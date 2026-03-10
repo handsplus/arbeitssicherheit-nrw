@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "arbeitssicherheit.nrw" }],
+      "destination": "https://www.arbeitssicherheit.nrw/:path*",
+      "permanent": true
+    }
+  ]
+}

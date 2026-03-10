@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* NRW Corporate Design – Grün, Rot, Grau */
+:root {
+  --nrw-weiss: #ffffff;
+  --nrw-gruen: #009233;
+  --nrw-gruen-hover: #007a2a;
+  --nrw-gruen-hell: #e8f5ec;
+  --nrw-rot: #e3000f;
+  --nrw-rot-hover: #c2000c;
+  --nrw-rot-hell: #ffebee;
+  /* NRW Grau – neutrale Basis */
+  --nrw-grau-50: #f8f9fa;
+  --nrw-grau-100: #f1f3f4;
+  --nrw-grau-200: #e8eaed;
+  --nrw-grau-400: #9aa0a6;
+  --nrw-grau-600: #5f6368;
+  --nrw-grau-800: #3c4043;
+  --nrw-grau-900: #202124;
+  --background: var(--nrw-weiss);
+  --foreground: var(--nrw-grau-900);
+}
+
+@theme inline {
+  --color-nrw-gruen: var(--nrw-gruen);
+  --color-nrw-gruen-hover: var(--nrw-gruen-hover);
+  --color-nrw-gruen-hell: var(--nrw-gruen-hell);
+  --color-nrw-rot: var(--nrw-rot);
+  --color-nrw-rot-hover: var(--nrw-rot-hover);
+  --color-nrw-rot-hell: var(--nrw-rot-hell);
+  --color-nrw-grau-50: var(--nrw-grau-50);
+  --color-nrw-grau-100: var(--nrw-grau-100);
+  --color-nrw-grau-200: var(--nrw-grau-200);
+  --color-nrw-grau-400: var(--nrw-grau-400);
+  --color-nrw-grau-600: var(--nrw-grau-600);
+  --color-nrw-grau-800: var(--nrw-grau-800);
+  --color-nrw-grau-900: var(--nrw-grau-900);
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Focus für Barrierefreiheit */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--nrw-gruen);
+  outline-offset: 2px;
+}
+
+/* Dezente Animation für Buttons */
+@media (prefers-reduced-motion: no-reduce) {
+  .btn-primary,
+  .btn-secondary {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    transform: translateY(-1px);
+  }
+}
