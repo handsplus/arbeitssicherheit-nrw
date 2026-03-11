@@ -1,9 +1,12 @@
 import { IconArrowRight } from "@/components/Icons";
 
+import { SITE } from "@/lib/constants";
+
 export const metadata = {
-  title: "Blog – Arbeitssicherheit, Gefährdungsbeurteilung, Getränkepflicht | Arbeitssicherheit.nrw",
+  title: "Blog – Arbeitssicherheit, Gefährdungsbeurteilung, Brandschutz | Arbeitssicherheit.nrw",
   description:
-    "Praxiswissen für Arbeitgeber: Gefährdungsbeurteilung unterschreiben? Getränke bereitstellen? ArbSchG, ArbStättV, ASR A4.1 – kurz erklärt für Köln und NRW.",
+    "Praxiswissen Arbeitssicherheit: Gefährdungsbeurteilung, Getränkepflicht, Akteure im Arbeitsschutz. ArbSchG, ArbStättV, ASR A4.1 – für Köln und NRW.",
+  alternates: { canonical: `${SITE.url}/blog` },
 };
 
 export default function BlogPage() {

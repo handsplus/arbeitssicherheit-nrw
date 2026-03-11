@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Suspense } from "react";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
@@ -27,12 +28,28 @@ export const metadata: Metadata = {
     "Arbeitssicherheit NRW",
     "Fachkraft für Arbeitssicherheit",
     "FaSi",
+    "externe FaSi",
+    "externe Fachkraft Arbeitssicherheit",
+    "Gefährdungsbeurteilung",
+    "Gefährdungsbeurteilung erstellen",
     "Brandschutz",
     "Brandschutzbeauftragter",
+    "Brandschutzbeauftragter Köln",
+    "Brandschutzmanager",
+    "Brandschutzkonzept",
     "SiGeKo",
-    "Gefährdungsbeurteilung",
+    "SiGeKo Baustelle",
+    "Sicherheits- und Gesundheitsschutzkoordinator",
+    "Arbeitsschutz",
+    "HSE Manager",
+    "ISO 45001",
+    "ASiG",
+    "DGUV Vorschrift 2",
     "Köln",
     "NRW",
+    "Nordrhein-Westfalen",
+    "Düsseldorf",
+    "Dortmund",
   ],
   metadataBase: new URL(SITE.url),
   openGraph: {
@@ -41,10 +58,18 @@ export const metadata: Metadata = {
     url: SITE.url,
     siteName: SITE.name,
     locale: "de_DE",
+    type: "website",
+    images: [{ url: "/logo.png", width: 420, height: 60, alt: SITE.name }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE.title,
+    description: SITE.description,
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: { index: true, follow: true },
   },
 };
 
@@ -72,7 +97,9 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <CookieBanner />
+        <Suspense fallback={null}>
+          <CookieBanner />
+        </Suspense>
         <VisitNotifier />
       </body>
     </html>

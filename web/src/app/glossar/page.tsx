@@ -1,10 +1,12 @@
 import Link from "next/link";
+import { SITE } from "@/lib/constants";
 import { IconArrowRight } from "@/components/Icons";
 
 export const metadata = {
   title: "Glossar: Arbeitssicherheit, Brandschutz, SiGeKo (FaSi, BSB, GBU, ASiG, DGUV, VEFK)",
   description:
     "Begriffe aus Arbeitssicherheit, Brandschutz und SiGeKo kurz erklärt: FaSi, Brandschutzbeauftragter, Gefährdungsbeurteilung, ASiG, DGUV, VEFK.",
+  alternates: { canonical: `${SITE.url}/glossar` },
 };
 
 const BEGRIFFE = [

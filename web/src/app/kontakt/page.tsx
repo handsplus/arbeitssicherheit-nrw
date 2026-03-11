@@ -1,10 +1,11 @@
-import { CONTACT } from "@/lib/constants";
+import { CONTACT, SITE } from "@/lib/constants";
 import { ContactForm } from "@/components/ContactForm";
 import { IconPhone, IconMail, IconLocation, IconWhatsApp, IconLinkedIn } from "@/components/Icons";
 
 export const metadata = {
   title: "Kontakt – Arbeitssicherheit, Brandschutz, SiGeKo",
   description: "Kontakt für Beratung zu Arbeitssicherheit, Brandschutz und SiGeKo in Köln und NRW. Schnelle Antwort.",
+  alternates: { canonical: `${SITE.url}/kontakt` },
 };
 
 export default function KontaktPage() {

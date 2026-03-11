@@ -1,8 +1,9 @@
-import { CONTACT } from "@/lib/constants";
+import { CONTACT, SITE } from "@/lib/constants";
 
 export const metadata = {
   title: "Impressum",
   description: "Impressum und rechtliche Angaben von Arbeitssicherheit.nrw.",
+  alternates: { canonical: `${SITE.url}/impressum` },
 };
 
 export default function ImpressumPage() {

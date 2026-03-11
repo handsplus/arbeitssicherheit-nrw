@@ -1,8 +1,10 @@
-import { CONTACT } from "@/lib/constants";
+import { CookieSettingsButton } from "@/components/CookieSettingsButton";
+import { CONTACT, SITE } from "@/lib/constants";
 
 export const metadata = {
   title: "Datenschutz",
   description: "Datenschutzerklärung von Arbeitssicherheit.nrw. Informationen zur Verarbeitung personenbezogener Daten.",
+  alternates: { canonical: `${SITE.url}/datenschutz` },
 };
 
 export default function DatenschutzPage() {
@@ -52,6 +54,9 @@ export default function DatenschutzPage() {
         <p>
           Wir setzen ggf. technisch notwendige Cookies ein. Ihre Einwilligung für optionalere
           Cookies können Sie über unser Cookie-Hinweisbanner erteilen bzw. widerrufen.
+        </p>
+        <p>
+          <CookieSettingsButton />
         </p>
         <h2 className="mt-10 text-lg font-semibold text-nrw-grau-900">6. Hosting</h2>
         <p>

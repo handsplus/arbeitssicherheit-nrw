@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { BeratungForm } from "@/components/BeratungForm";
-import { CONTACT } from "@/lib/constants";
+import { CONTACT, SITE } from "@/lib/constants";
 import { IconPhone, IconMail } from "@/components/Icons";
 
 export const metadata = {
   title: "Kostenlose Erstberatung – Arbeitssicherheit, Brandschutz, SiGeKo",
   description:
     "Unverbindliche kostenlose Erstberatung zu Arbeitssicherheit, Brandschutz und SiGeKo. Termin anfragen für Köln und NRW.",
+  alternates: { canonical: `${SITE.url}/beratung-buchen` },
 };
 
 export default function BeratungBuchenPage() {

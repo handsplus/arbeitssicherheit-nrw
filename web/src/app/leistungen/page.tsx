@@ -1,17 +1,26 @@
 import Link from "next/link";
-import { LEISTUNGEN } from "@/lib/constants";
+import { LEISTUNGEN, SITE } from "@/lib/constants";
 import { ServiceCard } from "@/components/ServiceCard";
 import { IconArrowRight } from "@/components/Icons";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 
 export const metadata = {
-  title: "Leistungen: Arbeitssicherheit, Brandschutz, SiGeKo, Schulungen, VEFK",
+  title: "Leistungen: Arbeitssicherheit, Brandschutz, SiGeKo – Köln & NRW",
   description:
-    "Arbeitssicherheit, Brandschutz, SiGeKo, Schulungen, Elektrosicherheit (VEFK) und Managementsysteme aus einer Hand in Köln und NRW.",
+    "Arbeitssicherheit (FaSi), Brandschutz, SiGeKo, Schulungen, Elektrosicherheit und Managementsysteme aus einer Hand in Köln und NRW. Rechtssicher, praxisnah.",
+  alternates: { canonical: `${SITE.url}/leistungen` },
+  openGraph: {
+    title: "Leistungen: Arbeitssicherheit, Brandschutz, SiGeKo | Köln & NRW",
+    description:
+      "Arbeitssicherheit, Brandschutz, SiGeKo, Schulungen, VEFK und Managementsysteme. Ihr Partner in Köln und NRW.",
+    url: "https://www.arbeitssicherheit.nrw/leistungen",
+  },
 };
 
 export default function LeistungenPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 md:py-24">
+      <BreadcrumbJsonLd items={[{ name: "Start", url: "/" }, { name: "Leistungen" }]} />
       <p className="text-sm font-semibold uppercase tracking-widest text-nrw-gruen">
         Unsere Leistungen
       </p>

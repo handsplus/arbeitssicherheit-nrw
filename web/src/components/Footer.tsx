@@ -117,7 +117,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/datenschutz#cookie-einstellungen" className="hover:text-nrw-gruen">
+                <Link href="/datenschutz?cookie-einstellungen=1#cookie-einstellungen" className="hover:text-nrw-gruen">
                   Cookie-Einstellungen
                 </Link>
               </li>

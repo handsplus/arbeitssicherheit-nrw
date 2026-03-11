@@ -1,15 +1,31 @@
 import Link from "next/link";
 import { IconArrowRight } from "@/components/Icons";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
+import { SITE } from "@/lib/constants";
 
 export const metadata = {
   title: "SiGeKo – Sicherheits- und Gesundheitsschutzkoordination | Köln & NRW",
   description:
     "SiGeKo-Leistungen auf der Baustelle: Planung, Koordination und Dokumentation gemäß Baustellenverordnung. Externer SiGeKo in Köln und NRW.",
+  alternates: { canonical: `${SITE.url}/leistungen/sigeko` },
+  openGraph: {
+    title: "SiGeKo – Sicherheits- und Gesundheitsschutzkoordination | Köln & NRW",
+    description:
+      "Externer SiGeKo, SiGePlan, Baustellenverordnung. Sicherheits- und Gesundheitsschutzkoordination in Köln und NRW.",
+    url: `${SITE.url}/leistungen/sigeko`,
+  },
 };
 
 export default function SiGeKoPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-16 md:py-24">
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Start", url: "/" },
+          { name: "Leistungen", url: "/leistungen" },
+          { name: "SiGeKo" },
+        ]}
+      />
       <nav className="mb-10 text-sm text-nrw-grau-400" aria-label="Breadcrumb">
         <Link href="/leistungen" className="hover:text-nrw-gruen">
           Leistungen

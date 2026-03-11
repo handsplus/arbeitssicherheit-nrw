@@ -1,9 +1,11 @@
 import Link from "next/link";
+import { SITE } from "@/lib/constants";
 import { IconShield, IconAcademic, IconCalendar, IconBook, IconChart, IconArrowRight } from "@/components/Icons";
 
 export const metadata = {
   title: "Wissen & Ressourcen – Checklisten, FAQ, Glossar, Rechner",
   description: "Checklisten, FAQ, Glossar, Rechner und Schulungstermine zu Arbeitssicherheit, Brandschutz und SiGeKo in Köln und NRW.",
+  alternates: { canonical: `${SITE.url}/wissen` },
 };
 
 const ARTICLES = [

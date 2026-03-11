@@ -1,15 +1,25 @@
 import Link from "next/link";
+import { SITE } from "@/lib/constants";
 import { IconArrowRight } from "@/components/Icons";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 
 export const metadata = {
   title: "Managementsysteme ISO 45001, ISO 14001 – Köln & NRW",
   description:
     "Einführung und Optimierung von Arbeitsschutz- und Umweltmanagementsystemen (ISO 45001, ISO 14001). Beratung in Köln und NRW.",
+  alternates: { canonical: `${SITE.url}/leistungen/managementsysteme` },
 };
 
 export default function ManagementsystemePage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-16 md:py-24">
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Start", url: "/" },
+          { name: "Leistungen", url: "/leistungen" },
+          { name: "Managementsysteme" },
+        ]}
+      />
       <nav className="mb-10 text-sm text-nrw-grau-400" aria-label="Breadcrumb">
         <Link href="/leistungen" className="hover:text-nrw-gruen">Leistungen</Link>
         <span className="mx-2">/</span>

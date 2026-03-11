@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const FORMSPREE_FORM_ID = process.env.NEXT_PUBLIC_FORMSPREE_KONTAKT_ID ?? "";
+const FORMSPREE_FORM_ID = (process.env.NEXT_PUBLIC_FORMSPREE_KONTAKT_ID ?? "").trim();
 
 export function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");

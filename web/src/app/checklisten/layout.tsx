@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+import { SITE } from "@/lib/constants";
 
-export const metadata: Metadata = {
-  title: "Checklisten: Arbeitssicherheit, Brandschutz, SiGeKo",
+export const metadata = {
+  title: "Checklisten – Arbeitssicherheit, Brandschutz, SiGeKo",
   description:
-    "Kostenlose Checklisten zur Selbstbewertung: Arbeitssicherheit, Brandschutz und SiGeKo für Ihren Betrieb. Orientierungshilfe – keine Fachberatung.",
+    "Selbstbewertung für Arbeitssicherheit, Gefährdungsbeurteilung, Brandschutz und SiGeKo. Erste Einschätzung für Ihren Betrieb – Köln und NRW.",
+  alternates: { canonical: `${SITE.url}/checklisten` },
 };
 
 export default function ChecklistenLayout({ children }: { children: React.ReactNode }) {

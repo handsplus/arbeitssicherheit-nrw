@@ -1,15 +1,31 @@
 import Link from "next/link";
 import { IconArrowRight } from "@/components/Icons";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
+import { SITE } from "@/lib/constants";
 
 export const metadata = {
   title: "Arbeitssicherheit & FaSi – externe Fachkraft in Köln & NRW",
   description:
     "Arbeitssicherheit professionell: Externe Fachkraft für Arbeitssicherheit (FaSi), Gefährdungsbeurteilung, Betreuung nach ASiG und DGUV Vorschrift 2. Köln, NRW.",
+  alternates: { canonical: `${SITE.url}/leistungen/arbeitssicherheit` },
+  openGraph: {
+    title: "Arbeitssicherheit & FaSi – externe Fachkraft | Köln & NRW",
+    description:
+      "Externe FaSi, Gefährdungsbeurteilung, Betriebsbegehung, Unterweisung. Arbeitssicherheit nach ASiG und DGUV Vorschrift 2 in Köln und NRW.",
+    url: `${SITE.url}/leistungen/arbeitssicherheit`,
+  },
 };
 
 export default function ArbeitssicherheitPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-16 md:py-24">
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Start", url: "/" },
+          { name: "Leistungen", url: "/leistungen" },
+          { name: "Arbeitssicherheit" },
+        ]}
+      />
       <nav className="mb-10 text-sm text-nrw-grau-400" aria-label="Breadcrumb">
         <Link href="/leistungen" className="hover:text-nrw-gruen">Leistungen</Link>
         <span className="mx-2">/</span>

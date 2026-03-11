@@ -1,8 +1,8 @@
 export const SITE = {
   name: "Arbeitssicherheit.nrw",
-  title: "Arbeitssicherheit Köln | Arbeitssicherheit, Brandschutz, SiGeKo – Arbeitssicherheit.nrw",
+  title: "Arbeitssicherheit Köln & NRW | FaSi, Brandschutz, SiGeKo – Arbeitssicherheit.nrw",
   description:
-    "Ihre Anlaufstelle in Köln und NRW: Arbeitssicherheit, Brandschutz, SiGeKo, Schulungen, Elektrosicherheit. Rechtssicher, entlastend.",
+    "Ihre Anlaufstelle für Arbeitssicherheit in Köln und NRW: Externe Fachkraft für Arbeitssicherheit (FaSi), Brandschutz, SiGeKo, Schulungen, Elektrosicherheit. Rechtssicher, entlastend.",
   url: "https://www.arbeitssicherheit.nrw",
 } as const;
 
@@ -43,10 +43,6 @@ export const NAV = [
   {
     label: "Über uns",
     href: "/ueber-uns",
-    children: [
-      { label: "Impressum", href: "/impressum" },
-      { label: "Datenschutz", href: "/datenschutz" },
-    ],
   },
   { label: "Beratung buchen", href: "/beratung-buchen" },
 ] as const;

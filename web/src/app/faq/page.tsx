@@ -63,8 +63,22 @@ function FaqEntry({ item, index }: { item: (typeof FAQ_ITEMS)[0]; index: number 
 }
 
 export default function FaqPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: FAQ_ITEMS.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
+  };
+
   return (
     <div className="mx-auto max-w-3xl px-4 py-16 md:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <p className="text-sm font-semibold uppercase tracking-widest text-nrw-gruen">FAQ</p>
       <h1 className="mt-2 text-4xl font-bold text-nrw-grau-900">Häufige Fragen</h1>
       <p className="mt-6 text-lg text-nrw-grau-600">

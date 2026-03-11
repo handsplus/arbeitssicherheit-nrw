@@ -12,7 +12,7 @@ const THEMEN = [
   "Sonstiges",
 ];
 
-const FORMSPREE_FORM_ID = process.env.NEXT_PUBLIC_FORMSPREE_BERATUNG_ID ?? "";
+const FORMSPREE_FORM_ID = (process.env.NEXT_PUBLIC_FORMSPREE_BERATUNG_ID ?? "").trim();
 
 export function BeratungForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");

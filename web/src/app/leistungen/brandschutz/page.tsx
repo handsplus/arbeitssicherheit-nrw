@@ -1,15 +1,31 @@
 import Link from "next/link";
 import { IconArrowRight } from "@/components/Icons";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
+import { SITE } from "@/lib/constants";
 
 export const metadata = {
   title: "Brandschutzbeauftragter (BSB) – extern in Köln & NRW",
   description:
     "Externer Brandschutzbeauftragter: Beratung und Konzepte im baulichen, anlagentechnischen und organisatorischen Brandschutz. Köln und NRW.",
+  alternates: { canonical: `${SITE.url}/leistungen/brandschutz` },
+  openGraph: {
+    title: "Brandschutzbeauftragter – extern | Köln & NRW",
+    description:
+      "Externer BSB, Brandschutzkonzepte, Brandschutzordnung, Schulungen. Brandschutz in Köln und NRW.",
+    url: `${SITE.url}/leistungen/brandschutz`,
+  },
 };
 
 export default function BrandschutzPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-16 md:py-24">
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Start", url: "/" },
+          { name: "Leistungen", url: "/leistungen" },
+          { name: "Brandschutz" },
+        ]}
+      />
       <nav className="mb-10 text-sm text-nrw-grau-400" aria-label="Breadcrumb">
         <Link href="/leistungen" className="hover:text-nrw-gruen">Leistungen</Link>
         <span className="mx-2">/</span>

@@ -1,14 +1,16 @@
-import { SITE, CONTACT } from "@/lib/constants";
+import { SITE, CONTACT, LEISTUNGEN } from "@/lib/constants";
+
+const ORGANIZATION_ID = `${SITE.url}/#organization`;
 
 /**
- * Strukturierte Daten (JSON-LD) für Suchmaschinen: LocalBusiness + angebotene Leistungen
- * (Arbeitssicherheit, Brandschutz, SiGeKo) – verbessert Auffindbarkeit in Köln/NRW.
+ * Strukturierte Daten (JSON-LD) für maximale Google-Sichtbarkeit:
+ * WebSite (Sitelinks, Indexierung) + Organization (Knowledge Panel, lokale Suche) + Leistungen.
  */
 export function JsonLd() {
-  const localBusiness = {
+  const organization = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "@id": `${SITE.url}/#organization`,
+    "@id": ORGANIZATION_ID,
     name: SITE.name,
     description: SITE.description,
     url: SITE.url,
@@ -24,56 +26,60 @@ export function JsonLd() {
     },
     areaServed: [
       { "@type": "City", name: "Köln" },
+      { "@type": "City", name: "Düsseldorf" },
+      { "@type": "City", name: "Dortmund" },
+      { "@type": "City", name: "Essen" },
+      { "@type": "City", name: "Bonn" },
+      { "@type": "City", name: "Wuppertal" },
       { "@type": "State", name: "Nordrhein-Westfalen" },
+    ],
+    sameAs: [
+      CONTACT.linkedin,
+      CONTACT.facebook,
+      CONTACT.instagram,
+      CONTACT.youtube,
     ],
     priceRange: "€€",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Leistungen Arbeitssicherheit, Brandschutz, SiGeKo",
-      itemListElement: [
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Arbeitssicherheit",
-            description:
-              "Externe Fachkraft für Arbeitssicherheit (FaSi), Gefährdungsbeurteilung, Betreuung nach ASiG und DGUV Vorschrift 2 in Köln und NRW.",
-          },
+      name: "Leistungen Arbeitssicherheit, Brandschutz, SiGeKo, Schulungen, Elektrosicherheit",
+      itemListElement: LEISTUNGEN.map((l) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: l.title,
+          description: l.short,
+          url: `${SITE.url}${l.href}`,
         },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Brandschutz",
-            description:
-              "Externer Brandschutzbeauftragter, Brandschutzkonzepte, baulicher und organisatorischer Brandschutz in Köln und NRW.",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "SiGeKo",
-            description:
-              "Sicherheits- und Gesundheitsschutzkoordination auf der Baustelle gemäß Baustellenverordnung in Köln und NRW.",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Schulungen",
-            description: "Schulungen und Unterweisungen zu Arbeitssicherheit, Brandschutz und SiGeKo in Köln und NRW.",
-          },
-        },
-      ],
+      })),
+    },
+  };
+
+  const webSite = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE.url}/#website`,
+    url: SITE.url,
+    name: SITE.name,
+    description: SITE.description,
+    publisher: { "@id": ORGANIZATION_ID },
+    inLanguage: "de-DE",
+    potentialAction: {
+      "@type": "ReadAction",
+      target: { "@type": "EntryPoint", url: SITE.url },
     },
   };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusiness) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webSite) }}
+      />
+    </>
   );
 }

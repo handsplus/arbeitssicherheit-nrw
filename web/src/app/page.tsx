@@ -14,11 +14,12 @@ import {
 export const metadata = {
   title: "Arbeitssicherheit NRW – FaSi, Brandschutz, SiGeKo",
   description:
-    "Arbeitssicherheit in NRW: Externe Fachkraft für Arbeitssicherheit (FaSi), Brandschutzbeauftragter, SiGeKo, Gefährdungsbeurteilung, Schulungen. Rechtssicher & praxisnah.",
+    "Arbeitssicherheit in NRW: Externe Fachkraft für Arbeitssicherheit (FaSi), Gefährdungsbeurteilung, Brandschutzbeauftragter, SiGeKo, Schulungen. Rechtssicher & praxisnah.",
+  alternates: { canonical: SITE.url },
   openGraph: {
     title: "Arbeitssicherheit NRW | FaSi, Brandschutz, SiGeKo",
     description:
-      "Arbeitssicherheit, Brandschutz und SiGeKo aus einer Hand in NRW. FaSi, Gefährdungsbeurteilung, Schulungen.",
+      "Arbeitssicherheit, FaSi, Gefährdungsbeurteilung, Brandschutz und SiGeKo aus einer Hand in NRW.",
     url: SITE.url,
   },
 };
@@ -55,6 +56,9 @@ export default function HomePage() {
             Professionelle Arbeitssicherheit, Brandschutz und SiGeKo: Externe Fachkraft für Arbeitssicherheit (FaSi),
             Gefährdungsbeurteilung, Brandschutzbeauftragter und Sicherheits- und Gesundheitsschutzkoordination auf
             Baustellen – rechtssicher, praxisnah und entlastend.
+          </p>
+          <p className="mt-3 text-sm text-white/70">
+            Externe FaSi, Brandschutz & SiGeKo – zertifiziert (TÜV, VdS, DEKRA), rechtssicher, praxisnah.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-start gap-4">
             <Link

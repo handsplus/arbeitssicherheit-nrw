@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+import { SITE } from "@/lib/constants";
 
-export const metadata: Metadata = {
-  title: "FAQ – FaSi, Brandschutzbeauftragter, SiGeKo, Elektrosicherheit",
+export const metadata = {
+  title: "FAQ – Arbeitssicherheit, FaSi, Brandschutz, SiGeKo",
   description:
-    "Häufige Fragen zu Fachkraft für Arbeitssicherheit, Brandschutzbeauftragter, SiGeKo und Elektrosicherheit. Kurze Antworten für Köln und NRW.",
+    "Häufige Fragen zu Arbeitssicherheit, externer FaSi, Brandschutzbeauftragter, SiGeKo und Elektrosicherheit. Kurze Antworten für Köln und NRW.",
+  alternates: { canonical: `${SITE.url}/faq` },
 };
 
 export default function FaqLayout({ children }: { children: React.ReactNode }) {
