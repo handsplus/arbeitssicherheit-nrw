@@ -21,6 +21,14 @@ const FOOTER_NAV = [
   { label: "Beratung buchen", href: "/beratung-buchen" },
 ] as const;
 
+/** Verbund- und Partnerdomains (rechte Spalte unter „Rechtliches“) */
+const PARTNER_VERBUND_LINKS = [
+  { label: "sigeko.koeln", href: "https://sigeko.koeln" },
+  { label: "handsplus.de", href: "https://www.handsplus.de" },
+  { label: "brandschutzkoeln.com", href: "https://brandschutzkoeln.com" },
+  { label: "arbeitssicherheitkoeln.de", href: "https://arbeitssicherheitkoeln.de" },
+] as const;
+
 export function Footer() {
   return (
     <footer className="border-t border-nrw-grau-200 bg-nrw-grau-900 text-white">
@@ -121,16 +129,23 @@ export function Footer() {
                   Cookie-Einstellungen
                 </Link>
               </li>
-              <li>
-                <a
-                  href="https://www.handsplus.de"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-nrw-gruen"
-                >
-                  handsplus.de
-                </a>
-              </li>
+            </ul>
+            <p className="mt-8 text-sm font-semibold uppercase tracking-widest text-nrw-grau-400">
+              Verbund und Partner
+            </p>
+            <ul className="mt-4 space-y-2 text-sm text-nrw-grau-400">
+              {PARTNER_VERBUND_LINKS.map((item) => (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-nrw-gruen"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
             </ul>
             <p className="mt-8 text-sm font-semibold uppercase tracking-widest text-nrw-grau-400">
               Folgen Sie uns
