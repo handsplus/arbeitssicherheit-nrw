@@ -34,19 +34,19 @@ export default function HomePage() {
           <p className="text-sm font-medium uppercase tracking-widest text-white/80">
             Rechtssicher. Entlastet. Ihr Partner in NRW.
           </p>
-          <h1 className="mt-4 max-w-full break-words text-3xl font-bold leading-snug tracking-tight text-white sm:text-4xl md:text-5xl md:leading-[1.12] lg:text-6xl">
-            <span className="block hyphens-none">
-              <span className="text-nrw-gruen">Arbeitssicherheit</span>
-              <span className="mx-1.5 text-nrw-grau-400 sm:mx-2" aria-hidden>
+          <h1 className="mt-4 max-w-full text-3xl font-bold leading-snug tracking-tight text-white sm:text-4xl md:text-5xl md:leading-[1.12] lg:text-6xl">
+            <span className="flex flex-wrap items-baseline gap-x-2 gap-y-2 sm:gap-x-3">
+              <span className="shrink-0 text-nrw-gruen">Arbeitssicherheit</span>
+              <span className="shrink-0 text-nrw-grau-400" aria-hidden>
                 ·
               </span>
-              <span className="text-nrw-rot">Brandschutz</span>
-              <span className="mx-1.5 text-nrw-grau-400 sm:mx-2" aria-hidden>
+              <span className="shrink-0 text-nrw-rot">Brandschutz</span>
+              <span className="shrink-0 text-nrw-grau-400" aria-hidden>
                 ·
               </span>
-              <span className="whitespace-nowrap">SiGeKo</span>
+              <span className="shrink-0 text-white">SiGeKo</span>
             </span>
-            <span className="mt-2 block">
+            <span className="mt-2 block break-words">
               in NRW für Ihr Unternehmen und Bauvorhaben
             </span>
           </h1>
