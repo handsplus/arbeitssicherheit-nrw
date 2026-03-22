@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/leistungen/managementsysteme`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
     { url: `${BASE}/kontakt`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/beratung-buchen`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE}/wissen`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE}/wissen`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
     { url: `${BASE}/checklisten`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/faq`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
     { url: `${BASE}/glossar`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
