@@ -21,7 +21,7 @@ const FOOTER_NAV = [
   { label: "Beratung buchen", href: "/beratung-buchen" },
 ] as const;
 
-/** Verbund- und Partnerdomains (rechte Spalte unter „Rechtliches“) */
+/** Partnerlinks unter „Verbund“ (rechte Spalte) */
 const PARTNER_VERBUND_LINKS = [
   { label: "sigeko.koeln", href: "https://sigeko.koeln" },
   { label: "handsplus.de", href: "https://www.handsplus.de" },
@@ -130,10 +130,10 @@ export function Footer() {
                 </Link>
               </li>
             </ul>
-            <p className="mt-8 text-sm font-semibold uppercase tracking-widest text-nrw-grau-400">
-              Verbund und Partner
+            <p className="mt-6 text-sm font-semibold tracking-wide text-nrw-grau-400">
+              Verbund
             </p>
-            <ul className="mt-4 space-y-2 text-sm text-nrw-grau-400">
+            <ul className="mt-2 space-y-0.5 text-sm text-nrw-grau-400">
               {PARTNER_VERBUND_LINKS.map((item) => (
                 <li key={item.href}>
                   <a

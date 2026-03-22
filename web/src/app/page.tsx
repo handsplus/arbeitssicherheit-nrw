@@ -28,27 +28,25 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-nrw-grau-900 py-20 md:py-28 lg:py-32">
+      <section className="relative overflow-x-hidden bg-nrw-grau-900 py-20 md:py-28 lg:py-32">
         <div className="absolute inset-0 bg-[linear-gradient(135deg,var(--nrw-grau-900)_0%,var(--nrw-grau-800)_50%,#0d2818_100%)] opacity-95" />
         <div className="relative mx-auto max-w-6xl px-4 text-left">
           <p className="text-sm font-medium uppercase tracking-widest text-white/80">
             Rechtssicher. Entlastet. Ihr Partner in NRW.
           </p>
-          <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl">
-            <span className="block">
+          <h1 className="mt-4 max-w-full break-words text-3xl font-bold leading-snug tracking-tight text-white sm:text-4xl md:text-5xl md:leading-[1.12] lg:text-6xl">
+            <span className="block hyphens-auto">
               <span className="text-nrw-gruen">Arbeitssicherheit</span>
-              <span
-                className="mx-1.5 inline-block h-1.5 w-1.5 shrink-0 rounded-none bg-nrw-grau-400 align-middle"
-                aria-hidden
-              />
+              <span className="mx-1.5 text-nrw-grau-400 sm:mx-2" aria-hidden>
+                ·
+              </span>
               <span className="text-nrw-rot">Brandschutz</span>
-              <span
-                className="mx-1.5 inline-block h-1.5 w-1.5 shrink-0 rounded-none bg-nrw-grau-400 align-middle"
-                aria-hidden
-              />
-              <span className="text-white">SiGeKo</span>
+              <span className="mx-1.5 text-nrw-grau-400 sm:mx-2" aria-hidden>
+                ·
+              </span>
+              SiGeKo
             </span>
-            <span className="mt-2 block text-white">
+            <span className="mt-2 block">
               in NRW für Ihr Unternehmen und Bauvorhaben
             </span>
           </h1>
