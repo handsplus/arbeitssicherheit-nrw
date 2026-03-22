@@ -59,7 +59,7 @@ export default function UeberUnsPage() {
       </div>
       <div className="mt-14">
         <h2 className="text-2xl font-bold text-nrw-grau-900">Leistungen im Überblick</h2>
-        <ul className="mt-6 space-y-3">
+        <ul className="mt-4 space-y-1">
           {LEISTUNGEN.map((l) => (
             <li key={l.slug}>
               <Link href={l.href} className="text-nrw-grau-600 hover:text-nrw-gruen">

@@ -35,7 +35,7 @@ export default function HomePage() {
             Rechtssicher. Entlastet. Ihr Partner in NRW.
           </p>
           <h1 className="mt-4 max-w-full break-words text-3xl font-bold leading-snug tracking-tight text-white sm:text-4xl md:text-5xl md:leading-[1.12] lg:text-6xl">
-            <span className="block hyphens-auto">
+            <span className="block hyphens-none">
               <span className="text-nrw-gruen">Arbeitssicherheit</span>
               <span className="mx-1.5 text-nrw-grau-400 sm:mx-2" aria-hidden>
                 ·
@@ -44,7 +44,7 @@ export default function HomePage() {
               <span className="mx-1.5 text-nrw-grau-400 sm:mx-2" aria-hidden>
                 ·
               </span>
-              SiGeKo
+              <span className="whitespace-nowrap">SiGeKo</span>
             </span>
             <span className="mt-2 block">
               in NRW für Ihr Unternehmen und Bauvorhaben
@@ -54,9 +54,6 @@ export default function HomePage() {
             Professionelle Arbeitssicherheit, Brandschutz und SiGeKo: Externe Fachkraft für Arbeitssicherheit (FaSi),
             Gefährdungsbeurteilung, Brandschutzbeauftragter und Sicherheits- und Gesundheitsschutzkoordination auf
             Baustellen – rechtssicher, praxisnah und entlastend.
-          </p>
-          <p className="mt-3 text-sm text-white/70">
-            Externe FaSi, Brandschutz & SiGeKo – zertifiziert (TÜV, VdS, DEKRA), rechtssicher, praxisnah.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-start gap-4">
             <Link
