@@ -4,7 +4,8 @@ import { IconPhone, IconMail, IconLocation, IconWhatsApp, IconLinkedIn } from "@
 
 export const metadata = {
   title: "Kontakt – Arbeitssicherheit, Brandschutz, SiGeKo",
-  description: "Kontakt für Beratung zu Arbeitssicherheit, Brandschutz und SiGeKo in Köln und NRW. Schnelle Antwort.",
+  description:
+    "Kontakt für Beratung mit Schwerpunkt Arbeitssicherheit, Brandschutz und SiGeKo in Köln und NRW. Schnelle Antwort.",
   alternates: { canonical: `${SITE.url}/kontakt` },
 };
 

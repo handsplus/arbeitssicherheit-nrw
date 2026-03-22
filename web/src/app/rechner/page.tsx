@@ -4,9 +4,9 @@ import { IconArrowRight } from "@/components/Icons";
 import { BrandschutzhelferRechner } from "@/components/BrandschutzhelferRechner";
 
 export const metadata = {
-  title: "Rechner: Brandschutzhelfer (ASR A2.2) & SiGeKo-Honorar",
+  title: "Rechner: Arbeitssicherheit & Betrieb – Brandschutzhelfer & SiGeKo-Honorar",
   description:
-    "Brandschutzhelfer-Rechner nach ASR A2.2, SiGeKo-Honorar-Orientierung. Kostenlose Orientierungshilfen für Arbeitssicherheit in Köln und NRW.",
+    "Orientierungshilfen im Kontext Arbeitssicherheit: Brandschutzhelfer-Rechner nach ASR A2.2 und SiGeKo-Honorar. Kostenlos für Köln und NRW.",
   alternates: { canonical: `${SITE.url}/rechner` },
 };
 

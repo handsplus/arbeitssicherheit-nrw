@@ -1,18 +1,18 @@
 import Link from "next/link";
 import { LEISTUNGEN, SITE } from "@/lib/constants";
 import { ServiceCard } from "@/components/ServiceCard";
-import { IconArrowRight } from "@/components/Icons";
+import { PrimaryCtaLink } from "@/components/PrimaryCtaLink";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 
 export const metadata = {
   title: "Leistungen: Arbeitssicherheit, Brandschutz, SiGeKo – Köln & NRW",
   description:
-    "Arbeitssicherheit (FaSi), Brandschutz, SiGeKo, Schulungen, Elektrosicherheit und Managementsysteme aus einer Hand in Köln und NRW. Rechtssicher, praxisnah.",
+    "Schwerpunkt Arbeitssicherheit (FaSi), Brandschutz und SiGeKo; dazu Schulungen sowie bei Bedarf Elektrosicherheit und Managementsysteme – aus einer Hand in Köln und NRW.",
   alternates: { canonical: `${SITE.url}/leistungen` },
   openGraph: {
     title: "Leistungen: Arbeitssicherheit, Brandschutz, SiGeKo | Köln & NRW",
     description:
-      "Arbeitssicherheit, Brandschutz, SiGeKo, Schulungen, VEFK und Managementsysteme. Ihr Partner in Köln und NRW.",
+      "Arbeitssicherheit, Brandschutz, SiGeKo zuerst; ergänzend Schulungen, VEFK und Managementsysteme. Partner in Köln und NRW.",
     url: "https://www.arbeitssicherheit.nrw/leistungen",
   },
 };
@@ -28,8 +28,9 @@ export default function LeistungenPage() {
         Alles aus einer Hand
       </h1>
       <p className="mt-6 max-w-2xl text-lg text-nrw-grau-600">
-        Betreuung in Arbeitssicherheit, Brandschutz, Elektrosicherheit und Managementsystemen – für
-        Rechtssicherheit und weniger Aufwand in Ihrem Unternehmen.
+        Schwerpunkt Arbeitssicherheit, Brandschutz und SiGeKo; ergänzend Schulungen sowie bei Bedarf
+        Elektrosicherheit und Managementsysteme – für Rechtssicherheit und weniger Aufwand in Ihrem
+        Unternehmen.
       </p>
       <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {LEISTUNGEN.map((l) => (
@@ -37,13 +38,10 @@ export default function LeistungenPage() {
         ))}
       </div>
       <div className="mt-14 text-center">
-        <Link
-          href="/beratung-buchen"
+        <PrimaryCtaLink
+          theme="default"
           className="inline-flex items-center gap-2 rounded-full bg-nrw-rot px-8 py-4 font-semibold text-white hover:bg-nrw-rot-hover"
-        >
-          Kostenlose Erstberatung anfragen
-          <IconArrowRight className="h-5 w-5" aria-hidden />
-        </Link>
+        />
       </div>
     </div>
   );

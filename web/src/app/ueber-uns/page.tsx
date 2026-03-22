@@ -3,7 +3,8 @@ import { CONTACT, LEISTUNGEN, SITE } from "@/lib/constants";
 
 export const metadata = {
   title: "Über uns – Ihr Partner für Arbeitssicherheit in NRW",
-  description: "Arbeitssicherheit.nrw: Ihr Partner für Arbeitssicherheit, Brandschutz und SiGeKo in Köln und Nordrhein-Westfalen.",
+  description:
+    "Arbeitssicherheit.nrw: Partner mit Schwerpunkt Arbeitssicherheit, Brandschutz und SiGeKo in Köln und Nordrhein-Westfalen.",
   alternates: { canonical: `${SITE.url}/ueber-uns` },
 };
 

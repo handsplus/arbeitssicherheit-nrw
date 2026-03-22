@@ -6,7 +6,7 @@ import { IconPhone, IconMail } from "@/components/Icons";
 export const metadata = {
   title: "Kostenlose Erstberatung – Arbeitssicherheit, Brandschutz, SiGeKo",
   description:
-    "Unverbindliche kostenlose Erstberatung zu Arbeitssicherheit, Brandschutz und SiGeKo. Termin anfragen für Köln und NRW.",
+    "Unverbindliche kostenlose Erstberatung mit Schwerpunkt Arbeitssicherheit, Brandschutz und SiGeKo. Termin anfragen für Köln und NRW.",
   alternates: { canonical: `${SITE.url}/beratung-buchen` },
 };
 

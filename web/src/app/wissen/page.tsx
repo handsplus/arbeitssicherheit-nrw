@@ -12,7 +12,7 @@ import {
 } from "@/components/Icons";
 
 const desc =
-  "Praxiswissen Arbeitssicherheit: FAQ, Glossar, Checklisten, Rechner und Blog zu FaSi, Brandschutz, SiGeKo, Gefährdungsbeurteilung, DGUV und ASiG – für Unternehmen in Köln und Nordrhein-Westfalen.";
+  "Praxiswissen mit Schwerpunkt Arbeitssicherheit: FAQ, Glossar, Checklisten, Rechner und Blog zu FaSi, Brandschutz, SiGeKo, Gefährdungsbeurteilung, DGUV und ASiG – für Unternehmen in Köln und Nordrhein-Westfalen.";
 
 export const metadata: Metadata = {
   title: "Wissen & Ressourcen – FAQ, Glossar, Checklisten, Rechner | Köln & NRW",
@@ -51,7 +51,7 @@ const ARTICLES = [
   {
     title: "Häufige Fragen (FAQ)",
     href: "/faq",
-    summary: "Antworten zu FaSi, Brandschutzbeauftragter, SiGeKo, Elektrosicherheit und mehr.",
+    summary: "Antworten zu FaSi, Brandschutz, SiGeKo; ergänzend auch Elektrosicherheit und mehr.",
     Icon: IconAcademic,
   },
   {

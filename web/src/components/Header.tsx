@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { CONTACT, NAV } from "@/lib/constants";
-import { IconPhone, IconArrowRight } from "@/components/Icons";
+import { IconPhone } from "@/components/Icons";
+import { PrimaryCtaLink } from "@/components/PrimaryCtaLink";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -76,13 +77,11 @@ export function Header() {
           >
             <IconPhone className="h-5 w-5" aria-hidden />
           </a>
-          <Link
-            href="/beratung-buchen"
+          <PrimaryCtaLink
+            theme="header"
             className="inline-flex h-11 items-center gap-2 rounded-full bg-nrw-rot px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-nrw-rot-hover hover:shadow focus:outline-none focus:ring-2 focus:ring-nrw-rot focus:ring-offset-2"
-          >
-            Erstberatung
-            <IconArrowRight className="h-4 w-4" aria-hidden />
-          </Link>
+            iconClassName="h-4 w-4"
+          />
         </div>
 
         <button
@@ -138,14 +137,12 @@ export function Header() {
           >
             <IconPhone className="h-6 w-6" aria-hidden />
           </a>
-          <Link
-            href="/beratung-buchen"
+          <PrimaryCtaLink
+            theme="header"
             className="mt-2 flex items-center justify-center gap-2 rounded-full bg-nrw-rot py-3 font-semibold text-white"
+            iconClassName="h-5 w-5"
             onClick={() => setMobileOpen(false)}
-          >
-            Kostenlose Erstberatung
-            <IconArrowRight className="w-5 h-5" aria-hidden />
-          </Link>
+          />
         </div>
       )}
     </header>

@@ -3,9 +3,9 @@ import { IconArrowRight } from "@/components/Icons";
 import { SITE } from "@/lib/constants";
 
 export const metadata = {
-  title: "Blog – Arbeitssicherheit, Gefährdungsbeurteilung, Brandschutz | Arbeitssicherheit.nrw",
+  title: "Blog – Arbeitssicherheit, Brandschutz, SiGeKo | Arbeitssicherheit.nrw",
   description:
-    "Praxiswissen Arbeitssicherheit: Gefährdungsbeurteilung, Getränkepflicht, Akteure im Arbeitsschutz. ArbSchG, ArbStättV, ASR A4.1 – für Köln und NRW.",
+    "Praxiswissen mit Schwerpunkt Arbeitssicherheit: Gefährdungsbeurteilung, Getränkepflicht, Akteure im Arbeitsschutz; dazu Brandschutz und SiGeKo. ArbSchG, ArbStättV, ASR A4.1 – für Köln und NRW.",
   alternates: { canonical: `${SITE.url}/blog` },
 };
 

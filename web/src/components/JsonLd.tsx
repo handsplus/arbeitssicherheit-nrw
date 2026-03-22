@@ -42,7 +42,7 @@ export function JsonLd() {
     priceRange: "€€",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Leistungen Arbeitssicherheit, Brandschutz, SiGeKo, Schulungen, Elektrosicherheit",
+      name: "Leistungen: Schwerpunkt Arbeitssicherheit, Brandschutz, SiGeKo; ergänzend Schulungen, Elektrosicherheit, Managementsysteme",
       itemListElement: LEISTUNGEN.map((l) => ({
         "@type": "Offer",
         itemOffered: {

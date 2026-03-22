@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import { PrimaryCtaLink } from "@/components/PrimaryCtaLink";
 
 const FAQ_ITEMS = [
   {
@@ -90,12 +90,11 @@ export default function FaqPage() {
         ))}
       </div>
       <div className="mt-12 text-center">
-        <Link
-          href="/beratung-buchen"
-          className="inline-flex items-center gap-2 rounded-full bg-nrw-rot px-8 py-4 font-semibold text-white hover:bg-nrw-rot-hover"
-        >
-          Kostenlose Erstberatung buchen
-        </Link>
+        <PrimaryCtaLink
+          theme="default"
+          showIcon={false}
+          className="inline-flex items-center justify-center rounded-full bg-nrw-rot px-8 py-4 font-semibold text-white hover:bg-nrw-rot-hover"
+        />
       </div>
     </div>
   );

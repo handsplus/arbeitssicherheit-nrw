@@ -3,6 +3,7 @@ import Image from "next/image";
 import { CONTACT, LEISTUNGEN, SITE } from "@/lib/constants";
 import { ServiceCard } from "@/components/ServiceCard";
 import { ContactForm } from "@/components/ContactForm";
+import { PrimaryCtaLink } from "@/components/PrimaryCtaLink";
 import {
   IconPhone,
   IconMail,
@@ -14,12 +15,12 @@ import {
 export const metadata = {
   title: "Arbeitssicherheit NRW – FaSi, Brandschutz, SiGeKo",
   description:
-    "Arbeitssicherheit in NRW: Externe Fachkraft für Arbeitssicherheit (FaSi), Gefährdungsbeurteilung, Brandschutzbeauftragter, SiGeKo, Schulungen. Rechtssicher & praxisnah.",
+    "Schwerpunkt Arbeitssicherheit in NRW: externe FaSi, Gefährdungsbeurteilung, Brandschutzbeauftragter und SiGeKo; ergänzend Schulungen. Rechtssicher & praxisnah.",
   alternates: { canonical: SITE.url },
   openGraph: {
     title: "Arbeitssicherheit NRW | FaSi, Brandschutz, SiGeKo",
     description:
-      "Arbeitssicherheit, FaSi, Gefährdungsbeurteilung, Brandschutz und SiGeKo aus einer Hand in NRW.",
+      "Arbeitssicherheit zuerst: FaSi, Gefährdungsbeurteilung, dann Brandschutz und SiGeKo aus einer Hand in NRW.",
     url: SITE.url,
   },
 };
@@ -56,13 +57,11 @@ export default function HomePage() {
             Baustellen – rechtssicher, praxisnah und entlastend.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-start gap-4">
-            <Link
-              href="/beratung-buchen"
+            <PrimaryCtaLink
+              theme="default"
               className="btn-primary inline-flex items-center gap-2 rounded-full bg-nrw-rot px-8 py-4 text-base font-semibold text-white shadow-lg hover:bg-nrw-rot-hover"
-            >
-              Kostenlose Erstberatung
-              <IconArrowRight className="w-5 h-5" aria-hidden />
-            </Link>
+              iconClassName="w-5 h-5"
+            />
             <Link
               href="/leistungen"
               className="btn-secondary inline-flex items-center gap-2 rounded-full border-2 border-white/40 bg-white/10 px-8 py-4 text-base font-semibold text-white backdrop-blur hover:border-nrw-gruen hover:bg-white/15"

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { PrimaryCtaLink } from "@/components/PrimaryCtaLink";
 
 const GEFAHREN = [
   "Gefährdungsbeurteilung liegt vor und ist aktuell?",
@@ -108,12 +109,11 @@ export default function ChecklistenPage() {
         <p className="mt-3 text-nrw-grau-600">
           Gefährdungsbeurteilung, Brandschutz oder SiGeKo für Ihre Baustelle – wir beraten Sie gerne.
         </p>
-        <Link
-          href="/beratung-buchen"
+        <PrimaryCtaLink
+          theme="default"
+          showIcon={false}
           className="mt-6 inline-block rounded-full bg-nrw-rot px-6 py-3 font-semibold text-white hover:bg-nrw-rot-hover"
-        >
-          Kostenlose Erstberatung buchen
-        </Link>
+        />
       </div>
     </div>
   );

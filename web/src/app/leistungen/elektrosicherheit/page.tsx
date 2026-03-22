@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { SITE } from "@/lib/constants";
-import { IconArrowRight } from "@/components/Icons";
+import { PrimaryCtaLink } from "@/components/PrimaryCtaLink";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 
 export const metadata = {
-  title: "Elektrosicherheit & VEFK – Elektroprüfungen in Köln & NRW",
+  title: "Elektrosicherheit & VEFK – Ergänzung zu Arbeitssicherheit | Köln & NRW",
   description:
-    "Verantwortliche Elektrofachkraft (VEFK) extern, Elektroprüfungen gemäß DIN VDE 1000-10 und DGUV Vorschrift 3. Köln und NRW.",
+    "Ergänzend zu Arbeitssicherheit und Brandschutz: externe verantwortliche Elektrofachkraft (VEFK) und Elektroprüfungen nach DIN VDE 1000-10 und DGUV Vorschrift 3 in Köln und NRW.",
   alternates: { canonical: `${SITE.url}/leistungen/elektrosicherheit` },
 };
 
@@ -44,13 +44,10 @@ export default function ElektrosicherheitPage() {
         </p>
       </div>
       <div className="mt-14 flex flex-wrap gap-4">
-        <Link
-          href="/beratung-buchen"
+        <PrimaryCtaLink
+          theme="elektrosicherheit"
           className="inline-flex items-center gap-2 rounded-full bg-nrw-rot px-8 py-4 font-semibold text-white hover:bg-nrw-rot-hover"
-        >
-          Kostenlose Erstberatung
-          <IconArrowRight className="h-5 w-5" aria-hidden />
-        </Link>
+        />
         <Link
           href="/kontakt"
           className="inline-flex items-center gap-2 rounded-full border-2 border-nrw-grau-800 px-8 py-4 font-semibold text-nrw-grau-800 hover:bg-nrw-grau-800 hover:text-white"
