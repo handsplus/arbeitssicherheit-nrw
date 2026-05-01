@@ -50,11 +50,6 @@ export const OFFICIAL_BRANDSCHUTZ: OfficialLink[] = [
     label: "Bauordnung NRW (Landesbauordnung 2018 – BauO NRW)",
     note: "Landesrecht zu baulichen Anforderungen, Genehmigung und Bauaufsicht in Nordrhein-Westfalen.",
   },
-  {
-    href: "https://recht.nrw.de/lrgv/gesetz/01012024-bauordnung-fuer-das-land-nordrhein-westfalen-landesbauordnung-2018-bauo-nrw",
-    label: "BauO NRW 2018 – Volltext (RECHT.NRW.DE)",
-    note: "Aktuelle Fassung der Bauordnung für NRW zum Nachlesen und Zitieren.",
-  },
 ];
 
 export const OFFICIAL_ELEKTRO: OfficialLink[] = [
