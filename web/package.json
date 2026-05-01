@@ -6,9 +6,10 @@
     "node": ">=20"
   },
   "scripts": {
-    "dev": "node ./node_modules/next/dist/bin/next dev",
+    "dev": "node ./scripts/dev-with-open.mjs",
+    "dev:server": "node ./node_modules/next/dist/bin/next dev -p 3007",
     "build": "node ./node_modules/next/dist/bin/next build",
-    "start": "node ./node_modules/next/dist/bin/next start",
+    "start": "node ./node_modules/next/dist/bin/next start -p 3007",
     "lint": "node ./node_modules/next/dist/bin/next lint"
   },
   "dependencies": {

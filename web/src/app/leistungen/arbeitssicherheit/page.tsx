@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { PrimaryCtaLink } from "@/components/PrimaryCtaLink";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
+import { OfficialSourcesBlock } from "@/components/content/OfficialSourcesBlock";
+import { RelatedOnSite } from "@/components/content/RelatedOnSite";
+import { OFFICIAL_GENERAL } from "@/lib/officialSources";
 import { SITE } from "@/lib/constants";
 
 export const metadata = {
@@ -56,7 +59,22 @@ export default function ArbeitssicherheitPage() {
         <p>
           Die betriebliche Betreuung erfolgt nach Arbeitssicherheitsgesetz (ASiG) und DGUV Vorschrift 2. Wir unterstützen Sie bei der Erfüllung Ihrer Pflichten als Arbeitgeber und sorgen für Rechtssicherheit in allen Belangen der Arbeitssicherheit.
         </p>
+        <h2 className="text-2xl font-bold">Typischer Ablauf mit externer FaSi</h2>
+        <p>
+          In der Praxis starten wir mit einer Bestandsaufnahme (Organisation, Tätigkeiten, bestehende Dokumente), priorisieren Gefährdungsbeurteilungen und legen mit Ihnen ein Betreuungsintervall fest. Betriebsbegehungen, Unterweisungen und Abstimmung mit dem Betriebsarzt werden so geplant, dass Nachweise vollständig bleiben und Führungskräfte entlastet werden.
+        </p>
       </div>
+      <OfficialSourcesBlock links={OFFICIAL_GENERAL} />
+      <RelatedOnSite
+        links={[
+          { href: "/faq", label: "FAQ", description: "Häufige Fragen zu FaSi und Pflichten" },
+          { href: "/blog", label: "Blog", description: "Praxisartikel zu Gefährdungsbeurteilung & Co." },
+          { href: "/checklisten", label: "Checklisten", description: "Erste Orientierung für Ihren Betrieb" },
+          { href: "/leistungen/brandschutz", label: "Brandschutz", description: "Ergänzend zum Arbeitsschutz" },
+          { href: "/leistungen/sigeko", label: "SiGeKo", description: "Baustelle & Koordination" },
+          { href: "/beratung-buchen", label: "Beratung buchen", description: "Direkter Terminwunsch" },
+        ]}
+      />
       <div className="mt-14 flex flex-wrap gap-4">
         <PrimaryCtaLink
           theme="arbeitssicherheit"

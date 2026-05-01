@@ -2,6 +2,9 @@ import Link from "next/link";
 import { SITE } from "@/lib/constants";
 import { PrimaryCtaLink } from "@/components/PrimaryCtaLink";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
+import { OfficialSourcesBlock } from "@/components/content/OfficialSourcesBlock";
+import { RelatedOnSite } from "@/components/content/RelatedOnSite";
+import { OFFICIAL_ELEKTRO, OFFICIAL_GENERAL } from "@/lib/officialSources";
 
 export const metadata = {
   title: "Elektrosicherheit & VEFK – Ergänzung zu Arbeitssicherheit | Köln & NRW",
@@ -42,7 +45,22 @@ export default function ElektrosicherheitPage() {
         <p>
           Bestellung und Qualifikation der VEFK nach DIN VDE 1000-10. Wir unterstützen Sie bei der Erfüllung der Prüfpflichten nach DGUV Vorschrift 3 und BetrSichV.
         </p>
+        <h2 className="text-2xl font-bold">Praxis: Prüfungen & Dokumentation</h2>
+        <p>
+          Wir strukturieren Prüfintervalle transparent nach Betriebsmittelart und Einsatzort, dokumentieren Ergebnisse verständlich für Betriebsrat und Arbeitgeber und geben Handlungsempfehlungen bei Abweichungen – immer im Kontext Ihrer übrigen Arbeitssicherheit.
+        </p>
       </div>
+      <OfficialSourcesBlock
+        title="Normen & anerkannte Informationen"
+        links={[...OFFICIAL_ELEKTRO, ...OFFICIAL_GENERAL.slice(0, 3)]}
+      />
+      <RelatedOnSite
+        links={[
+          { href: "/leistungen/arbeitssicherheit", label: "Arbeitssicherheit", description: "FaSi & Betreuung" },
+          { href: "/faq", label: "FAQ", description: "Elektroprüfungen & Fristen" },
+          { href: "/checklisten", label: "Checklisten", description: "Erste Selbstprüfung" },
+        ]}
+      />
       <div className="mt-14 flex flex-wrap gap-4">
         <PrimaryCtaLink
           theme="elektrosicherheit"

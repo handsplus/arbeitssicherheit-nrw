@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { PrimaryCtaLink } from "@/components/PrimaryCtaLink";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
+import { OfficialSourcesBlock } from "@/components/content/OfficialSourcesBlock";
+import { RelatedOnSite } from "@/components/content/RelatedOnSite";
+import { OFFICIAL_GENERAL, OFFICIAL_SIGEKO } from "@/lib/officialSources";
 import { SITE } from "@/lib/constants";
 
 export const metadata = {
@@ -57,7 +60,23 @@ export default function SiGeKoPage() {
         <p>
           SiGeKo-Leistungen sind insbesondere bei größeren Bauprojekten und bei mehreren gleichzeitig tätigen Unternehmen erforderlich. Gern prüfen wir mit Ihnen, ob und in welchem Umfang ein SiGeKo für Ihr Vorhaben nötig ist.
         </p>
+        <h2 className="text-2xl font-bold">Schnittstelle zur Arbeitssicherheit im Betrieb</h2>
+        <p>
+          SiGeKo betrifft die Baustelle; parallel bleiben betriebliche Pflichten nach ASiG und DGUV Vorschrift 2 in Ihren Stammstandorten bestehen. Wir helfen, Informationen zwischen Baustelle und Betrieb sauber zu übergeben – damit Unterweisungen und Dokumentation zusammenpassen.
+        </p>
       </div>
+      <OfficialSourcesBlock
+        title="Gesetzliche Einordnung & Behördeninformationen"
+        links={[...OFFICIAL_SIGEKO, ...OFFICIAL_GENERAL.slice(0, 2)]}
+      />
+      <RelatedOnSite
+        links={[
+          { href: "/leistungen/arbeitssicherheit", label: "Arbeitssicherheit", description: "FaSi für Ihren Betrieb" },
+          { href: "/rechner", label: "Rechner", description: "Honorar- und Personal-Orientierung" },
+          { href: "/faq", label: "FAQ", description: "Fragen zu SiGeKo" },
+          { href: "/blog", label: "Blog", description: "Praxiswissen Baustelle" },
+        ]}
+      />
       <div className="mt-14 flex flex-wrap gap-4">
         <PrimaryCtaLink
           theme="sigeko"

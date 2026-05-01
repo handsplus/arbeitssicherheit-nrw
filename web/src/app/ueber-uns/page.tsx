@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { CONTACT, LEISTUNGEN, SITE } from "@/lib/constants";
+import { CONTACT, LEISTUNGEN, PRESS_MENTIONS, SITE } from "@/lib/constants";
 
 export const metadata = {
   title: "Über uns – Ihr Partner für Arbeitssicherheit in NRW",
   description:
-    "Arbeitssicherheit.nrw: Partner mit Schwerpunkt Arbeitssicherheit, Brandschutz und SiGeKo in Köln und Nordrhein-Westfalen.",
+    "Arbeitssicherheit.nrw: Partner mit Schwerpunkt Arbeitssicherheit, Brandschutz und SiGeKo in Köln und NRW. Presse: General-Anzeiger Bonn (Brandprävention).",
   alternates: { canonical: `${SITE.url}/ueber-uns` },
 };
 
@@ -40,6 +40,32 @@ export default function UeberUnsPage() {
           Mit fundierter Expertise, individuellen Lösungen und ganzheitlicher Betreuung stehen wir
           Ihnen als verlässlicher Partner zur Seite.
         </p>
+        <div className="mt-10 rounded-2xl border border-nrw-gruen/25 bg-nrw-gruen-hell/60 p-6 md:p-8">
+          <h2 className="text-xl font-bold text-nrw-grau-900 md:text-2xl">Presse &amp; Medien</h2>
+          <p className="mt-3 text-nrw-grau-600">
+            Als Einordnung in die öffentliche Diskussion – unabhängig von unserer Beratung
+            nachlesbar bei der Redaktion.
+          </p>
+          <ul className="mt-6 space-y-6">
+            {PRESS_MENTIONS.map((item) => (
+              <li key={item.url} className="border-t border-nrw-grau-200 pt-6 first:border-t-0 first:pt-0">
+                <p className="text-xs font-semibold uppercase tracking-wider text-nrw-gruen">
+                  {item.outlet}
+                </p>
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-block text-lg font-semibold text-nrw-grau-900 underline decoration-nrw-gruen/30 underline-offset-2 hover:text-nrw-gruen hover:decoration-nrw-gruen"
+                >
+                  {item.title}
+                </a>
+                <p className="mt-2 text-nrw-grau-600">{item.summary}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+
         <div className="mt-6">
           <h2 className="text-base font-semibold text-nrw-grau-900">Unsere Qualifikationen</h2>
           <ul className="mt-2 list-disc space-y-1 pl-5 text-lg text-nrw-grau-600">

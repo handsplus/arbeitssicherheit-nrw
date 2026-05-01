@@ -4,7 +4,41 @@ export const SITE = {
   description:
     "Schwerpunkt Arbeitssicherheit in Köln und NRW: externe Fachkraft (FaSi), Brandschutz und SiGeKo aus einer Hand. Ergänzend Schulungen, Elektrosicherheit (VEFK) und Managementsysteme. Rechtssicher, entlastend.",
   url: "https://www.arbeitssicherheit.nrw",
+  /** Kurzbeschreibung für Social / KI-Zusammenfassungen */
+  tagline: "FaSi, Brandschutz & SiGeKo in Nordrhein-Westfalen – rechtssicher und praxisnah.",
+  /** Themen für strukturierte Daten (Sichtbarkeit in Suche & KI-Antworten) */
+  knowsAbout: [
+    "Arbeitssicherheit",
+    "Fachkraft für Arbeitssicherheit",
+    "externe FaSi",
+    "Gefährdungsbeurteilung",
+    "Brandschutzbeauftragter",
+    "SiGeKo",
+    "Baustellenkoordination",
+    "DGUV Vorschrift 2",
+    "Arbeitssicherheitsgesetz",
+    "ISO 45001",
+    "Elektrosicherheit",
+    "VEFK",
+  ] as const,
 } as const;
+
+/** Standort Köln (Barcelona Allee) – für Local SEO / Schema.org geo */
+export const GEO = {
+  latitude: 50.9586,
+  longitude: 6.9991,
+} as const;
+
+/** Presse & Medien (seriöse externe Erwähnungen – gut für Vertrauen & SEO-Kontext) */
+export const PRESS_MENTIONS = [
+  {
+    outlet: "General-Anzeiger Bonn",
+    title: "Bonn: Das raten Experten im Haushalt zur Brandprävention",
+    url: "https://www.general-anzeiger-bonn.de/ga-plus/bonn-das-raten-experten-im-haushalt-zur-brandpraevention_aid-140328087",
+    summary:
+      "Ratgeber zur Brandprävention im Haushalt – mit Experteneinschätzungen; Amin Korkae wird als Brand- und Arbeitssicherheitsexperte aus Köln genannt, der Betriebe und öffentliche Einrichtungen in NRW berät.",
+  },
+] as const;
 
 export const CONTACT = {
   company: "Arbeitssicherheit.nrw",

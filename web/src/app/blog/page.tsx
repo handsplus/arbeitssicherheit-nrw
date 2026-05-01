@@ -1,11 +1,14 @@
+import Link from "next/link";
 import { IconArrowRight } from "@/components/Icons";
-
+import { OfficialSourcesBlock } from "@/components/content/OfficialSourcesBlock";
+import { RelatedOnSite } from "@/components/content/RelatedOnSite";
+import { OFFICIAL_GENERAL, OFFICIAL_SIGEKO } from "@/lib/officialSources";
 import { SITE } from "@/lib/constants";
 
 export const metadata = {
   title: "Blog – Arbeitssicherheit, Brandschutz, SiGeKo | Arbeitssicherheit.nrw",
   description:
-    "Praxiswissen mit Schwerpunkt Arbeitssicherheit: Gefährdungsbeurteilung, Getränkepflicht, Akteure im Arbeitsschutz; dazu Brandschutz und SiGeKo. ArbSchG, ArbStättV, ASR A4.1 – für Köln und NRW.",
+    "Praxiswissen mit Schwerpunkt Arbeitssicherheit: Gefährdungsbeurteilung, Unterweisung, SiGeKo, Akteure im Arbeitsschutz; dazu Brandschutz und Baustelle. Verlinkt mit FAQ, Leistungen und offiziellen Quellen – für Köln und NRW.",
   alternates: { canonical: `${SITE.url}/blog` },
 };
 
@@ -16,8 +19,26 @@ export default function BlogPage() {
       <h1 className="mt-2 text-4xl font-bold text-nrw-grau-900">Blog Beiträge</h1>
       <p className="mt-6 max-w-2xl text-lg text-nrw-grau-600">
         Praxiswissen zu Arbeitssicherheit, Brandschutz und SiGeKo – für Ihren Betrieb in Köln und
-        NRW. Klicken Sie auf eine Frage, um den Beitrag zu öffnen.
+        NRW. Klicken Sie auf eine Frage, um den Beitrag zu öffnen. Ergänzend:{" "}
+        <Link href="/faq" className="font-semibold text-nrw-gruen hover:underline">
+          FAQ
+        </Link>
+        ,{" "}
+        <Link href="/wissen" className="font-semibold text-nrw-gruen hover:underline">
+          Wissen & Ressourcen
+        </Link>{" "}
+        und die{" "}
+        <Link href="/leistungen" className="font-semibold text-nrw-gruen hover:underline">
+          Leistungsseiten
+        </Link>{" "}
+        mit verlässlichen Behördenlinks.
       </p>
+
+      <OfficialSourcesBlock
+        title="Behörden & Gesetzestexte (für Ihre Einordnung)"
+        intro="Unsere Artikel ersetzen keine Rechtsberatung. Für verbindliche Auslegung nutzen Sie die offiziellen Quellen – verlinkt auch auf den Leistungsseiten."
+        links={[...OFFICIAL_GENERAL.slice(0, 4), ...OFFICIAL_SIGEKO]}
+      />
 
       <div className="mt-14 space-y-4">
         <details className="group rounded-2xl border border-nrw-grau-200 bg-white shadow-sm [&[open]_summary]:rounded-b-none [&[open]_summary]:border-b [&[open]_summary]:border-nrw-grau-200">
@@ -247,7 +268,91 @@ export default function BlogPage() {
             </div>
           </div>
         </details>
+
+        <details className="group rounded-2xl border border-nrw-grau-200 bg-white shadow-sm [&[open]_summary]:rounded-b-none [&[open]_summary]:border-b [&[open]_summary]:border-nrw-grau-200">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-2xl p-6 text-left font-bold text-nrw-grau-900 transition hover:bg-nrw-grau-50 [&::-webkit-details-marker]:hidden">
+            <h2 className="text-xl md:text-2xl">
+              Unterweisung Arbeitssicherheit: Was muss wirklich drinstehen?
+            </h2>
+            <span className="shrink-0 text-nrw-gruen transition group-open:rotate-90" aria-hidden>
+              <IconArrowRight className="h-6 w-6" />
+            </span>
+          </summary>
+          <div className="border-t border-nrw-grau-200 p-6 pt-6">
+            <div className="space-y-6 text-nrw-grau-700 leading-relaxed">
+              <p>
+                Unterweisungen sind ein Kernelement des betrieblichen Arbeitsschutzes: Sie machen
+                Beschäftigte auf konkrete Gefährdungen und Verhaltensregeln aufmerksam. Inhaltlich
+                orientieren sich sinnvolle Programme an Ihrer Gefährdungsbeurteilung und an den
+                Vorgaben der DGUV Vorschrift 2 – angepasst an Rollen (Führungskraft, Büro,
+                Produktion, Baustelle).
+              </p>
+              <p>
+                Praxisnah sollten Sie Themen wie Unfallmeldeketten, persönliche Schutzausrüstung,
+                Ordnung und Sauberkeit, ergonomische Leitlinien sowie branchenspezifische Risiken
+                abdecken. Wichtig ist die Nachweisführung: Datum, Inhalt, Dauer, Zielgruppe und
+                Referent dokumentieren. Kombinieren Sie Pflichtunterweisungen mit gezielten
+                Vertiefungen (z. B. Brandschutzhelfer) – so bleiben Inhalte konsistent mit Ihrer{" "}
+                <Link href="/leistungen/brandschutz" className="font-semibold text-nrw-gruen hover:underline">
+                  Brandschutzorganisation
+                </Link>{" "}
+                und Ihrer{" "}
+                <Link href="/leistungen/arbeitssicherheit" className="font-semibold text-nrw-gruen hover:underline">
+                  FaSi-Betreuung
+                </Link>
+                .
+              </p>
+            </div>
+          </div>
+        </details>
+
+        <details className="group rounded-2xl border border-nrw-grau-200 bg-white shadow-sm [&[open]_summary]:rounded-b-none [&[open]_summary]:border-b [&[open]_summary]:border-nrw-grau-200">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-2xl p-6 text-left font-bold text-nrw-grau-900 transition hover:bg-nrw-grau-50 [&::-webkit-details-marker]:hidden">
+            <h2 className="text-xl md:text-2xl">
+              SiGeKo und Arbeitssicherheit im Betrieb – wie hängt das zusammen?
+            </h2>
+            <span className="shrink-0 text-nrw-gruen transition group-open:rotate-90" aria-hidden>
+              <IconArrowRight className="h-6 w-6" />
+            </span>
+          </summary>
+          <div className="border-t border-nrw-grau-200 p-6 pt-6">
+            <div className="space-y-6 text-nrw-grau-700 leading-relaxed">
+              <p>
+                Die SiGeKo wirkt auf der Baustelle: Sie koordiniert Sicherheit und Gesundheitsschutz
+                zwischen den am Bau beteiligten Unternehmen, dokumentiert Übergaben und begleitet
+                kritische Phasen. Parallel bleibt Ihr Stammbetrieb in der Pflicht nach ASiG und DGUV
+                Vorschrift 2 – Gefährdungsbeurteilungen, Unterweisungen und Betreuung durch FaSi
+                und Betriebsarzt laufen dort weiter.
+              </p>
+              <p>
+                Sinnvoll ist eine klare Schnittstelle: Welche Informationen fließen vom Bauvorhaben
+                in den Betrieb zurück (z. B. neue Arbeitsmittel, eingesetzte Gefahrstoffe), und
+                welche betrieblichen Regeln müssen Subunternehmer auf der Baustelle kennen? Wer das
+                abstimmt, vermeidet Lücken in Nachweisen und reduziert Reibung zwischen Projektteam
+                und Arbeitssicherheitsorganisation. Mehr zur{" "}
+                <Link href="/leistungen/sigeko" className="font-semibold text-nrw-gruen hover:underline">
+                  SiGeKo-Leistung
+                </Link>{" "}
+                und zu typischen Fragen in der{" "}
+                <Link href="/faq" className="font-semibold text-nrw-gruen hover:underline">
+                  FAQ
+                </Link>
+                .
+              </p>
+            </div>
+          </div>
+        </details>
       </div>
+
+      <RelatedOnSite
+        className="mt-16"
+        links={[
+          { href: "/faq", label: "FAQ", description: "Schnelle Antworten" },
+          { href: "/checklisten", label: "Checklisten", description: "Selbstbewertung" },
+          { href: "/glossar", label: "Glossar", description: "Begriffe von ASiG bis VEFK" },
+          { href: "/leistungen", label: "Leistungen", description: "FaSi, Brandschutz, SiGeKo & mehr" },
+        ]}
+      />
     </div>
   );
 }

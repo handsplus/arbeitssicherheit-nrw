@@ -2,6 +2,9 @@ import Link from "next/link";
 import { SITE } from "@/lib/constants";
 import { PrimaryCtaLink } from "@/components/PrimaryCtaLink";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
+import { OfficialSourcesBlock } from "@/components/content/OfficialSourcesBlock";
+import { RelatedOnSite } from "@/components/content/RelatedOnSite";
+import { OFFICIAL_GENERAL, OFFICIAL_ISO } from "@/lib/officialSources";
 
 export const metadata = {
   title: "Managementsysteme ISO 45001, ISO 14001 – im Kontext Arbeitssicherheit | Köln & NRW",
@@ -41,7 +44,22 @@ export default function ManagementsystemePage() {
         <p>
           Ein einheitliches Management für Sicherheit, Gesundheit und Umwelt entlastet Ihr Unternehmen und schafft Rechtssicherheit. Wir begleiten Sie von der Analyse bis zur Zertifizierung.
         </p>
+        <h2 className="text-2xl font-bold">Integration mit Arbeitssicherheit</h2>
+        <p>
+          ISO 45001 und betrieblicher Arbeitsschutz nach ASiG ergänzen sich: Normenprozesse strukturieren, was die FaSi ohnehin begleitet (Gefährdungsbeurteilung, Unterweisung, Verbesserung). Wir vermeiden Doppelarbeit und nutzen bestehende Nachweise sinnvoll weiter.
+        </p>
       </div>
+      <OfficialSourcesBlock
+        title="Normen & staatliche Arbeitsschutz-Informationen"
+        links={[...OFFICIAL_ISO, ...OFFICIAL_GENERAL.slice(0, 3)]}
+      />
+      <RelatedOnSite
+        links={[
+          { href: "/leistungen/arbeitssicherheit", label: "Arbeitssicherheit", description: "FaSi & Pflichtprogramm" },
+          { href: "/faq", label: "FAQ", description: "ISO 45001 & Arbeitsschutz" },
+          { href: "/blog", label: "Blog", description: "Praxiswissen" },
+        ]}
+      />
       <div className="mt-14 flex flex-wrap gap-4">
         <PrimaryCtaLink
           theme="managementsysteme"

@@ -7,7 +7,7 @@ import { Footer } from "@/components/Footer";
 import { CookieBanner } from "@/components/CookieBanner";
 import { VisitNotifier } from "@/components/VisitNotifier";
 import { JsonLd } from "@/components/JsonLd";
-import { SITE } from "@/lib/constants";
+import { SITE, CONTACT } from "@/lib/constants";
 
 const font = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -53,8 +53,20 @@ export const metadata: Metadata = {
     "Nordrhein-Westfalen",
     "Düsseldorf",
     "Dortmund",
+    "Bochum",
+    "Wuppertal",
+    "Münster",
+    "Aachen",
+    "Essen",
+    "Ruhrgebiet",
+    "Rheinland",
   ],
   metadataBase: new URL(SITE.url),
+  applicationName: SITE.name,
+  authors: [{ name: CONTACT.company, url: SITE.url }],
+  creator: CONTACT.company,
+  publisher: CONTACT.company,
+  category: "business",
   openGraph: {
     title: SITE.title,
     description: SITE.description,
@@ -62,7 +74,6 @@ export const metadata: Metadata = {
     siteName: SITE.name,
     locale: "de_DE",
     type: "website",
-    images: [{ url: "/logo.png", width: 420, height: 60, alt: SITE.name }],
   },
   twitter: {
     card: "summary_large_image",
@@ -72,8 +83,21 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true },
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
+  ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? {
+        verification: {
+          google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+        },
+      }
+    : {}),
 };
 
 export const viewport: Viewport = {

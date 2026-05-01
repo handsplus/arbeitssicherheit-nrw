@@ -1,10 +1,12 @@
-import { SITE, CONTACT, LEISTUNGEN } from "@/lib/constants";
+import { SITE, CONTACT, LEISTUNGEN, GEO, PRESS_MENTIONS } from "@/lib/constants";
 
 const ORGANIZATION_ID = `${SITE.url}/#organization`;
+const LOGO_URL = `${SITE.url}/icon`;
+const SOCIAL_IMAGE_URL = `${SITE.url}/opengraph-image`;
 
 /**
- * Strukturierte Daten (JSON-LD) für maximale Google-Sichtbarkeit:
- * WebSite (Sitelinks, Indexierung) + Organization (Knowledge Panel, lokale Suche) + Leistungen.
+ * Strukturierte Daten (JSON-LD) für Google, Bing und KI-gestützte Antworten:
+ * ProfessionalService + WebSite + Leistungen, Geo, knowsAbout.
  */
 export function JsonLd() {
   const organization = {
@@ -12,8 +14,11 @@ export function JsonLd() {
     "@type": "ProfessionalService",
     "@id": ORGANIZATION_ID,
     name: SITE.name,
+    alternateName: ["Arbeitssicherheit NRW", "AS NRW", "Health and Safety Plus"],
     description: SITE.description,
     url: SITE.url,
+    logo: { "@type": "ImageObject", url: LOGO_URL, contentUrl: LOGO_URL },
+    image: [SOCIAL_IMAGE_URL],
     telephone: CONTACT.phoneHref.replace("tel:", ""),
     email: CONTACT.email,
     address: {
@@ -24,6 +29,22 @@ export function JsonLd() {
       addressRegion: "NRW",
       addressCountry: "DE",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: GEO.latitude,
+      longitude: GEO.longitude,
+    },
+    knowsAbout: [...SITE.knowsAbout],
+    subjectOf: PRESS_MENTIONS.map((p) => ({
+      "@type": "NewsArticle",
+      headline: p.title,
+      url: p.url,
+      description: p.summary,
+      publisher: {
+        "@type": "NewsMediaOrganization",
+        name: p.outlet,
+      },
+    })),
     areaServed: [
       { "@type": "City", name: "Köln" },
       { "@type": "City", name: "Düsseldorf" },
@@ -61,13 +82,11 @@ export function JsonLd() {
     "@id": `${SITE.url}/#website`,
     url: SITE.url,
     name: SITE.name,
+    alternateName: SITE.name,
     description: SITE.description,
     publisher: { "@id": ORGANIZATION_ID },
     inLanguage: "de-DE",
-    potentialAction: {
-      "@type": "ReadAction",
-      target: { "@type": "EntryPoint", url: SITE.url },
-    },
+    isAccessibleForFree: true,
   };
 
   return (

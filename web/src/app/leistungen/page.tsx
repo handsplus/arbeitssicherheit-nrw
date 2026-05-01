@@ -3,6 +3,9 @@ import { LEISTUNGEN, SITE } from "@/lib/constants";
 import { ServiceCard } from "@/components/ServiceCard";
 import { PrimaryCtaLink } from "@/components/PrimaryCtaLink";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
+import { OfficialSourcesBlock } from "@/components/content/OfficialSourcesBlock";
+import { RelatedOnSite } from "@/components/content/RelatedOnSite";
+import { OFFICIAL_GENERAL } from "@/lib/officialSources";
 
 export const metadata = {
   title: "Leistungen: Arbeitssicherheit, Brandschutz, SiGeKo – Köln & NRW",
@@ -37,6 +40,35 @@ export default function LeistungenPage() {
           <ServiceCard key={l.slug} title={l.title} short={l.short} href={l.href} icon={l.icon} />
         ))}
       </div>
+      <div className="prose mt-16 max-w-none rounded-2xl border border-nrw-grau-200 bg-nrw-grau-50 p-6 md:p-8 prose-p:text-nrw-grau-700 prose-a:text-nrw-gruen">
+        <h2 className="text-xl font-bold text-nrw-grau-900 md:text-2xl">Orientierung & Tiefgang</h2>
+        <p>
+          Unter{" "}
+          <Link href="/wissen" className="font-semibold">
+            Wissen
+          </Link>{" "}
+          bündeln wir FAQ, Glossar, Checklisten und Rechner. Im{" "}
+          <Link href="/blog" className="font-semibold">
+            Blog
+          </Link>{" "}
+          finden Sie längere Praxisartikel – sinnvoll ergänzend zu den Leistungsseiten und für die
+          Einordnung typischer Fragestellungen in Köln und NRW.
+        </p>
+      </div>
+      <OfficialSourcesBlock
+        title="Staatliche Stellen & Gesetzestexte"
+        intro="Seriöse externe Verlinkungen stärken Vertrauen und helfen Google sowie Leser:innen, Inhalte einzuordnen."
+        links={OFFICIAL_GENERAL.slice(0, 4)}
+      />
+      <RelatedOnSite
+        title="Weiterführend auf dieser Website"
+        links={[
+          { href: "/faq", label: "FAQ", description: "Kurzantworten zu Pflichten" },
+          { href: "/blog", label: "Blog", description: "Vertiefende Artikel" },
+          { href: "/wissen", label: "Wissen", description: "Glossar, Checklisten, Rechner" },
+          { href: "/beratung-buchen", label: "Beratung buchen", description: "Direkter Kontakt" },
+        ]}
+      />
       <div className="mt-14 text-center">
         <PrimaryCtaLink
           theme="default"

@@ -3,7 +3,7 @@ import { SITE } from "@/lib/constants";
 export const metadata = {
   title: "FAQ – Arbeitssicherheit, FaSi, Brandschutz, SiGeKo",
   description:
-    "Häufige Fragen zu Arbeitssicherheit, externer FaSi, Brandschutzbeauftragter und SiGeKo; ergänzend zu Elektrosicherheit. Kurze Antworten für Köln und NRW.",
+    "Ausführliche Antworten zu externer FaSi, Gefährdungsbeurteilung, SiGeKo, Brandschutz, Elektroprüfungen und ISO 45001 – mit Verweisen auf Leistungen, Blog und Checklisten. Für Unternehmen in Köln und NRW.",
   alternates: { canonical: `${SITE.url}/faq` },
 };
 

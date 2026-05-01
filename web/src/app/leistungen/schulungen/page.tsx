@@ -2,6 +2,9 @@ import Link from "next/link";
 import { SITE } from "@/lib/constants";
 import { IconArrowRight } from "@/components/Icons";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
+import { OfficialSourcesBlock } from "@/components/content/OfficialSourcesBlock";
+import { RelatedOnSite } from "@/components/content/RelatedOnSite";
+import { OFFICIAL_GENERAL } from "@/lib/officialSources";
 
 export const metadata = {
   title: "Schulungen: Arbeitssicherheit, Brandschutz, SiGeKo – Köln & NRW",
@@ -64,7 +67,25 @@ export default function SchulungenPage() {
           </Link>
           .
         </p>
+        <h2 className="text-2xl font-bold">Nachweise & Qualität</h2>
+        <p>
+          Unterweisungen und Schulungen sollten nachweisbar sein (Teilnehmerlisten, Inhalte, Dauer). Wir stimmen Themen mit Ihrer Gefährdungsbeurteilung und Ihren Betriebsvereinbarungen ab und verlinken inhaltlich auf Ihre Kernrisiken – damit Schulungen nicht „generisch“, sondern betrieblich relevant wirken.
+        </p>
       </div>
+
+      <OfficialSourcesBlock
+        title="Rechtliche Einordnung (Auswahl)"
+        intro="Hinweise der Unfallversicherung und des Gesetzgebers zur Unterweisung und zum Arbeitsschutz."
+        links={OFFICIAL_GENERAL.slice(0, 4)}
+      />
+      <RelatedOnSite
+        links={[
+          { href: "/schulungskalender", label: "Schulungskalender", description: "Planung & Formate" },
+          { href: "/leistungen/arbeitssicherheit", label: "Arbeitssicherheit", description: "FaSi & Unterweisungen" },
+          { href: "/leistungen/brandschutz", label: "Brandschutz", description: "Brandschutzhelfer u. a." },
+          { href: "/faq", label: "FAQ", description: "Unterweisung vs. Schulung" },
+        ]}
+      />
 
       <div className="mt-14 flex flex-wrap gap-4">
         <Link

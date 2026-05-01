@@ -1,40 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { PrimaryCtaLink } from "@/components/PrimaryCtaLink";
-
-const FAQ_ITEMS = [
-  {
-    category: "Arbeitssicherheit",
-    q: "Braucht unser Unternehmen eine Fachkraft für Arbeitssicherheit?",
-    a: "Nach dem Arbeitssicherheitsgesetz (ASiG) und der DGUV Vorschrift 2 müssen Arbeitgeber Betriebe mit Beschäftigten durch eine Fachkraft für Arbeitssicherheit (FaSi) und einen Betriebsarzt betreiben lassen. Die Betreuung kann extern erfolgen – wir übernehmen das für Sie.",
-  },
-  {
-    category: "Arbeitssicherheit",
-    q: "Was macht eine externe Fachkraft für Arbeitssicherheit?",
-    a: "Die FaSi berät in allen Fragen der Arbeitssicherheit, unterstützt bei der Gefährdungsbeurteilung, bei Betriebsbegehungen, Unterweisungen und der Umsetzung von Maßnahmen. Sie arbeitet mit dem Betriebsarzt und dem Arbeitgeber zusammen.",
-  },
-  {
-    category: "SiGeKo",
-    q: "Was ist SiGeKo und wann wird sie benötigt?",
-    a: "SiGeKo steht für Sicherheits- und Gesundheitsschutzkoordination. Auf Baustellen mit mehreren Arbeitgebern muss ein SiGeKo bestellt werden. Er koordiniert die Arbeitssicherheit, erstellt den SiGePlan und führt die Unternehmerübergabe durch.",
-  },
-  {
-    category: "Brandschutz",
-    q: "Wann brauchen wir einen Brandschutzbeauftragten?",
-    a: "Die Bestellung eines Brandschutzbeauftragten kann sich aus Rechtsvorschriften, Auflagen oder betrieblicher Entscheidung ergeben. Wir beraten Sie, ob und in welchem Umfang ein Brandschutzbeauftragter erforderlich ist, und übernehmen die Rolle extern.",
-  },
-  {
-    category: "Brandschutz",
-    q: "Was umfasst ein Brandschutzkonzept?",
-    a: "Ein Brandschutzkonzept beschreibt die geplanten Maßnahmen im baulichen, anlagentechnischen und organisatorischen Brandschutz. Es wird oft bei Neubau, Umbau oder Sonderbauten von Behörden gefordert. Wir erstellen und begleiten solche Konzepte.",
-  },
-  {
-    category: "Elektrosicherheit",
-    q: "Wie oft müssen Elektrogeräte geprüft werden?",
-    a: "Die Prüffristen hängen von der Art der Betriebsmittel und der Umgebung ab (z. B. DGUV Vorschrift 3). Ortsveränderliche Geräte werden oft in Abständen von 6–24 Monaten geprüft. Wir führen die Prüfungen durch und dokumentieren sie.",
-  },
-];
+import { FAQ_ITEMS } from "@/data/faq-items";
 
 function FaqEntry({ item, index }: { item: (typeof FAQ_ITEMS)[0]; index: number }) {
   const [open, setOpen] = useState(false);
@@ -50,12 +19,32 @@ function FaqEntry({ item, index }: { item: (typeof FAQ_ITEMS)[0]; index: number 
         id={`${id}-question`}
       >
         <span className="font-semibold text-nrw-grau-900">{item.q}</span>
-        <span className="shrink-0 text-nrw-grau-400" aria-hidden>{open ? "−" : "+"}</span>
+        <span className="shrink-0 text-nrw-grau-400" aria-hidden>
+          {open ? "−" : "+"}
+        </span>
       </button>
       {open && (
-        <div id={`${id}-answer`} className="pb-5 text-nrw-grau-600" role="region" aria-labelledby={`${id}-question`}>
+        <div
+          id={`${id}-answer`}
+          className="pb-5 text-nrw-grau-600"
+          role="region"
+          aria-labelledby={`${id}-question`}
+        >
           <span className="text-xs font-medium text-nrw-gruen">{item.category}</span>
-          <p className="mt-2">{item.a}</p>
+          <p className="mt-2 leading-relaxed">{item.a}</p>
+          {item.related?.length ? (
+            <div className="mt-4 flex flex-wrap gap-2">
+              {item.related.map((r) => (
+                <Link
+                  key={r.href}
+                  href={r.href}
+                  className="inline-flex items-center rounded-full border border-nrw-grau-200 bg-nrw-grau-50 px-3 py-1.5 text-sm font-medium text-nrw-grau-800 hover:border-nrw-gruen hover:text-nrw-gruen"
+                >
+                  {r.label}
+                </Link>
+              ))}
+            </div>
+          ) : null}
         </div>
       )}
     </div>
@@ -75,19 +64,34 @@ export default function FaqPage() {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-16 md:py-24">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p className="text-sm font-semibold uppercase tracking-widest text-nrw-gruen">FAQ</p>
       <h1 className="mt-2 text-4xl font-bold text-nrw-grau-900">Häufige Fragen</h1>
       <p className="mt-6 text-lg text-nrw-grau-600">
-        Kurze Antworten zu FaSi, SiGeKo, Brandschutz und Elektrosicherheit.
+        Ausführliche Antworten zu FaSi, Gefährdungsbeurteilung, SiGeKo, Brandschutz, Elektrosicherheit
+        und Managementsystemen – mit Verweisen auf passende Seiten dieser Website.
+      </p>
+      <p className="mt-4 text-sm text-nrw-grau-500">
+        Rechtliche Einzelfälle ersetzt keine Website; wir beraten Sie gern konkret zu Ihrem Betrieb in
+        Köln und NRW.
       </p>
       <div className="mt-12 rounded-2xl border border-nrw-grau-200 bg-white shadow-sm">
         {FAQ_ITEMS.map((item, i) => (
-          <FaqEntry key={i} item={item} index={i} />
+          <FaqEntry key={item.q} item={item} index={i} />
         ))}
+      </div>
+      <div className="mt-10 flex flex-wrap gap-3 text-sm">
+        <Link href="/blog" className="font-medium text-nrw-gruen hover:underline">
+          Blog mit Praxisartikeln
+        </Link>
+        <span className="text-nrw-grau-300">·</span>
+        <Link href="/wissen" className="font-medium text-nrw-gruen hover:underline">
+          Wissen & Ressourcen
+        </Link>
+        <span className="text-nrw-grau-300">·</span>
+        <Link href="/leistungen" className="font-medium text-nrw-gruen hover:underline">
+          Alle Leistungen
+        </Link>
       </div>
       <div className="mt-12 text-center">
         <PrimaryCtaLink

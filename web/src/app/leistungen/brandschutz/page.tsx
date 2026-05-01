@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { PrimaryCtaLink } from "@/components/PrimaryCtaLink";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
+import { OfficialSourcesBlock } from "@/components/content/OfficialSourcesBlock";
+import { RelatedOnSite } from "@/components/content/RelatedOnSite";
+import { OFFICIAL_BRANDSCHUTZ, OFFICIAL_GENERAL } from "@/lib/officialSources";
 import { SITE } from "@/lib/constants";
 
 export const metadata = {
@@ -56,7 +59,23 @@ export default function BrandschutzPage() {
         <p>
           Die Bestellung eines Brandschutzbeauftragten kann sich aus Rechtsvorschriften, Auflagen oder betrieblicher Entscheidung ergeben. Wir beraten Sie, ob und in welchem Umfang ein Brandschutzbeauftragter erforderlich ist, und übernehmen die Rolle extern.
         </p>
+        <h2 className="text-2xl font-bold">Zusammenhang mit Arbeitssicherheit</h2>
+        <p>
+          Brandschutz und Arbeitssicherheit greifen in Unterweisungen, Gefährdungsbeurteilungen und Evakuierungskonzepten ineinander. Wir stimmen Maßnahmen mit Ihrer FaSi und Ihren internen Abläufen ab, damit Verantwortlichkeiten klar bleiben.
+        </p>
       </div>
+      <OfficialSourcesBlock
+        title="Orientierung zum vorbeugenden Brandschutz"
+        links={[...OFFICIAL_BRANDSCHUTZ, ...OFFICIAL_GENERAL.slice(0, 3)]}
+      />
+      <RelatedOnSite
+        links={[
+          { href: "/leistungen/arbeitssicherheit", label: "Arbeitssicherheit", description: "FaSi & Gefährdungsbeurteilung" },
+          { href: "/leistungen/schulungen", label: "Schulungen", description: "Brandschutzhelfer u. a." },
+          { href: "/faq", label: "FAQ", description: "Brandschutz & Pflichten" },
+          { href: "/rechner", label: "Rechner", description: "Orientierung z. B. Brandschutzhelfer" },
+        ]}
+      />
       <div className="mt-14 flex flex-wrap gap-4">
         <PrimaryCtaLink
           theme="brandschutz"
