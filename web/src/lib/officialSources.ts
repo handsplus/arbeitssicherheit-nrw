@@ -42,10 +42,6 @@ export const OFFICIAL_SIGEKO: OfficialLink[] = [
 
 export const OFFICIAL_BRANDSCHUTZ: OfficialLink[] = [
   {
-    href: "https://www.bmi.bund.de/DE/themen/bauen-wohnen/brandschutz/brandschutz-node.html",
-    label: "BMI – Thema Brandschutz",
-  },
-  {
     href: "https://www.mhkbd.nrw/themen/bau/bau-und-kammerrecht/bauordnung",
     label: "Bauordnung NRW (Landesbauordnung 2018 – BauO NRW)",
     note: "Landesrecht zu baulichen Anforderungen, Genehmigung und Bauaufsicht in Nordrhein-Westfalen.",
