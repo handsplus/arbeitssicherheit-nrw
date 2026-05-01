@@ -55,10 +55,6 @@ export const OFFICIAL_BRANDSCHUTZ: OfficialLink[] = [
     label: "BauO NRW 2018 – Volltext (RECHT.NRW.DE)",
     note: "Aktuelle Fassung der Bauordnung für NRW zum Nachlesen und Zitieren.",
   },
-  {
-    href: "https://www.hlf-info.de/",
-    label: "Hilfeleistungsfonds (HLF) – Informationen zur Brandsicherheit",
-  },
 ];
 
 export const OFFICIAL_ELEKTRO: OfficialLink[] = [
