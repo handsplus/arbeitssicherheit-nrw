@@ -63,8 +63,6 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL(SITE.url),
   applicationName: SITE.name,
-  authors: [{ name: CONTACT.company, url: SITE.url }],
-  creator: CONTACT.company,
   publisher: CONTACT.company,
   category: "business",
   openGraph: {

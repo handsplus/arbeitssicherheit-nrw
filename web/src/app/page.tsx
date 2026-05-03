@@ -15,12 +15,12 @@ import {
 export const metadata = {
   title: "Arbeitssicherheit NRW – FaSi, Brandschutz, SiGeKo",
   description:
-    "Schwerpunkt Arbeitssicherheit in NRW: externe FaSi, Gefährdungsbeurteilung, Brandschutzbeauftragter und SiGeKo; ergänzend Schulungen. Rechtssicher & praxisnah.",
+    "FaSi, Brandschutz und SiGeKo in NRW: Gefährdungsbeurteilung, externe Fachkraft, Baustellen. Für Unternehmen und Bauvorhaben. Köln & NRW – rechtssicher.",
   alternates: { canonical: SITE.url },
   openGraph: {
     title: "Arbeitssicherheit NRW | FaSi, Brandschutz, SiGeKo",
     description:
-      "Arbeitssicherheit zuerst: FaSi, Gefährdungsbeurteilung, dann Brandschutz und SiGeKo aus einer Hand in NRW.",
+      "FaSi, Brandschutz, SiGeKo für Unternehmen und Bauprojekte in NRW. Gefährdungsbeurteilung aus einer Hand.",
     url: SITE.url,
   },
 };
@@ -52,9 +52,9 @@ export default function HomePage() {
             </span>
           </h1>
           <p className="mt-6 max-w-3xl text-lg text-nrw-grau-200">
-            Professionelle Arbeitssicherheit, Brandschutz und SiGeKo: Externe Fachkraft für Arbeitssicherheit (FaSi),
-            Gefährdungsbeurteilung, Brandschutzbeauftragter und Sicherheits- und Gesundheitsschutzkoordination auf
-            Baustellen – rechtssicher, praxisnah und entlastend.
+            Professionelle Arbeitssicherheit, Brandschutz und SiGeKo für Ihr Unternehmen und Ihre Bauvorhaben in NRW:
+            externe Fachkraft für Arbeitssicherheit (FaSi), Gefährdungsbeurteilung, Brandschutzbeauftragter und
+            Sicherheits- und Gesundheitsschutzkoordination auf Baustellen – rechtssicher, praxisnah und entlastend.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-start gap-4">
             <PrimaryCtaLink
@@ -178,6 +178,45 @@ export default function HomePage() {
               />
             </li>
           </ul>
+        </div>
+      </section>
+
+      {/* Erweiterter Fließtext: H1-Begriffe, mehr Tiefe (SEO-Check: Länge & Abdeckung) */}
+      <section className="border-b border-nrw-grau-200 bg-white py-16 md:py-20" aria-labelledby="startseite-einordnung">
+        <div className="mx-auto max-w-3xl px-4">
+          <h2 id="startseite-einordnung" className="text-2xl font-bold tracking-tight text-nrw-grau-900 md:text-3xl">
+            Arbeitssicherheit, Brandschutz und SiGeKo für Unternehmen und Bauvorhaben in NRW
+          </h2>
+          <div className="mt-8 space-y-5 text-base leading-relaxed text-nrw-grau-700 md:text-lg">
+            <p>
+              Unternehmen in Nordrhein-Westfalen stehen vor denselben Pflichten: Gefährdungen
+              bewerten, Unterweisungen planen, Brandschutz organisieren und auf Baustellen die
+              Schnittstellen zwischen Gewerken sauber abstimmen. Genau hier setzt unsere Beratung an:
+              Wir bündeln Arbeitssicherheit, vorbeugenden Brandschutz und SiGeKo so, dass Führung,
+              Betriebsrat und ausführende Teams dieselbe Sprache sprechen.
+            </p>
+            <p>
+              Für Bauvorhaben begleiten wir Planungs- und Ausführungsphase: vom SiGePlan über
+              Abstimmung mit Nachunternehmern bis zu Übergaben an den Bauherrn. Im Stammbetrieb
+              kümmern wir uns parallel um die betriebliche Fachkraft für Arbeitssicherheit, die
+              Fortschreibung Ihrer Gefährdungsbeurteilungen und die sinnvolle Verzahnung mit Ihrem
+              Brandschutzbeauftragten – damit Nachweise vollständig bleiben und Audits oder
+              Behördengespräche vorbereitet sind.
+            </p>
+            <p>
+              Ob Produktion, Logistik, Verwaltung oder Baustelle: Wir priorisieren Maßnahmen nach
+              Risiko und Aufwand, dokumentieren nachvollziehbar und unterstützen bei der Umsetzung
+              vor Ort in Köln, im Rheinland und im Ruhrgebiet. Schulungen und Elektroprüfungen
+              ergänzen wir dort, wo sie betrieblich Sinn ergeben – ohne unnötige Doppelarbeit.
+            </p>
+            <p>
+              Ziel bleibt ein belastbares System aus Regeln, Prüfungen und Kommunikation: weniger
+              Reibung zwischen Projektleitung und Arbeitssicherheit, klare Zuständigkeiten bei
+              Brandschutz und eine SiGeKo, die Baustellenkonflikte früh entschärft. Sprechen Sie uns
+              an, wenn Sie Ihr Unternehmen oder Ihr nächstes Bauvorhaben in NRW rechtssicher aufstellen
+              möchten.
+            </p>
+          </div>
         </div>
       </section>
 
