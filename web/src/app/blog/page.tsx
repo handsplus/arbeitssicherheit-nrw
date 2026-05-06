@@ -4,6 +4,7 @@ import { OfficialSourcesBlock } from "@/components/content/OfficialSourcesBlock"
 import { RelatedOnSite } from "@/components/content/RelatedOnSite";
 import { OFFICIAL_GENERAL, OFFICIAL_SIGEKO } from "@/lib/officialSources";
 import { SITE } from "@/lib/constants";
+import { BLOG_POSTS } from "@/data/blog-posts";
 
 export const metadata = {
   title: "Blog: Arbeitssicherheit Köln, externe FaSi, Brandschutzbeauftragter & SiGeKo NRW",
@@ -20,21 +21,20 @@ export default function BlogPage() {
         Blog: Arbeitssicherheit Köln, Brandschutz &amp; SiGeKo NRW
       </h1>
       <p className="mt-6 max-w-2xl text-lg text-nrw-grau-600">
-        Praxiswissen zu externer FaSi, Brandschutzbeauftragtem, SiGeKo und Arbeitsschutz – für Betriebe
-        und Bauvorhaben in Köln und NRW. Klicken Sie auf eine Überschrift, um den Beitrag zu öffnen.
-        Ergänzend:{" "}
+        Jeder Artikel hat eine eigene URL für bessere Auffindbarkeit in Google. Themen: FaSi, BSB,
+        SiGeKo, Gefährdungsbeurteilung, Unterweisung und Arbeitsschutz in Köln und NRW. Ergänzend:{" "}
         <Link href="/faq" className="font-semibold text-nrw-gruen hover:underline">
           FAQ
         </Link>
         ,{" "}
         <Link href="/wissen" className="font-semibold text-nrw-gruen hover:underline">
-          Wissen & Ressourcen
+          Wissen &amp; Ressourcen
         </Link>{" "}
         und die{" "}
         <Link href="/leistungen" className="font-semibold text-nrw-gruen hover:underline">
           Leistungsseiten
-        </Link>{" "}
-        mit verlässlichen Behördenlinks.
+        </Link>
+        .
       </p>
 
       <OfficialSourcesBlock
@@ -43,423 +43,24 @@ export default function BlogPage() {
         links={[...OFFICIAL_GENERAL.slice(0, 4), ...OFFICIAL_SIGEKO]}
       />
 
-      <div className="mt-14 space-y-4">
-        <details className="group rounded-2xl border border-nrw-grau-200 bg-white shadow-sm [&[open]_summary]:rounded-b-none [&[open]_summary]:border-b [&[open]_summary]:border-nrw-grau-200">
-          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-2xl p-6 text-left font-bold text-nrw-grau-900 transition hover:bg-nrw-grau-50 [&::-webkit-details-marker]:hidden">
-            <h2 className="text-xl md:text-2xl">
-              Muss die Gefährdungsbeurteilung unterschrieben werden?
-            </h2>
-            <span className="shrink-0 text-nrw-gruen transition group-open:rotate-90" aria-hidden>
-              <IconArrowRight className="h-6 w-6" />
-            </span>
-          </summary>
-          <div className="border-t border-nrw-grau-200 p-6 pt-6">
-            <div className="space-y-6 text-nrw-grau-700 leading-relaxed">
-              <p>
-                In den Arbeitsschutzvorschriften gibt es keine Regel, die explizit festlegt, dass
-                eine Gefährdungsbeurteilung unterschrieben werden muss. Laut Arbeitsschutzgesetz (§
-                5 ArbSchG) ist der Arbeitgeber für die Umsetzung der Vorschriften verantwortlich,
-                dazu gehört auch die Durchführung der Gefährdungsbeurteilung. Eine Unterschrift ist
-                daher nicht nötig, da der Arbeitgeber immer in der Verantwortung bleibt – auch wenn
-                er Aufgaben an andere Personen überträgt. Personen, die im Namen des Arbeitgebers
-                handeln, gelten als dessen Vertreter, wodurch die Gefährdungsbeurteilung automatisch
-                rechtsverbindlich ist. Tätigkeiten mit gefährlichen Stoffen dürfen ohne
-                Gefährdungsbeurteilung nicht ausgeführt werden (§ 7 Abs. 1 GefStoffV).
-              </p>
-              <p>
-                Nach § 6 Abs. 11 GefStoffV darf eine Gefährdungsbeurteilung nur von fachkundigen
-                Personen durchgeführt werden. Hat der Arbeitgeber selbst keine ausreichende
-                Fachkenntnis, muss er sich beraten lassen, zum Beispiel von einer Fachkraft für
-                Arbeitssicherheit.
-              </p>
-            </div>
-          </div>
-        </details>
-
-        <details className="group rounded-2xl border border-nrw-grau-200 bg-white shadow-sm [&[open]_summary]:rounded-b-none [&[open]_summary]:border-b [&[open]_summary]:border-nrw-grau-200">
-          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-2xl p-6 text-left font-bold text-nrw-grau-900 transition hover:bg-nrw-grau-50 [&::-webkit-details-marker]:hidden">
-            <h2 className="text-xl md:text-2xl">
-              Muss der Arbeitgeber Getränke zur Verfügung stellen?
-            </h2>
-            <span className="shrink-0 text-nrw-gruen transition group-open:rotate-90" aria-hidden>
-              <IconArrowRight className="h-6 w-6" />
-            </span>
-          </summary>
-          <div className="border-t border-nrw-grau-200 p-6 pt-6">
-            <div className="space-y-6 text-nrw-grau-700 leading-relaxed">
-              <p>
-                Ein Glas Wasser kann im Arbeitsalltag wahre Wunder wirken: Es fördert die
-                Konzentration, beugt Kopfschmerzen vor und ist entscheidend für das allgemeine
-                Wohlbefinden. Doch wie sieht es rechtlich aus – ist der Arbeitgeber verpflichtet,
-                seinen Beschäftigten Getränke bereitzustellen?
-              </p>
-
-              <h3 className="mt-8 text-xl font-bold text-nrw-grau-900">
-                Die Fürsorgepflicht des Arbeitgebers
-              </h3>
-              <p>
-                Grundsätzlich gilt: Arbeitgeber haben eine Fürsorgepflicht gegenüber ihren
-                Beschäftigten. Das bedeutet, sie müssen für sichere, gesunde und zumutbare
-                Arbeitsbedingungen sorgen. Dazu zählt unter anderem auch der Schutz vor
-                gesundheitlichen Beeinträchtigungen am Arbeitsplatz.
-              </p>
-              <p>
-                Aber heißt das auch, dass der Arbeitgeber kostenfreie Getränke bereitstellen muss?
-              </p>
-
-              <h3 className="mt-8 text-xl font-bold text-nrw-grau-900">
-                Getränke am Arbeitsplatz: Nicht immer Pflicht
-              </h3>
-              <p>
-                Unter normalen Arbeitsbedingungen – also etwa bei Bürotätigkeiten in Innenräumen
-                bei moderaten Temperaturen – besteht keine gesetzliche Pflicht, Getränke zur
-                Verfügung zu stellen. Arbeitnehmer müssen sich in diesem Fall selbst versorgen.
-              </p>
-
-              <h3 className="mt-8 text-xl font-bold text-nrw-grau-900">
-                Ausnahme: Hohe Temperaturen
-              </h3>
-              <p>
-                Die Arbeitsstättenverordnung (ArbStättV) sieht jedoch klare Vorgaben vor, wenn die
-                Temperaturen steigen. In Verbindung mit der Technischen Regel ASR A4.1 gilt:
-              </p>
-              <ul className="list-inside list-disc space-y-2 pl-2">
-                <li>
-                  Ab 26 °C Raumtemperatur sollten Arbeitgeber geeignete Getränke (z. B. Wasser,
-                  ungesüßter Tee) bereitstellen.
-                </li>
-                <li>
-                  Ab 30 °C müssen Getränke bereitgestellt werden – andernfalls kann das
-                  gesundheitliche Risiken für die Beschäftigten bedeuten.
-                </li>
-              </ul>
-              <p>
-                Die Auswahl der Getränke sollte dabei auf den Flüssigkeitsbedarf und die körperliche
-                Belastung abgestimmt sein. Alkoholische Getränke sind selbstverständlich nicht
-                erlaubt.
-              </p>
-
-              <h3 className="mt-8 text-xl font-bold text-nrw-grau-900">
-                Besonderheit: Arbeiten im Freien und auf Baustellen
-              </h3>
-              <p>
-                Bei Arbeiten im Freien – insbesondere auf Baustellen – ist die Regelung strenger.
-                Hier müssen Arbeitgeber jederzeit für eine ausreichende Versorgung mit Trinkwasser
-                oder anderen nicht-alkoholischen Getränken sorgen. Das gilt unabhängig von der
-                Außentemperatur.
-              </p>
-            </div>
-          </div>
-        </details>
-
-        <details className="group rounded-2xl border border-nrw-grau-200 bg-white shadow-sm [&[open]_summary]:rounded-b-none [&[open]_summary]:border-b [&[open]_summary]:border-nrw-grau-200">
-          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-2xl p-6 text-left font-bold text-nrw-grau-900 transition hover:bg-nrw-grau-50 [&::-webkit-details-marker]:hidden">
-            <h2 className="text-xl md:text-2xl">
-              Akteure im Arbeitsschutz – wer kümmert sich um was?
-            </h2>
-            <span className="shrink-0 text-nrw-gruen transition group-open:rotate-90" aria-hidden>
-              <IconArrowRight className="h-6 w-6" />
-            </span>
-          </summary>
-          <div className="border-t border-nrw-grau-200 p-6 pt-6">
-            <div className="space-y-6 text-nrw-grau-700 leading-relaxed">
-              <p>
-                Ein sicheres Arbeitsumfeld entsteht nicht von selbst, es erfordert klare
-                Verantwortlichkeiten. Doch wer trägt welche Aufgaben – wer sind die Akteure im
-                Arbeitsschutz?
-              </p>
-
-              <h3 className="mt-8 text-xl font-bold text-nrw-grau-900">
-                Arbeitgeber: Die Hauptverantwortung
-              </h3>
-              <p>
-                Der Arbeitgeber ist laut Arbeitsschutzgesetz verpflichtet, Schutzmaßnahmen zu
-                ergreifen, diese regelmäßig zu prüfen und anzupassen. Auch wenn er Aufgaben
-                delegieren kann, bleibt die Gesamtverantwortung bei ihm.
-              </p>
-
-              <h3 className="mt-8 text-xl font-bold text-nrw-grau-900">
-                Fachkraft für Arbeitssicherheit: Beratung & Kontrolle
-              </h3>
-              <p>
-                Sie unterstützt den Arbeitgeber und die Führungskräfte, achtet auf die Einhaltung
-                der Arbeitsschutzvorschriften und berät in sicherheitsrelevanten Fragen.
-                Weisungsbefugnis hat sie nicht, außer in akuten Gefahrensituationen.
-              </p>
-
-              <h3 className="mt-8 text-xl font-bold text-nrw-grau-900">
-                Sicherheitsbeauftragte: Kollegen mit Verantwortung
-              </h3>
-              <p>
-                Sicherheitsbeauftragte sind Mitarbeiter, die sich zusätzlich für die Sicherheit am
-                Arbeitsplatz engagieren. Sie haben keine Weisungsbefugnis, unterstützen aber dabei,
-                Risiken frühzeitig zu erkennen.
-              </p>
-
-              <h3 className="mt-8 text-xl font-bold text-nrw-grau-900">
-                Betriebsarzt: Gesundheit im Fokus
-              </h3>
-              <p>
-                Der Betriebsarzt berät Unternehmen zu Gesundheitsrisiken, führt
-                Vorsorgeuntersuchungen durch und hilft, die Gesundheit der Beschäftigten langfristig
-                zu schützen.
-              </p>
-
-              <h3 className="mt-8 text-xl font-bold text-nrw-grau-900">
-                Arbeitsschutzausschuss: Pflicht ab 20 Mitarbeitern
-              </h3>
-              <p>
-                Dieser Ausschuss, bestehend aus Arbeitgeber, Betriebsarzt, Fachkraft für
-                Arbeitssicherheit und weiteren Vertretern, bespricht regelmäßig Maßnahmen zur
-                Unfallverhütung und Arbeitssicherheit.
-              </p>
-
-              <h3 className="mt-8 text-xl font-bold text-nrw-grau-900">
-                Spezialisten für bestimmte Bereiche
-              </h3>
-              <p>
-                In manchen Betrieben gibt es zusätzliche Beauftragte, z. B. für Brandschutz oder
-                Gefahrstoffe, die sich um spezielle Risiken kümmern und dazu beraten.
-              </p>
-            </div>
-          </div>
-        </details>
-
-        <details className="group rounded-2xl border border-nrw-grau-200 bg-white shadow-sm [&[open]_summary]:rounded-b-none [&[open]_summary]:border-b [&[open]_summary]:border-nrw-grau-200">
-          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-2xl p-6 text-left font-bold text-nrw-grau-900 transition hover:bg-nrw-grau-50 [&::-webkit-details-marker]:hidden">
-            <h2 className="text-xl md:text-2xl">
-              Ladestation für E-Autos in Garagen genehmigungspflichtig?
-            </h2>
-            <span className="shrink-0 text-nrw-gruen transition group-open:rotate-90" aria-hidden>
-              <IconArrowRight className="h-6 w-6" />
-            </span>
-          </summary>
-          <div className="border-t border-nrw-grau-200 p-6 pt-6">
-            <div className="space-y-6 text-nrw-grau-700 leading-relaxed">
-              <p>
-                Ladestationen unterliegen keiner Genehmigungspflicht und führen auch nicht zu einer
-                Nutzungsänderung der Garage. Auch nach der Verschiebung der Landesbauordnung
-                Nordrhein-Westfalen bleibt die geltende Rechtslage unverändert.
-              </p>
-              <p>
-                Ladestationen für E-Autos gelten als Teil der Leitungsanlagen und der technischen
-                Gebäudeausstattung der Garage. Im Gegensatz zu Kraftstoffzapfsäulen unterliegen sie
-                keinen zusätzlichen öffentlich-rechtlichen Anforderungen (Kraftstoffzapfsäulen sind
-                nach § 18 Abs. 1 Nr. 6 der Betriebssicherheitsverordnung genehmigungspflichtig).
-              </p>
-              <p>
-                Leitungsanlagen sind in Nutzungseinheiten wie Garagen grundsätzlich erlaubt, im
-                Gegensatz zu Rettungswegen. Da Ladestationen wie Steckdosen oder elektrische
-                Verteiler bewertet werden, ist deren Installation in Garagen ebenso zulässig wie die
-                Installation einer Steckdose.
-              </p>
-              <p>
-                Es ist bekannt, dass Feuerwehren Ladestationen in Garagen kritisch sehen, da Brände,
-                die durch lithiumbasierte Akkus entstehen, schwer zu löschen sind. Allerdings geht
-                vom eigentlichen Ladevorgang keine Gefahr aus. Risiken bestehen eher bei defekten
-                oder überladenen Batterien, sodass potenzielle Gefahren vom Elektrofahrzeug selbst
-                und nicht von der Ladestation ausgehen.
-              </p>
-              <p>
-                Die Sonderbauverordnung enthält zudem kein Verbot, Elektrofahrzeuge in Garagen
-                abzustellen.
-              </p>
-              <p className="text-sm text-nrw-grau-500">
-                (Praktische Folgen des Aufschiebens „Moratorium“ der Landesbauordnung in
-                Nordrhein-Westfalen.)
-              </p>
-            </div>
-          </div>
-        </details>
-
-        <details className="group rounded-2xl border border-nrw-grau-200 bg-white shadow-sm [&[open]_summary]:rounded-b-none [&[open]_summary]:border-b [&[open]_summary]:border-nrw-grau-200">
-          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-2xl p-6 text-left font-bold text-nrw-grau-900 transition hover:bg-nrw-grau-50 [&::-webkit-details-marker]:hidden">
-            <h2 className="text-xl md:text-2xl">
-              Unterweisung Arbeitssicherheit: Was muss wirklich drinstehen?
-            </h2>
-            <span className="shrink-0 text-nrw-gruen transition group-open:rotate-90" aria-hidden>
-              <IconArrowRight className="h-6 w-6" />
-            </span>
-          </summary>
-          <div className="border-t border-nrw-grau-200 p-6 pt-6">
-            <div className="space-y-6 text-nrw-grau-700 leading-relaxed">
-              <p>
-                Unterweisungen sind ein Kernelement des betrieblichen Arbeitsschutzes: Sie machen
-                Beschäftigte auf konkrete Gefährdungen und Verhaltensregeln aufmerksam. Inhaltlich
-                orientieren sich sinnvolle Programme an Ihrer Gefährdungsbeurteilung und an den
-                Vorgaben der DGUV Vorschrift 2 – angepasst an Rollen (Führungskraft, Büro,
-                Produktion, Baustelle).
-              </p>
-              <p>
-                Praxisnah sollten Sie Themen wie Unfallmeldeketten, persönliche Schutzausrüstung,
-                Ordnung und Sauberkeit, ergonomische Leitlinien sowie branchenspezifische Risiken
-                abdecken. Wichtig ist die Nachweisführung: Datum, Inhalt, Dauer, Zielgruppe und
-                Referent dokumentieren. Kombinieren Sie Pflichtunterweisungen mit gezielten
-                Vertiefungen (z. B. Brandschutzhelfer) – so bleiben Inhalte konsistent mit Ihrer{" "}
-                <Link href="/leistungen/brandschutz" className="font-semibold text-nrw-gruen hover:underline">
-                  Brandschutzorganisation
-                </Link>{" "}
-                und Ihrer{" "}
-                <Link href="/leistungen/arbeitssicherheit" className="font-semibold text-nrw-gruen hover:underline">
-                  FaSi-Betreuung
-                </Link>
-                .
-              </p>
-            </div>
-          </div>
-        </details>
-
-        <details className="group rounded-2xl border border-nrw-grau-200 bg-white shadow-sm [&[open]_summary]:rounded-b-none [&[open]_summary]:border-b [&[open]_summary]:border-nrw-grau-200">
-          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-2xl p-6 text-left font-bold text-nrw-grau-900 transition hover:bg-nrw-grau-50 [&::-webkit-details-marker]:hidden">
-            <h2 className="text-xl md:text-2xl">
-              SiGeKo und Arbeitssicherheit im Betrieb – wie hängt das zusammen?
-            </h2>
-            <span className="shrink-0 text-nrw-gruen transition group-open:rotate-90" aria-hidden>
-              <IconArrowRight className="h-6 w-6" />
-            </span>
-          </summary>
-          <div className="border-t border-nrw-grau-200 p-6 pt-6">
-            <div className="space-y-6 text-nrw-grau-700 leading-relaxed">
-              <p>
-                Die SiGeKo wirkt auf der Baustelle: Sie koordiniert Sicherheit und Gesundheitsschutz
-                zwischen den am Bau beteiligten Unternehmen, dokumentiert Übergaben und begleitet
-                kritische Phasen. Parallel bleibt Ihr Stammbetrieb in der Pflicht nach ASiG und DGUV
-                Vorschrift 2 – Gefährdungsbeurteilungen, Unterweisungen und Betreuung durch FaSi
-                und Betriebsarzt laufen dort weiter.
-              </p>
-              <p>
-                Sinnvoll ist eine klare Schnittstelle: Welche Informationen fließen vom Bauvorhaben
-                in den Betrieb zurück (z. B. neue Arbeitsmittel, eingesetzte Gefahrstoffe), und
-                welche betrieblichen Regeln müssen Subunternehmer auf der Baustelle kennen? Wer das
-                abstimmt, vermeidet Lücken in Nachweisen und reduziert Reibung zwischen Projektteam
-                und Arbeitssicherheitsorganisation. Mehr zur{" "}
-                <Link href="/leistungen/sigeko" className="font-semibold text-nrw-gruen hover:underline">
-                  SiGeKo-Leistung
-                </Link>{" "}
-                und zu typischen Fragen in der{" "}
-                <Link href="/faq" className="font-semibold text-nrw-gruen hover:underline">
-                  FAQ
-                </Link>
-                .
-              </p>
-            </div>
-          </div>
-        </details>
-
-        <details className="group rounded-2xl border border-nrw-grau-200 bg-white shadow-sm [&[open]_summary]:rounded-b-none [&[open]_summary]:border-b [&[open]_summary]:border-nrw-grau-200">
-          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-2xl p-6 text-left font-bold text-nrw-grau-900 transition hover:bg-nrw-grau-50 [&::-webkit-details-marker]:hidden">
-            <h2 className="text-xl md:text-2xl">
-              Externe Fachkraft für Arbeitssicherheit in Köln: Worauf kommt es an?
-            </h2>
-            <span className="shrink-0 text-nrw-gruen transition group-open:rotate-90" aria-hidden>
-              <IconArrowRight className="h-6 w-6" />
-            </span>
-          </summary>
-          <div className="border-t border-nrw-grau-200 p-6 pt-6">
-            <div className="space-y-6 text-nrw-grau-700 leading-relaxed">
-              <p>
-                Eine externe Fachkraft für Arbeitssicherheit (FaSi) sollte Ihre Branche und Ihre
-                Standorte verstehen – ob Produktion, Logistik, Büro oder Baustelle. Entscheidend sind
-                klare Zuständigkeiten mit Betriebsarzt und Führung, nachvollziehbare Dokumentation der
-                Gefährdungsbeurteilung und Unterweisungen sowie pragmatische Priorisierung von
-                Maßnahmen. In Köln und NRW profitieren viele Betriebe davon, dass externe Betreuung
-                Kapazität freisetzt und Fachfragen nicht an internen Alleingängen hängen bleiben.
-              </p>
-              <p>
-                Vor der Beauftragung lohnt sich ein Kurzgespräch: Welche gesetzlichen Pflichten
-                treffen Sie, welche Fristen stehen an, und wie soll die Zusammenarbeit mit Ihrem
-                bestehenden Arbeitsschutz-Setup aussehen? Unsere{" "}
-                <Link href="/leistungen/arbeitssicherheit" className="font-semibold text-nrw-gruen hover:underline">
-                  Leistungsseite Arbeitssicherheit
-                </Link>{" "}
-                und die{" "}
-                <Link href="/faq" className="font-semibold text-nrw-gruen hover:underline">
-                  FAQ
-                </Link>{" "}
-                geben erste Orientierung; für Ihr konkretes Szenario vereinbaren Sie gern eine{" "}
-                <Link href="/beratung-buchen" className="font-semibold text-nrw-gruen hover:underline">
-                  kostenlose Erstberatung
-                </Link>
-                .
-              </p>
-            </div>
-          </div>
-        </details>
-
-        <details className="group rounded-2xl border border-nrw-grau-200 bg-white shadow-sm [&[open]_summary]:rounded-b-none [&[open]_summary]:border-b [&[open]_summary]:border-nrw-grau-200">
-          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-2xl p-6 text-left font-bold text-nrw-grau-900 transition hover:bg-nrw-grau-50 [&::-webkit-details-marker]:hidden">
-            <h2 className="text-xl md:text-2xl">
-              Brandschutzbeauftragter (BSB) in NRW: intern besetzen oder extern beauftragen?
-            </h2>
-            <span className="shrink-0 text-nrw-gruen transition group-open:rotate-90" aria-hidden>
-              <IconArrowRight className="h-6 w-6" />
-            </span>
-          </summary>
-          <div className="border-t border-nrw-grau-200 p-6 pt-6">
-            <div className="space-y-6 text-nrw-grau-700 leading-relaxed">
-              <p>
-                Ein Brandschutzbeauftragter unterstützt den Arbeitgeber bei organisatorischem,
-                baulichen und anlagentechnischen Fragen – von Fluchtwegen über Unterweisungen bis zu
-                Abstimmung mit Brandschutzkonzepten. Interne Besetzung kann sinnvoll sein, wenn
-                ausreichend Zeit, Qualifikation und Vertretungsregelungen vorhanden sind. Externe
-                Beauftragung ist oft die stabilere Lösung, wenn Kapazitäten fehlen, mehrere Standorte
-                betreut werden oder Fachtiefe bei Auflagen und Behördenkommunikation nötig ist.
-              </p>
-              <p>
-                In Köln und bundesweit in NRW kombinieren wir die Rolle des BSB dort sinnvoll mit Ihrer{" "}
-                <Link href="/leistungen/arbeitssicherheit" className="font-semibold text-nrw-gruen hover:underline">
-                  FaSi-Betreuung
-                </Link>
-                , damit Unterweisungen, Gefährdungsbeurteilung und Brandschutzordnung zusammenpassen.
-                Details zu Leistungen und typischen Fragen finden Sie unter{" "}
-                <Link href="/leistungen/brandschutz" className="font-semibold text-nrw-gruen hover:underline">
-                  Brandschutz
-                </Link>
-                .
-              </p>
-            </div>
-          </div>
-        </details>
-
-        <details className="group rounded-2xl border border-nrw-grau-200 bg-white shadow-sm [&[open]_summary]:rounded-b-none [&[open]_summary]:border-b [&[open]_summary]:border-nrw-grau-200">
-          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-2xl p-6 text-left font-bold text-nrw-grau-900 transition hover:bg-nrw-grau-50 [&::-webkit-details-marker]:hidden">
-            <h2 className="text-xl md:text-2xl">
-              SiGeKo NRW: Erste Orientierung für Bauherren und Ausführende
-            </h2>
-            <span className="shrink-0 text-nrw-gruen transition group-open:rotate-90" aria-hidden>
-              <IconArrowRight className="h-6 w-6" />
-            </span>
-          </summary>
-          <div className="border-t border-nrw-grau-200 p-6 pt-6">
-            <div className="space-y-6 text-nrw-grau-700 leading-relaxed">
-              <p>
-                Die SiGeKo (Sicherheits- und Gesundheitsschutzkoordination) sorgt dafür, dass
-                Arbeitssicherheit auf der Baustelle zwischen den beteiligten Unternehmen abgestimmt
-                wird – mit SiGePlan, Übergaben und Dokumentation. Für Bauvorhaben in NRW und Köln ist
-                entscheidend, früh zu klären, ob und ab wann ein SiGeKo erforderlich ist, wer die
-                Schnittstellen zum Betrieb hält und wie Informationen an Nachunternehmer fließen.
-              </p>
-              <p>
-                Parallel bleibt Ihr Stammbetrieb in der Pflicht nach ASiG und DGUV Vorschrift 2;
-                deshalb sollten Baustelle und Betrieb nicht als getrennte Welten geführt werden. Mehr
-                zur{" "}
-                <Link href="/leistungen/sigeko" className="font-semibold text-nrw-gruen hover:underline">
-                  SiGeKo-Leistung
-                </Link>
-                , zu Pflichtfragen in der{" "}
-                <Link href="/faq" className="font-semibold text-nrw-gruen hover:underline">
-                  FAQ
-                </Link>{" "}
-                und zu Orientierungswerten im{" "}
-                <Link href="/rechner" className="font-semibold text-nrw-gruen hover:underline">
-                  Rechner
-                </Link>
-                .
-              </p>
-            </div>
-          </div>
-        </details>
-      </div>
+      <h2 className="mt-14 text-2xl font-bold text-nrw-grau-900">Alle Artikel</h2>
+      <ul className="mt-8 grid gap-4 sm:grid-cols-2">
+        {BLOG_POSTS.map((post) => (
+          <li key={post.slug}>
+            <Link
+              href={`/blog/${post.slug}`}
+              className="flex h-full flex-col rounded-2xl border border-nrw-grau-200 bg-white p-6 shadow-sm transition hover:border-nrw-gruen hover:shadow-md"
+            >
+              <span className="text-lg font-bold text-nrw-grau-900">{post.title}</span>
+              <span className="mt-2 flex-1 text-sm text-nrw-grau-600">{post.description}</span>
+              <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-nrw-gruen">
+                Weiterlesen
+                <IconArrowRight className="h-4 w-4" aria-hidden />
+              </span>
+            </Link>
+          </li>
+        ))}
+      </ul>
 
       <RelatedOnSite
         className="mt-16"

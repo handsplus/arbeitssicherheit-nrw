@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { CONTACT, LEISTUNGEN, SITE } from "@/lib/constants";
+import { BLOG_POSTS } from "@/data/blog-posts";
 import { ServiceCard } from "@/components/ServiceCard";
 import { ContactForm } from "@/components/ContactForm";
 import { PrimaryCtaLink } from "@/components/PrimaryCtaLink";
@@ -128,6 +129,7 @@ export default function HomePage() {
                 alt="TÜV Rheinland"
                 width={180}
                 height={72}
+                priority
                 className="max-h-14 w-auto object-contain"
               />
             </li>
@@ -177,6 +179,47 @@ export default function HomePage() {
                 className="max-h-14 w-auto object-contain"
               />
             </li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="border-b border-nrw-grau-200 bg-white py-12 md:py-16" aria-labelledby="start-blog-teaser">
+        <div className="mx-auto max-w-6xl px-4">
+          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-widest text-nrw-gruen">Praxiswissen</p>
+              <h2 id="start-blog-teaser" className="mt-2 text-2xl font-bold text-nrw-grau-900 md:text-3xl">
+                Aus dem Blog
+              </h2>
+              <p className="mt-2 max-w-xl text-nrw-grau-600">
+                Kurze Artikel zu FaSi, Brandschutz und SiGeKo – jedes Thema mit eigener Seite für
+                bessere Auffindbarkeit.
+              </p>
+            </div>
+            <Link
+              href="/blog"
+              className="inline-flex shrink-0 items-center gap-2 font-semibold text-nrw-gruen hover:underline"
+            >
+              Alle Artikel
+              <IconArrowRight className="h-5 w-5" aria-hidden />
+            </Link>
+          </div>
+          <ul className="mt-8 grid gap-4 md:grid-cols-3">
+            {BLOG_POSTS.slice(0, 3).map((post) => (
+              <li key={post.slug}>
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="block h-full rounded-2xl border border-nrw-grau-200 bg-nrw-grau-50 p-5 transition hover:border-nrw-gruen hover:bg-white hover:shadow-sm"
+                >
+                  <span className="font-semibold text-nrw-grau-900">{post.title}</span>
+                  <span className="mt-2 line-clamp-2 block text-sm text-nrw-grau-600">{post.description}</span>
+                  <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-nrw-gruen">
+                    Lesen
+                    <IconArrowRight className="h-4 w-4" aria-hidden />
+                  </span>
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </section>
