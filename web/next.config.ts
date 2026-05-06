@@ -13,6 +13,11 @@ const legacyRedirects = [
   { source: "/datenschutzerklärung", destination: "/datenschutz", permanent: true },
   { source: "/datenschutzerklaerung", destination: "/datenschutz", permanent: true },
   {
+    source: "/post/brandschutz-brandbekämpfung-von-elektrofahrzeugen",
+    destination: "/leistungen/brandschutz",
+    permanent: true,
+  },
+  {
     source: "/post/brandschutz-brandbekaempfung-von-elektrofahrzeugen",
     destination: "/leistungen/brandschutz",
     permanent: true,
