@@ -7,14 +7,14 @@ import { OFFICIAL_BRANDSCHUTZ, OFFICIAL_GENERAL } from "@/lib/officialSources";
 import { SITE } from "@/lib/constants";
 
 export const metadata = {
-  title: "Brandschutzbeauftragter (BSB) – extern in Köln & NRW",
+  title: "Brandschutzbeauftragter Köln | Externer BSB & Brandschutzberatung NRW",
   description:
-    "Externer Brandschutzbeauftragter: Beratung und Konzepte im baulichen, anlagentechnischen und organisatorischen Brandschutz. Köln und NRW.",
+    "Externer Brandschutzbeauftragter (BSB) in Köln: organisatorischer, baulicher und anlagentechnischer Brandschutz, Konzepte und Schulungen. Jetzt Beratung anfragen.",
   alternates: { canonical: `${SITE.url}/leistungen/brandschutz` },
   openGraph: {
-    title: "Brandschutzbeauftragter – extern | Köln & NRW",
+    title: "Brandschutzbeauftragter Köln | Externer BSB NRW",
     description:
-      "Externer BSB, Brandschutzkonzepte, Brandschutzordnung, Schulungen. Brandschutz in Köln und NRW.",
+      "Brandschutz aus einer Hand: BSB, Konzepte, Brandschutzordnung. Für Betriebe und Einrichtungen in Köln und ganz NRW.",
     url: `${SITE.url}/leistungen/brandschutz`,
   },
 };
@@ -70,10 +70,12 @@ export default function BrandschutzPage() {
       />
       <RelatedOnSite
         links={[
-          { href: "/leistungen/arbeitssicherheit", label: "Arbeitssicherheit", description: "FaSi & Gefährdungsbeurteilung" },
+          { href: "/leistungen/arbeitssicherheit", label: "Arbeitssicherheit", description: "FaSi & Arbeitsschutz vor Ort" },
           { href: "/leistungen/schulungen", label: "Schulungen", description: "Brandschutzhelfer u. a." },
-          { href: "/faq", label: "FAQ", description: "Brandschutz & Pflichten" },
-          { href: "/rechner", label: "Rechner", description: "Orientierung z. B. Brandschutzhelfer" },
+          { href: "/blog", label: "Blog", description: "Brandschutzbeauftragter & Praxis" },
+          { href: "/faq", label: "FAQ", description: "BSB Köln & Pflichten" },
+          { href: "/beratung-buchen", label: "Beratung buchen", description: "Unverbindlich anfragen" },
+          { href: "/rechner", label: "Rechner", description: "Orientierung Brandschutzhelfer" },
         ]}
       />
       <div className="mt-14 flex flex-wrap gap-4">

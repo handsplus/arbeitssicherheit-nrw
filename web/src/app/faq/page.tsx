@@ -66,10 +66,13 @@ export default function FaqPage() {
     <div className="mx-auto max-w-3xl px-4 py-16 md:py-24">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p className="text-sm font-semibold uppercase tracking-widest text-nrw-gruen">FAQ</p>
-      <h1 className="mt-2 text-4xl font-bold text-nrw-grau-900">Häufige Fragen</h1>
+      <h1 className="mt-2 text-4xl font-bold text-nrw-grau-900">
+        FAQ: Arbeitssicherheit Köln, Arbeitsschutz, Brandschutz &amp; SiGeKo NRW
+      </h1>
       <p className="mt-6 text-lg text-nrw-grau-600">
-        Ausführliche Antworten zu FaSi, Gefährdungsbeurteilung, SiGeKo, Brandschutz, Elektrosicherheit
-        und Managementsystemen – mit Verweisen auf passende Seiten dieser Website.
+        Ausführliche Antworten zu externer Fachkraft für Arbeitssicherheit (FaSi), Gefährdungsbeurteilung,
+        Brandschutzbeauftragtem, SiGeKo auf der Baustelle, Elektrosicherheit und Managementsystemen – mit
+        direkten Links zu Leistungen, Blog und Erstberatung.
       </p>
       <p className="mt-4 text-sm text-nrw-grau-500">
         Rechtliche Einzelfälle ersetzt keine Website; wir beraten Sie gern konkret zu Ihrem Betrieb in

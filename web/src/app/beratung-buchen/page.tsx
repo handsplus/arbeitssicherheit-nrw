@@ -4,9 +4,9 @@ import { CONTACT, SITE } from "@/lib/constants";
 import { IconPhone, IconMail } from "@/components/Icons";
 
 export const metadata = {
-  title: "Kostenlose Erstberatung – Arbeitssicherheit, Brandschutz, SiGeKo",
+  title: "Arbeitssicherheit Beratung Köln – kostenlose Erstberatung | FaSi, BSB, SiGeKo",
   description:
-    "Unverbindliche kostenlose Erstberatung mit Schwerpunkt Arbeitssicherheit, Brandschutz und SiGeKo. Termin anfragen für Köln und NRW.",
+    "Unverbindliche kostenlose Erstberatung: Arbeitssicherheit, Arbeitsschutz, Brandschutz und SiGeKo. Termin für Köln und NRW online anfragen.",
   alternates: { canonical: `${SITE.url}/beratung-buchen` },
 };
 

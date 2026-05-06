@@ -7,14 +7,14 @@ import { OFFICIAL_GENERAL, OFFICIAL_SIGEKO } from "@/lib/officialSources";
 import { SITE } from "@/lib/constants";
 
 export const metadata = {
-  title: "SiGeKo – Sicherheits- und Gesundheitsschutzkoordination | Köln & NRW",
+  title: "SiGeKo NRW & Köln | Sicherheits- und Gesundheitsschutzkoordinator Baustelle",
   description:
-    "SiGeKo-Leistungen auf der Baustelle: Planung, Koordination und Dokumentation gemäß Baustellenverordnung. Externer SiGeKo in Köln und NRW.",
+    "SiGeKo für Baustellen in NRW und Köln: Planung, Koordination und Dokumentation nach Baustellenverordnung. Externer Koordinator – anfragen.",
   alternates: { canonical: `${SITE.url}/leistungen/sigeko` },
   openGraph: {
-    title: "SiGeKo – Sicherheits- und Gesundheitsschutzkoordination | Köln & NRW",
+    title: "SiGeKo NRW | Koordination Baustelle Köln",
     description:
-      "Externer SiGeKo, SiGePlan, Baustellenverordnung. Sicherheits- und Gesundheitsschutzkoordination in Köln und NRW.",
+      "Externer SiGeKo: SiGePlan, Unterlagen, Abstimmung Gewerke. Für Bauvorhaben in NRW und Köln.",
     url: `${SITE.url}/leistungen/sigeko`,
   },
 };
@@ -72,9 +72,10 @@ export default function SiGeKoPage() {
       <RelatedOnSite
         links={[
           { href: "/leistungen/arbeitssicherheit", label: "Arbeitssicherheit", description: "FaSi für Ihren Betrieb" },
-          { href: "/rechner", label: "Rechner", description: "Honorar- und Personal-Orientierung" },
-          { href: "/faq", label: "FAQ", description: "Fragen zu SiGeKo" },
-          { href: "/blog", label: "Blog", description: "Praxiswissen Baustelle" },
+          { href: "/rechner", label: "Rechner", description: "SiGeKo-Honorar-Orientierung" },
+          { href: "/faq", label: "FAQ", description: "SiGeKo NRW & Pflicht" },
+          { href: "/blog", label: "Blog", description: "Baustelle & Koordination" },
+          { href: "/beratung-buchen", label: "Beratung buchen", description: "Vorhaben kurz schildern" },
         ]}
       />
       <div className="mt-14 flex flex-wrap gap-4">

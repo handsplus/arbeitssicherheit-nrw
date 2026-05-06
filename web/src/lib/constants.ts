@@ -1,15 +1,16 @@
 export const SITE = {
   name: "Arbeitssicherheit.nrw",
-  title: "Arbeitssicherheit Köln & NRW | FaSi, Brandschutz, SiGeKo – Arbeitssicherheit.nrw",
+  title: "Arbeitssicherheit Köln & NRW | Externe FaSi, Brandschutz & SiGeKo",
   description:
-    "Schwerpunkt Arbeitssicherheit in Köln und NRW: externe Fachkraft (FaSi), Brandschutz und SiGeKo aus einer Hand. Ergänzend Schulungen, Elektrosicherheit (VEFK) und Managementsysteme. Rechtssicher, entlastend.",
+    "Fachkraft für Arbeitssicherheit & Arbeitsschutz in Köln und NRW: externe FaSi, Brandschutzbeauftragter (BSB) und SiGeKo. Gefährdungsbeurteilung, Beratung, Baustelle. Jetzt Termin anfragen – unverbindlich.",
   /** Kanonische URL = Vercel-Produktions-Domain (ohne www; www leitet 301 hierher). */
   url: "https://arbeitssicherheit.nrw",
   /** Kurzbeschreibung für Social / KI-Zusammenfassungen */
-  tagline: "FaSi, Brandschutz & SiGeKo in Nordrhein-Westfalen – rechtssicher und praxisnah.",
+  tagline: "Arbeitssicherheit Köln & NRW: externe FaSi, BSB & SiGeKo – rechtssicher, aus einer Hand.",
   /** Themen für strukturierte Daten (Sichtbarkeit in Suche & KI-Antworten) */
   knowsAbout: [
     "Arbeitssicherheit",
+    "Arbeitsschutz",
     "Fachkraft für Arbeitssicherheit",
     "externe FaSi",
     "Gefährdungsbeurteilung",

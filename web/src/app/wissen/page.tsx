@@ -12,10 +12,10 @@ import {
 } from "@/components/Icons";
 
 const desc =
-  "Praxiswissen mit Schwerpunkt Arbeitssicherheit: FAQ, Glossar, Checklisten, Rechner und Blog zu FaSi, Brandschutz, SiGeKo, Gefährdungsbeurteilung, DGUV und ASiG – für Unternehmen in Köln und Nordrhein-Westfalen.";
+  "Wissen zu Arbeitssicherheit und Arbeitsschutz in Köln und NRW: FAQ, Glossar, Checklisten, Rechner und Blog zu externer FaSi, Brandschutzbeauftragtem, SiGeKo, Gefährdungsbeurteilung, DGUV und ASiG.";
 
 export const metadata: Metadata = {
-  title: "Wissen & Ressourcen – FAQ, Glossar, Checklisten, Rechner | Köln & NRW",
+  title: "Wissen: Arbeitssicherheit Köln & NRW | FAQ, Blog, externe FaSi, SiGeKo",
   description: desc,
   alternates: { canonical: `${SITE.url}/wissen` },
   keywords: [
@@ -28,6 +28,10 @@ export const metadata: Metadata = {
     "ASiG",
     "Arbeitssicherheit Köln",
     "Arbeitssicherheit NRW",
+    "Arbeitsschutz Köln",
+    "externe Fachkraft Arbeitssicherheit",
+    "Brandschutzbeauftragter Köln",
+    "SiGeKo NRW",
     "FAQ Arbeitssicherheit",
     "Glossar Arbeitssicherheit",
   ],
@@ -88,9 +92,12 @@ const ARTICLES = [
 
 /** Interne Verlinkung für SEO & Orientierung */
 const THEMA_LINKS = [
-  { label: "Arbeitssicherheit (FaSi)", href: "/leistungen/arbeitssicherheit" },
-  { label: "Brandschutz", href: "/leistungen/brandschutz" },
-  { label: "SiGeKo Baustelle", href: "/leistungen/sigeko" },
+  { label: "Externe FaSi Köln & NRW", href: "/leistungen/arbeitssicherheit" },
+  { label: "Brandschutzbeauftragter (BSB)", href: "/leistungen/brandschutz" },
+  { label: "SiGeKo NRW / Baustelle", href: "/leistungen/sigeko" },
+  { label: "Arbeitssicherheit Beratung", href: "/beratung-buchen" },
+  { label: "FAQ Arbeitsschutz", href: "/faq" },
+  { label: "Blog Praxis", href: "/blog" },
   { label: "Schulungen", href: "/leistungen/schulungen" },
   { label: "Elektrosicherheit / VEFK", href: "/leistungen/elektrosicherheit" },
   { label: "Managementsysteme (ISO 45001)", href: "/leistungen/managementsysteme" },

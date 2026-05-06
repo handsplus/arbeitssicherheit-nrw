@@ -1,11 +1,12 @@
+import Link from "next/link";
 import { CONTACT, SITE } from "@/lib/constants";
 import { ContactForm } from "@/components/ContactForm";
 import { IconPhone, IconMail, IconLocation, IconWhatsApp, IconLinkedIn } from "@/components/Icons";
 
 export const metadata = {
-  title: "Kontakt – Arbeitssicherheit, Brandschutz, SiGeKo",
+  title: "Arbeitssicherheit Beratung Köln | Kontakt FaSi, Brandschutz & SiGeKo",
   description:
-    "Kontakt für Beratung mit Schwerpunkt Arbeitssicherheit, Brandschutz und SiGeKo in Köln und NRW. Schnelle Antwort.",
+    "Kontakt für Arbeitssicherheit, Arbeitsschutz und Brandschutz in Köln und NRW. Beratung zu FaSi, BSB und SiGeKo – wir melden uns zeitnah.",
   alternates: { canonical: `${SITE.url}/kontakt` },
 };
 
@@ -19,6 +20,29 @@ export default function KontaktPage() {
       <p className="mt-6 max-w-2xl text-lg text-nrw-grau-600">
         Egal ob Frage zu Arbeitssicherheit, Brandschutz oder SiGeKo – wir antworten zeitnah
         und unverbindlich.
+      </p>
+      <p className="mt-4 max-w-2xl text-sm text-nrw-grau-600">
+        Vorab lesen:{" "}
+        <Link href="/leistungen/arbeitssicherheit" className="font-medium text-nrw-gruen hover:underline">
+          externe FaSi
+        </Link>
+        ,{" "}
+        <Link href="/leistungen/brandschutz" className="font-medium text-nrw-gruen hover:underline">
+          Brandschutzbeauftragter Köln
+        </Link>
+        ,{" "}
+        <Link href="/leistungen/sigeko" className="font-medium text-nrw-gruen hover:underline">
+          SiGeKo NRW
+        </Link>
+        ,{" "}
+        <Link href="/faq" className="font-medium text-nrw-gruen hover:underline">
+          FAQ
+        </Link>{" "}
+        oder{" "}
+        <Link href="/beratung-buchen" className="font-medium text-nrw-gruen hover:underline">
+          Erstberatung buchen
+        </Link>
+        .
       </p>
       <div className="mt-16 grid gap-12 lg:grid-cols-2 lg:gap-16">
         <div>

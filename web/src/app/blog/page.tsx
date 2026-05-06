@@ -6,9 +6,9 @@ import { OFFICIAL_GENERAL, OFFICIAL_SIGEKO } from "@/lib/officialSources";
 import { SITE } from "@/lib/constants";
 
 export const metadata = {
-  title: "Blog – Arbeitssicherheit, Brandschutz, SiGeKo | Arbeitssicherheit.nrw",
+  title: "Blog: Arbeitssicherheit Köln, externe FaSi, Brandschutzbeauftragter & SiGeKo NRW",
   description:
-    "Praxiswissen mit Schwerpunkt Arbeitssicherheit: Gefährdungsbeurteilung, Unterweisung, SiGeKo, Akteure im Arbeitsschutz; dazu Brandschutz und Baustelle. Verlinkt mit FAQ, Leistungen und offiziellen Quellen – für Köln und NRW.",
+    "Praxisartikel zu Arbeitssicherheit und Arbeitsschutz in Köln und NRW: externe Fachkraft für Arbeitssicherheit (FaSi), Brandschutzbeauftragter (BSB), SiGeKo auf der Baustelle, Gefährdungsbeurteilung und Unterweisung. Mit Links zu FAQ, Leistungen und Behördenquellen.",
   alternates: { canonical: `${SITE.url}/blog` },
 };
 
@@ -16,10 +16,13 @@ export default function BlogPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 md:py-24">
       <p className="text-sm font-semibold uppercase tracking-widest text-nrw-gruen">Blog</p>
-      <h1 className="mt-2 text-4xl font-bold text-nrw-grau-900">Blog Beiträge</h1>
+      <h1 className="mt-2 text-4xl font-bold text-nrw-grau-900">
+        Blog: Arbeitssicherheit Köln, Brandschutz &amp; SiGeKo NRW
+      </h1>
       <p className="mt-6 max-w-2xl text-lg text-nrw-grau-600">
-        Praxiswissen zu Arbeitssicherheit, Brandschutz und SiGeKo – für Ihren Betrieb in Köln und
-        NRW. Klicken Sie auf eine Frage, um den Beitrag zu öffnen. Ergänzend:{" "}
+        Praxiswissen zu externer FaSi, Brandschutzbeauftragtem, SiGeKo und Arbeitsschutz – für Betriebe
+        und Bauvorhaben in Köln und NRW. Klicken Sie auf eine Überschrift, um den Beitrag zu öffnen.
+        Ergänzend:{" "}
         <Link href="/faq" className="font-semibold text-nrw-gruen hover:underline">
           FAQ
         </Link>
@@ -342,15 +345,131 @@ export default function BlogPage() {
             </div>
           </div>
         </details>
+
+        <details className="group rounded-2xl border border-nrw-grau-200 bg-white shadow-sm [&[open]_summary]:rounded-b-none [&[open]_summary]:border-b [&[open]_summary]:border-nrw-grau-200">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-2xl p-6 text-left font-bold text-nrw-grau-900 transition hover:bg-nrw-grau-50 [&::-webkit-details-marker]:hidden">
+            <h2 className="text-xl md:text-2xl">
+              Externe Fachkraft für Arbeitssicherheit in Köln: Worauf kommt es an?
+            </h2>
+            <span className="shrink-0 text-nrw-gruen transition group-open:rotate-90" aria-hidden>
+              <IconArrowRight className="h-6 w-6" />
+            </span>
+          </summary>
+          <div className="border-t border-nrw-grau-200 p-6 pt-6">
+            <div className="space-y-6 text-nrw-grau-700 leading-relaxed">
+              <p>
+                Eine externe Fachkraft für Arbeitssicherheit (FaSi) sollte Ihre Branche und Ihre
+                Standorte verstehen – ob Produktion, Logistik, Büro oder Baustelle. Entscheidend sind
+                klare Zuständigkeiten mit Betriebsarzt und Führung, nachvollziehbare Dokumentation der
+                Gefährdungsbeurteilung und Unterweisungen sowie pragmatische Priorisierung von
+                Maßnahmen. In Köln und NRW profitieren viele Betriebe davon, dass externe Betreuung
+                Kapazität freisetzt und Fachfragen nicht an internen Alleingängen hängen bleiben.
+              </p>
+              <p>
+                Vor der Beauftragung lohnt sich ein Kurzgespräch: Welche gesetzlichen Pflichten
+                treffen Sie, welche Fristen stehen an, und wie soll die Zusammenarbeit mit Ihrem
+                bestehenden Arbeitsschutz-Setup aussehen? Unsere{" "}
+                <Link href="/leistungen/arbeitssicherheit" className="font-semibold text-nrw-gruen hover:underline">
+                  Leistungsseite Arbeitssicherheit
+                </Link>{" "}
+                und die{" "}
+                <Link href="/faq" className="font-semibold text-nrw-gruen hover:underline">
+                  FAQ
+                </Link>{" "}
+                geben erste Orientierung; für Ihr konkretes Szenario vereinbaren Sie gern eine{" "}
+                <Link href="/beratung-buchen" className="font-semibold text-nrw-gruen hover:underline">
+                  kostenlose Erstberatung
+                </Link>
+                .
+              </p>
+            </div>
+          </div>
+        </details>
+
+        <details className="group rounded-2xl border border-nrw-grau-200 bg-white shadow-sm [&[open]_summary]:rounded-b-none [&[open]_summary]:border-b [&[open]_summary]:border-nrw-grau-200">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-2xl p-6 text-left font-bold text-nrw-grau-900 transition hover:bg-nrw-grau-50 [&::-webkit-details-marker]:hidden">
+            <h2 className="text-xl md:text-2xl">
+              Brandschutzbeauftragter (BSB) in NRW: intern besetzen oder extern beauftragen?
+            </h2>
+            <span className="shrink-0 text-nrw-gruen transition group-open:rotate-90" aria-hidden>
+              <IconArrowRight className="h-6 w-6" />
+            </span>
+          </summary>
+          <div className="border-t border-nrw-grau-200 p-6 pt-6">
+            <div className="space-y-6 text-nrw-grau-700 leading-relaxed">
+              <p>
+                Ein Brandschutzbeauftragter unterstützt den Arbeitgeber bei organisatorischem,
+                baulichen und anlagentechnischen Fragen – von Fluchtwegen über Unterweisungen bis zu
+                Abstimmung mit Brandschutzkonzepten. Interne Besetzung kann sinnvoll sein, wenn
+                ausreichend Zeit, Qualifikation und Vertretungsregelungen vorhanden sind. Externe
+                Beauftragung ist oft die stabilere Lösung, wenn Kapazitäten fehlen, mehrere Standorte
+                betreut werden oder Fachtiefe bei Auflagen und Behördenkommunikation nötig ist.
+              </p>
+              <p>
+                In Köln und bundesweit in NRW kombinieren wir die Rolle des BSB dort sinnvoll mit Ihrer{" "}
+                <Link href="/leistungen/arbeitssicherheit" className="font-semibold text-nrw-gruen hover:underline">
+                  FaSi-Betreuung
+                </Link>
+                , damit Unterweisungen, Gefährdungsbeurteilung und Brandschutzordnung zusammenpassen.
+                Details zu Leistungen und typischen Fragen finden Sie unter{" "}
+                <Link href="/leistungen/brandschutz" className="font-semibold text-nrw-gruen hover:underline">
+                  Brandschutz
+                </Link>
+                .
+              </p>
+            </div>
+          </div>
+        </details>
+
+        <details className="group rounded-2xl border border-nrw-grau-200 bg-white shadow-sm [&[open]_summary]:rounded-b-none [&[open]_summary]:border-b [&[open]_summary]:border-nrw-grau-200">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-2xl p-6 text-left font-bold text-nrw-grau-900 transition hover:bg-nrw-grau-50 [&::-webkit-details-marker]:hidden">
+            <h2 className="text-xl md:text-2xl">
+              SiGeKo NRW: Erste Orientierung für Bauherren und Ausführende
+            </h2>
+            <span className="shrink-0 text-nrw-gruen transition group-open:rotate-90" aria-hidden>
+              <IconArrowRight className="h-6 w-6" />
+            </span>
+          </summary>
+          <div className="border-t border-nrw-grau-200 p-6 pt-6">
+            <div className="space-y-6 text-nrw-grau-700 leading-relaxed">
+              <p>
+                Die SiGeKo (Sicherheits- und Gesundheitsschutzkoordination) sorgt dafür, dass
+                Arbeitssicherheit auf der Baustelle zwischen den beteiligten Unternehmen abgestimmt
+                wird – mit SiGePlan, Übergaben und Dokumentation. Für Bauvorhaben in NRW und Köln ist
+                entscheidend, früh zu klären, ob und ab wann ein SiGeKo erforderlich ist, wer die
+                Schnittstellen zum Betrieb hält und wie Informationen an Nachunternehmer fließen.
+              </p>
+              <p>
+                Parallel bleibt Ihr Stammbetrieb in der Pflicht nach ASiG und DGUV Vorschrift 2;
+                deshalb sollten Baustelle und Betrieb nicht als getrennte Welten geführt werden. Mehr
+                zur{" "}
+                <Link href="/leistungen/sigeko" className="font-semibold text-nrw-gruen hover:underline">
+                  SiGeKo-Leistung
+                </Link>
+                , zu Pflichtfragen in der{" "}
+                <Link href="/faq" className="font-semibold text-nrw-gruen hover:underline">
+                  FAQ
+                </Link>{" "}
+                und zu Orientierungswerten im{" "}
+                <Link href="/rechner" className="font-semibold text-nrw-gruen hover:underline">
+                  Rechner
+                </Link>
+                .
+              </p>
+            </div>
+          </div>
+        </details>
       </div>
 
       <RelatedOnSite
         className="mt-16"
         links={[
-          { href: "/faq", label: "FAQ", description: "Schnelle Antworten" },
+          { href: "/faq", label: "FAQ", description: "Arbeitssicherheit Köln & NRW" },
+          { href: "/beratung-buchen", label: "Erstberatung", description: "Unverbindlich Termin" },
           { href: "/checklisten", label: "Checklisten", description: "Selbstbewertung" },
           { href: "/glossar", label: "Glossar", description: "Begriffe von ASiG bis VEFK" },
           { href: "/leistungen", label: "Leistungen", description: "FaSi, Brandschutz, SiGeKo & mehr" },
+          { href: "/kontakt", label: "Kontakt", description: "Direkt Nachricht senden" },
         ]}
       />
     </div>

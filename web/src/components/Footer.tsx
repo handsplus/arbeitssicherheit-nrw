@@ -17,6 +17,8 @@ const FOOTER_NAV = [
   { label: "Leistungen", href: "/leistungen" },
   { label: "Kontakt", href: "/kontakt" },
   { label: "Wissen", href: "/wissen" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Blog", href: "/blog" },
   { label: "Über uns", href: "/ueber-uns" },
   { label: "Beratung buchen", href: "/beratung-buchen" },
 ] as const;

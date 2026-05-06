@@ -8,14 +8,14 @@ import { RelatedOnSite } from "@/components/content/RelatedOnSite";
 import { OFFICIAL_GENERAL } from "@/lib/officialSources";
 
 export const metadata = {
-  title: "Leistungen: Arbeitssicherheit, Brandschutz, SiGeKo – Köln & NRW",
+  title: "Leistungen Arbeitssicherheit Köln | FaSi, BSB, SiGeKo & Beratung NRW",
   description:
-    "Schwerpunkt Arbeitssicherheit (FaSi), Brandschutz und SiGeKo; dazu Schulungen sowie bei Bedarf Elektrosicherheit und Managementsysteme – aus einer Hand in Köln und NRW.",
+    "Arbeitssicherheit Beratung und Umsetzung: externe FaSi, Brandschutzbeauftragter, SiGeKo; ergänzend Schulungen, VEFK und Managementsysteme – Köln und NRW.",
   alternates: { canonical: `${SITE.url}/leistungen` },
   openGraph: {
-    title: "Leistungen: Arbeitssicherheit, Brandschutz, SiGeKo | Köln & NRW",
+    title: "Leistungen | Arbeitssicherheit Köln & NRW",
     description:
-      "Arbeitssicherheit, Brandschutz, SiGeKo zuerst; ergänzend Schulungen, VEFK und Managementsysteme. Partner in Köln und NRW.",
+      "FaSi, Brandschutz und SiGeKo aus einer Hand; optional Schulungen und Managementsysteme. Für Betriebe und Bauprojekte.",
     url: `${SITE.url}/leistungen`,
   },
 };

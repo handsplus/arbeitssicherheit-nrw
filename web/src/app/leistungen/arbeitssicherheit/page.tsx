@@ -7,14 +7,14 @@ import { OFFICIAL_GENERAL } from "@/lib/officialSources";
 import { SITE } from "@/lib/constants";
 
 export const metadata = {
-  title: "Arbeitssicherheit & FaSi – externe Fachkraft in Köln & NRW",
+  title: "Externe Fachkraft für Arbeitssicherheit Köln | FaSi & Arbeitsschutz NRW",
   description:
-    "Arbeitssicherheit professionell: Externe Fachkraft für Arbeitssicherheit (FaSi), Gefährdungsbeurteilung, Betreuung nach ASiG und DGUV Vorschrift 2. Köln, NRW.",
+    "Externe Fachkraft für Arbeitssicherheit (FaSi) in Köln: Gefährdungsbeurteilung, Betreuung nach ASiG und DGUV Vorschrift 2, Arbeitsschutz vor Ort. Unverbindlich anfragen.",
   alternates: { canonical: `${SITE.url}/leistungen/arbeitssicherheit` },
   openGraph: {
-    title: "Arbeitssicherheit & FaSi – externe Fachkraft | Köln & NRW",
+    title: "Externe Fachkraft für Arbeitssicherheit Köln | FaSi NRW",
     description:
-      "Externe FaSi, Gefährdungsbeurteilung, Betriebsbegehung, Unterweisung. Arbeitssicherheit nach ASiG und DGUV Vorschrift 2 in Köln und NRW.",
+      "FaSi & Arbeitsschutz: Gefährdungsbeurteilung, Begehungen, Unterweisungen. Externe Betreuung für Unternehmen in Köln und NRW.",
     url: `${SITE.url}/leistungen/arbeitssicherheit`,
   },
 };
@@ -67,12 +67,13 @@ export default function ArbeitssicherheitPage() {
       <OfficialSourcesBlock links={OFFICIAL_GENERAL} />
       <RelatedOnSite
         links={[
-          { href: "/faq", label: "FAQ", description: "Häufige Fragen zu FaSi und Pflichten" },
-          { href: "/blog", label: "Blog", description: "Praxisartikel zu Gefährdungsbeurteilung & Co." },
+          { href: "/faq", label: "FAQ", description: "Externe FaSi, Arbeitsschutz, Köln & NRW" },
+          { href: "/blog", label: "Blog", description: "Praxis: FaSi & Gefährdungsbeurteilung" },
+          { href: "/wissen", label: "Wissen", description: "FAQ, Glossar, Rechner" },
           { href: "/checklisten", label: "Checklisten", description: "Erste Orientierung für Ihren Betrieb" },
-          { href: "/leistungen/brandschutz", label: "Brandschutz", description: "Ergänzend zum Arbeitsschutz" },
-          { href: "/leistungen/sigeko", label: "SiGeKo", description: "Baustelle & Koordination" },
-          { href: "/beratung-buchen", label: "Beratung buchen", description: "Direkter Terminwunsch" },
+          { href: "/leistungen/brandschutz", label: "Brandschutz", description: "BSB ergänzend zur FaSi" },
+          { href: "/leistungen/sigeko", label: "SiGeKo", description: "Baustelle & Koordination NRW" },
+          { href: "/beratung-buchen", label: "Beratung buchen", description: "Arbeitssicherheit Beratung Köln" },
         ]}
       />
       <div className="mt-14 flex flex-wrap gap-4">

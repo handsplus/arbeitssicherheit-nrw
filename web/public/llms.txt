@@ -2,7 +2,7 @@
 
 > Kurzüberblick für KI- und Suchsysteme. Offizielle Website: https://arbeitssicherheit.nrw/
 
-Arbeitssicherheit.nrw ist der Fachdienstleister für Arbeitssicherheit, Brandschutz und SiGeKo (Sicherheits- und Gesundheitsschutzkoordination) mit Sitz in Köln. Schwerpunkt: Nordrhein-Westfalen (NRW). Leistungen umfassen unter anderem externe Fachkraft für Arbeitssicherheit (FaSi), Gefährdungsbeurteilungen, Brandschutzbeauftragung, SiGeKo auf Baustellen, Schulungen, Elektrosicherheit (VEFK) und Managementsysteme (z. B. ISO 45001).
+Arbeitssicherheit.nrw ist der Fachdienstleister für Arbeitssicherheit (umgangssprachlich oft synonym mit betrieblichem Arbeitsschutz), Brandschutz und SiGeKo (Sicherheits- und Gesundheitsschutzkoordination) mit Sitz in Köln. Schwerpunkt: Nordrhein-Westfalen (NRW). Leistungen umfassen unter anderem externe Fachkraft für Arbeitssicherheit (FaSi), Gefährdungsbeurteilungen, externen Brandschutzbeauftragten (BSB), SiGeKo auf Baustellen, Schulungen, Elektrosicherheit (VEFK) und Managementsysteme (z. B. ISO 45001).
 
 Die Website verlinkt seriös auf offizielle Quellen (BAuA, DGUV, BMAS, Gesetzestexte) und vernetzt Blog, FAQ, Glossar, Checklisten und Leistungsseiten inhaltlich miteinander.
 
@@ -20,6 +20,7 @@ Presse (Auswahl): General-Anzeiger Bonn – Ratgeber „Bonn: Das raten Experten
 - Beratung buchen: https://arbeitssicherheit.nrw/beratung-buchen
 - Wissen: https://arbeitssicherheit.nrw/wissen
 - FAQ: https://arbeitssicherheit.nrw/faq
+- Blog: https://arbeitssicherheit.nrw/blog
 - Glossar: https://arbeitssicherheit.nrw/glossar
 
 ## Technische Hinweise

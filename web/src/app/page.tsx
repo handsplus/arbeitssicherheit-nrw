@@ -13,14 +13,14 @@ import {
 } from "@/components/Icons";
 
 export const metadata = {
-  title: "Arbeitssicherheit NRW – FaSi, Brandschutz, SiGeKo",
+  title: "Arbeitssicherheit Köln | Externe FaSi, Brandschutzbeauftragter & SiGeKo NRW",
   description:
-    "FaSi, Brandschutz und SiGeKo in NRW: Gefährdungsbeurteilung, externe Fachkraft, Baustellen. Für Unternehmen und Bauvorhaben. Köln & NRW – rechtssicher.",
+    "Fachkraft für Arbeitssicherheit & Arbeitsschutz in Köln: externe FaSi, BSB und SiGeKo. Beratung, Gefährdungsbeurteilung, Baustelle. Unverbindlich Termin vereinbaren.",
   alternates: { canonical: SITE.url },
   openGraph: {
-    title: "Arbeitssicherheit NRW | FaSi, Brandschutz, SiGeKo",
+    title: "Arbeitssicherheit Köln | Externe FaSi, Brandschutz & SiGeKo NRW",
     description:
-      "FaSi, Brandschutz, SiGeKo für Unternehmen und Bauprojekte in NRW. Gefährdungsbeurteilung aus einer Hand.",
+      "Externe Fachkraft für Arbeitssicherheit, Brandschutzbeauftragter und SiGeKo – für Betriebe und Bauprojekte in Köln und NRW. Schnelle, klare Beratung.",
     url: SITE.url,
   },
 };
@@ -240,6 +240,44 @@ export default function HomePage() {
               Kontakt aufnehmen
               <IconArrowRight className="w-5 h-5" aria-hidden />
             </Link>
+            <nav
+              className="mt-10 flex flex-wrap justify-center gap-x-5 gap-y-2 border-t border-nrw-grau-200 pt-8 text-sm text-nrw-grau-600"
+              aria-label="Schwerpunkte Arbeitssicherheit Köln und NRW"
+            >
+              <Link href="/leistungen/arbeitssicherheit" className="font-medium hover:text-nrw-gruen">
+                Externe FaSi
+              </Link>
+              <span className="text-nrw-grau-300" aria-hidden>
+                ·
+              </span>
+              <Link href="/leistungen/brandschutz" className="font-medium hover:text-nrw-gruen">
+                Brandschutz Köln
+              </Link>
+              <span className="text-nrw-grau-300" aria-hidden>
+                ·
+              </span>
+              <Link href="/leistungen/sigeko" className="font-medium hover:text-nrw-gruen">
+                SiGeKo NRW
+              </Link>
+              <span className="text-nrw-grau-300" aria-hidden>
+                ·
+              </span>
+              <Link href="/faq" className="font-medium hover:text-nrw-gruen">
+                FAQ
+              </Link>
+              <span className="text-nrw-grau-300" aria-hidden>
+                ·
+              </span>
+              <Link href="/blog" className="font-medium hover:text-nrw-gruen">
+                Blog
+              </Link>
+              <span className="text-nrw-grau-300" aria-hidden>
+                ·
+              </span>
+              <Link href="/beratung-buchen" className="font-medium hover:text-nrw-gruen">
+                Beratung
+              </Link>
+            </nav>
           </div>
         </div>
       </section>

@@ -3,9 +3,9 @@ import { SITE } from "@/lib/constants";
 import { IconArrowRight } from "@/components/Icons";
 
 export const metadata = {
-  title: "Glossar: Arbeitssicherheit, Brandschutz, SiGeKo (FaSi, BSB, GBU, ASiG, DGUV, VEFK)",
+  title: "Glossar: Arbeitssicherheit, Arbeitsschutz, Brandschutz, SiGeKo (FaSi, BSB, ASiG, ArbSchG)",
   description:
-    "Begriffe mit Schwerpunkt Arbeitssicherheit, Brandschutz und SiGeKo kurz erklärt: FaSi, Brandschutzbeauftragter, Gefährdungsbeurteilung, ASiG, DGUV; ergänzend z. B. VEFK.",
+    "Begriffe zu Arbeitssicherheit und Arbeitsschutz: FaSi, externe Fachkraft, Brandschutzbeauftragter, SiGeKo, Gefährdungsbeurteilung, ASiG, ArbSchG, DGUV; ergänzend VEFK und SiGePlan.",
   alternates: { canonical: `${SITE.url}/glossar` },
 };
 
@@ -14,6 +14,11 @@ const BEGRIFFE = [
     begriff: "ASiG",
     titel: "Arbeitssicherheitsgesetz",
     text: "Das Arbeitssicherheitsgesetz verpflichtet Arbeitgeber, Betriebsärzte und Fachkräfte für Arbeitssicherheit in bestimmter Anzahl zu bestellen. Die konkrete Ausgestaltung regelt die DGUV Vorschrift 2.",
+  },
+  {
+    begriff: "ArbSchG",
+    titel: "Arbeitsschutzgesetz (Arbeitsschutz)",
+    text: "Das Arbeitsschutzgesetz ist der übergeordnete Rahmen zum Schutz der Beschäftigten. Es verlangt u. a. die Gefährdungsbeurteilung und wirkt zusammen mit Verordnungen und DGUV-Vorschriften. „Arbeitsschutz“ und „Arbeitssicherheit“ werden umgangssprachlich oft synonym verwendet; fachlich steckt der gesamte Schutz der Beschäftigten dahinter – umgesetzt u. a. mit FaSi und Betriebsarzt.",
   },
   {
     begriff: "BSB",
