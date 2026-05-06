@@ -21,6 +21,7 @@ Presse (Auswahl): General-Anzeiger Bonn – Ratgeber „Bonn: Das raten Experten
 - Wissen: https://arbeitssicherheit.nrw/wissen
 - FAQ: https://arbeitssicherheit.nrw/faq
 - Blog: https://arbeitssicherheit.nrw/blog
+- Checklisten: https://arbeitssicherheit.nrw/checklisten
 - Glossar: https://arbeitssicherheit.nrw/glossar
 
 ## Technische Hinweise

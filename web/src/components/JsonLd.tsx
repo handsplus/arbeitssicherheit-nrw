@@ -40,6 +40,14 @@ export function JsonLd() {
       latitude: GEO.latitude,
       longitude: GEO.longitude,
     },
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: CONTACT.phoneHref.replace("tel:", ""),
+      email: CONTACT.email,
+      contactType: "customer support",
+      areaServed: ["DE", "Nordrhein-Westfalen", "Köln"],
+      availableLanguage: ["German", "de"],
+    },
     knowsAbout: [...SITE.knowsAbout],
     subjectOf: PRESS_MENTIONS.map((p) => ({
       "@type": "NewsArticle",
@@ -88,11 +96,13 @@ export function JsonLd() {
     "@id": `${SITE.url}/#website`,
     url: SITE.url,
     name: SITE.name,
-    alternateName: SITE.name,
+    alternateName: [SITE.name, "Arbeitssicherheit Köln & NRW"],
     description: SITE.description,
     publisher: { "@id": ORGANIZATION_ID },
     inLanguage: "de-DE",
     isAccessibleForFree: true,
+    /** Explizite Startseite für Rich-Results-Kontext */
+    about: { "@id": ORGANIZATION_ID },
   };
 
   return (
