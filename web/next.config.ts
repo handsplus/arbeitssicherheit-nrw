@@ -44,6 +44,32 @@ const legacyRedirects = [
     destination: "/leistungen/arbeitssicherheit",
     permanent: true,
   },
+  {
+    source: "/post/bestellung-der-fachkraft-für-arbeitssicherheit-fasi",
+    destination: "/leistungen/arbeitssicherheit",
+    permanent: true,
+  },
+  {
+    source: "/post/bestellung-der-fachkraft-fuer-arbeitssicherheit-fasi",
+    destination: "/leistungen/arbeitssicherheit",
+    permanent: true,
+  },
+  {
+    source:
+      "/post/beurteilung-der-arbeitsbedingungen-ein-wesentlicher-faktor-fuer-den-erfolg-von-unternehmen",
+    destination: "/blog",
+    permanent: true,
+  },
+  {
+    source: "/post/vorteile-einer-externen-fachkraft-fuer-arbeitssicherheit",
+    destination: "/leistungen/arbeitssicherheit",
+    permanent: true,
+  },
+  {
+    source: "/post/vorteile-einer-externen-fachkraft-für-arbeitssicherheit",
+    destination: "/leistungen/arbeitssicherheit",
+    permanent: true,
+  },
   { source: "/post/:path*", destination: "/blog", permanent: true },
 ] satisfies Awaited<ReturnType<NonNullable<NextConfig["redirects"]>>>;
 
