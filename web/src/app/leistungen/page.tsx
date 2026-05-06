@@ -16,7 +16,7 @@ export const metadata = {
     title: "Leistungen: Arbeitssicherheit, Brandschutz, SiGeKo | Köln & NRW",
     description:
       "Arbeitssicherheit, Brandschutz, SiGeKo zuerst; ergänzend Schulungen, VEFK und Managementsysteme. Partner in Köln und NRW.",
-    url: "https://www.arbeitssicherheit.nrw/leistungen",
+    url: `${SITE.url}/leistungen`,
   },
 };
 

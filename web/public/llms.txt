@@ -1,28 +1,28 @@
 # Arbeitssicherheit.nrw
 
-> Kurzüberblick für KI- und Suchsysteme. Offizielle Website: https://www.arbeitssicherheit.nrw/
+> Kurzüberblick für KI- und Suchsysteme. Offizielle Website: https://arbeitssicherheit.nrw/
 
 Arbeitssicherheit.nrw ist der Fachdienstleister für Arbeitssicherheit, Brandschutz und SiGeKo (Sicherheits- und Gesundheitsschutzkoordination) mit Sitz in Köln. Schwerpunkt: Nordrhein-Westfalen (NRW). Leistungen umfassen unter anderem externe Fachkraft für Arbeitssicherheit (FaSi), Gefährdungsbeurteilungen, Brandschutzbeauftragung, SiGeKo auf Baustellen, Schulungen, Elektrosicherheit (VEFK) und Managementsysteme (z. B. ISO 45001).
 
 Die Website verlinkt seriös auf offizielle Quellen (BAuA, DGUV, BMAS, Gesetzestexte) und vernetzt Blog, FAQ, Glossar, Checklisten und Leistungsseiten inhaltlich miteinander.
 
-Presse (Auswahl): General-Anzeiger Bonn – Ratgeber „Bonn: Das raten Experten im Haushalt zur Brandprävention“ (https://www.general-anzeiger-bonn.de/ga-plus/bonn-das-raten-experten-im-haushalt-zur-brandpraevention_aid-140328087). Über uns: https://www.arbeitssicherheit.nrw/ueber-uns
+Presse (Auswahl): General-Anzeiger Bonn – Ratgeber „Bonn: Das raten Experten im Haushalt zur Brandprävention“ (https://www.general-anzeiger-bonn.de/ga-plus/bonn-das-raten-experten-im-haushalt-zur-brandpraevention_aid-140328087). Über uns: https://arbeitssicherheit.nrw/ueber-uns
 
 ## Wichtige Seiten
 
-- Start: https://www.arbeitssicherheit.nrw/
-- Leistungen: https://www.arbeitssicherheit.nrw/leistungen
-- Arbeitssicherheit: https://www.arbeitssicherheit.nrw/leistungen/arbeitssicherheit
-- Brandschutz: https://www.arbeitssicherheit.nrw/leistungen/brandschutz
-- SiGeKo: https://www.arbeitssicherheit.nrw/leistungen/sigeko
-- Schulungen: https://www.arbeitssicherheit.nrw/leistungen/schulungen
-- Kontakt: https://www.arbeitssicherheit.nrw/kontakt
-- Beratung buchen: https://www.arbeitssicherheit.nrw/beratung-buchen
-- Wissen: https://www.arbeitssicherheit.nrw/wissen
-- FAQ: https://www.arbeitssicherheit.nrw/faq
-- Glossar: https://www.arbeitssicherheit.nrw/glossar
+- Start: https://arbeitssicherheit.nrw/
+- Leistungen: https://arbeitssicherheit.nrw/leistungen
+- Arbeitssicherheit: https://arbeitssicherheit.nrw/leistungen/arbeitssicherheit
+- Brandschutz: https://arbeitssicherheit.nrw/leistungen/brandschutz
+- SiGeKo: https://arbeitssicherheit.nrw/leistungen/sigeko
+- Schulungen: https://arbeitssicherheit.nrw/leistungen/schulungen
+- Kontakt: https://arbeitssicherheit.nrw/kontakt
+- Beratung buchen: https://arbeitssicherheit.nrw/beratung-buchen
+- Wissen: https://arbeitssicherheit.nrw/wissen
+- FAQ: https://arbeitssicherheit.nrw/faq
+- Glossar: https://arbeitssicherheit.nrw/glossar
 
 ## Technische Hinweise
 
-- Sitemap: https://www.arbeitssicherheit.nrw/sitemap.xml
+- Sitemap: https://arbeitssicherheit.nrw/sitemap.xml
 - Sprache: Deutsch (de-DE)
