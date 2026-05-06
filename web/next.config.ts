@@ -45,6 +45,16 @@ const legacyRedirects = [
     permanent: true,
   },
   {
+    source: "/post/bestellung-der-fachkraft-für-arbeitssicherheit-stef-fasi",
+    destination: "/leistungen/arbeitssicherheit",
+    permanent: true,
+  },
+  {
+    source: "/post/bestellung-der-fachkraft-fuer-arbeitssicherheit-stef-fasi",
+    destination: "/leistungen/arbeitssicherheit",
+    permanent: true,
+  },
+  {
     source: "/post/bestellung-der-fachkraft-für-arbeitssicherheit-fasi",
     destination: "/leistungen/arbeitssicherheit",
     permanent: true,
