@@ -1,5 +1,37 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/datenschutzerklärung",
+      "destination": "/datenschutz",
+      "permanent": true
+    },
+    {
+      "source": "/datenschutzerkl%C3%A4rung",
+      "destination": "/datenschutz",
+      "permanent": true
+    },
+    {
+      "source": "/datenschutzerkl%C3%A4rung/",
+      "destination": "/datenschutz",
+      "permanent": true
+    },
+    {
+      "source": "/datenschutzerklärung/",
+      "destination": "/datenschutz",
+      "permanent": true
+    },
+    {
+      "source": "/datenschutzerklaerung",
+      "destination": "/datenschutz",
+      "permanent": true
+    },
+    {
+      "source": "/datenschutzerklaerung/",
+      "destination": "/datenschutz",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
