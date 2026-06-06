@@ -65,8 +65,15 @@ export default function SchulungenPage() {
         </ul>
         <h2 className="text-2xl font-bold">Formate</h2>
         <p>
-          Wir kommen zu Ihnen ins Unternehmen oder führen Schulungen online durch. Termine
-          individuell.{" "}
+          Für allgemeingültige Einstiegs-Unterweisungen im Browser (Grundunterweisung, Brandschutz, Gabelstapler u.&nbsp;a.) – kostenlos und ohne Anmeldung:{" "}
+          <a
+            href="https://arbeitsschutz-nrw.online/themen"
+            className="font-semibold text-nrw-gruen hover:underline"
+            rel="noopener noreferrer"
+          >
+            arbeitsschutz-nrw.online
+          </a>
+          . Für betriebsspezifische Schulungen und Unterweisungen kommen wir zu Ihnen ins Unternehmen oder führen sie online durch. Termine individuell.{" "}
           <Link href="/beratung-buchen" className="font-semibold text-nrw-gruen hover:underline">
             Schulungstermine anfragen
           </Link>
@@ -85,6 +92,11 @@ export default function SchulungenPage() {
       />
       <RelatedOnSite
         links={[
+          {
+            href: "https://arbeitsschutz-nrw.online/themen",
+            label: "Kostenlose Online-Unterweisungen",
+            description: "Grundunterweisung, Brandschutz & mehr – H&S+",
+          },
           { href: "/schulungskalender", label: "Schulungskalender", description: "Planung & Formate" },
           { href: "/leistungen/arbeitssicherheit", label: "Arbeitssicherheit", description: "FaSi & Unterweisungen" },
           { href: "/leistungen/brandschutz", label: "Brandschutz", description: "Brandschutzhelfer u. a." },
