@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { CONTACT, LEISTUNGEN, SITE } from "@/lib/constants";
-import { BLOG_POSTS } from "@/data/blog-posts";
+import { getBlogPostsSorted } from "@/data/blog-posts";
 import { ServiceCard } from "@/components/ServiceCard";
 import { ContactForm } from "@/components/ContactForm";
 import { PrimaryCtaLink } from "@/components/PrimaryCtaLink";
@@ -205,7 +205,7 @@ export default function HomePage() {
             </Link>
           </div>
           <ul className="mt-8 grid gap-4 md:grid-cols-3">
-            {BLOG_POSTS.slice(0, 3).map((post) => (
+            {getBlogPostsSorted().slice(0, 3).map((post) => (
               <li key={post.slug}>
                 <Link
                   href={`/blog/${post.slug}`}

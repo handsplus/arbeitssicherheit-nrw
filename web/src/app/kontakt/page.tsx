@@ -2,12 +2,17 @@ import Link from "next/link";
 import { CONTACT, SITE } from "@/lib/constants";
 import { ContactForm } from "@/components/ContactForm";
 import { IconPhone, IconMail, IconLocation, IconWhatsApp, IconLinkedIn } from "@/components/Icons";
+import { pageSocialMeta } from "@/lib/page-metadata";
+
+const title = "Kontakt – FaSi, Brandschutz & SiGeKo Köln";
+const description =
+  "Kontakt für Arbeitssicherheit in Köln und NRW: FaSi, BSB und SiGeKo – wir melden uns zeitnah.";
 
 export const metadata = {
-  title: "Arbeitssicherheit Beratung Köln | Kontakt FaSi, Brandschutz & SiGeKo",
-  description:
-    "Kontakt für Arbeitssicherheit, Arbeitsschutz und Brandschutz in Köln und NRW. Beratung zu FaSi, BSB und SiGeKo – wir melden uns zeitnah.",
+  title,
+  description,
   alternates: { canonical: `${SITE.url}/kontakt` },
+  ...pageSocialMeta({ path: "/kontakt", title, description }),
 };
 
 export default function KontaktPage() {

@@ -1,9 +1,15 @@
+import Link from "next/link";
 import { CONTACT, SITE } from "@/lib/constants";
+import { pageSocialMeta } from "@/lib/page-metadata";
+
+const title = "Impressum";
+const description = "Impressum und rechtliche Angaben von Arbeitssicherheit.nrw.";
 
 export const metadata = {
-  title: "Impressum",
-  description: "Impressum und rechtliche Angaben von Arbeitssicherheit.nrw.",
+  title,
+  description,
   alternates: { canonical: `${SITE.url}/impressum` },
+  ...pageSocialMeta({ path: "/impressum", title, description }),
 };
 
 export default function ImpressumPage() {
@@ -16,6 +22,8 @@ export default function ImpressumPage() {
         </p>
         <p className="mt-4">
           {CONTACT.company}
+          <br />
+          Inhaber: Amin Korkae
           <br />
           {CONTACT.address}
           <br />
@@ -42,6 +50,25 @@ export default function ImpressumPage() {
           <br />
           {CONTACT.zip} {CONTACT.city}
         </p>
+        <p className="mt-6">
+          <strong>EU-Streitschlichtung</strong>
+          <br />
+          Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{" "}
+          <a
+            href="https://ec.europa.eu/consumers/odr/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://ec.europa.eu/consumers/odr/
+          </a>
+          . Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer
+          Verbraucherschlichtungsstelle teilzunehmen.
+        </p>
+        <p className="mt-6">
+          <Link href="/datenschutz" className="font-medium text-nrw-gruen hover:underline">
+            Datenschutzerklärung
+          </Link>
+        </p>
         <h2 className="mt-10 text-lg font-semibold text-nrw-grau-900">Haftungsausschluss</h2>
         <h3 className="mt-4 font-medium text-nrw-grau-800">Haftung für Inhalte</h3>
         <p>
@@ -50,9 +77,8 @@ export default function ImpressumPage() {
         </p>
         <h3 className="mt-4 font-medium text-nrw-grau-800">Haftung für Links</h3>
         <p>
-          Unser Angebot enthält Links zu externen Webseiten. Auf die Inhalte dieser verlinkten
-          Seiten haben wir keinen Einfluss; für die Inhalte ist der jeweilige Anbieter
-          verantwortlich.
+          Unser Angebot enthält Links zu externen Webseiten. Auf die Inhalte dieser verlinkten Seiten
+          haben wir keinen Einfluss; für die Inhalte ist der jeweilige Anbieter verantwortlich.
         </p>
       </div>
     </div>

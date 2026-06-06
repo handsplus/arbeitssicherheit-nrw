@@ -1,0 +1,14 @@
+# Blog: unterweisung-arbeitssicherheit-pflichtinhalte
+# PDF: 09_ArbSchG.pdf
+# Pfad: C:\Users\akork\OneDrive\H&S+\4. Gesetze-Vorschriften\02_Empfohlen_Arbeitsschutz_Personal\09_ArbSchG.pdf
+# Suche: § 12 Unterweisung
+# Zeichen: 758Arbeitsbedingungen und der getroffenen Schutzmaßnahmen ist nicht mit einem Gesundheitsschaden zu rechnen.
+§ 12 Unterweisung
+(1) Der Arbeitgeber hat die Beschäftigten über Sicherheit und Gesundheitsschutz bei der Arbeit während
+ihrer Arbeitszeit ausreichend und angemessen zu unterweisen. Die Unterweisung umfaßt Anweisungen und
+Erläuterungen, die eigens auf den Arbeitsplatz oder den Aufgabenbereich der Beschäftigten ausgerichtet
+sind. Die Unterweisung muß bei der Einstellung, bei Veränderungen im Aufgabenbereich, der Einführung
+neuer Arbeitsmittel oder einer neuen Technologie vor Aufnahme der Tätigkeit der Beschäftigten erfolgen. Die
+Unterweisung muß an die Gefährdungsentwicklung angepaßt sein und erforderlichenfalls regelmäßig wiederholt
+werden.
+---

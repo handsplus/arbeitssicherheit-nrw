@@ -2,12 +2,17 @@ import Link from "next/link";
 import { BeratungForm } from "@/components/BeratungForm";
 import { CONTACT, SITE } from "@/lib/constants";
 import { IconPhone, IconMail } from "@/components/Icons";
+import { pageSocialMeta } from "@/lib/page-metadata";
+
+const title = "Kostenlose Erstberatung – Köln & NRW";
+const description =
+  "Unverbindliche Erstberatung zu FaSi, Brandschutz und SiGeKo – online Termin anfragen für Köln und NRW.";
 
 export const metadata = {
-  title: "Arbeitssicherheit Beratung Köln – kostenlose Erstberatung | FaSi, BSB, SiGeKo",
-  description:
-    "Unverbindliche kostenlose Erstberatung: Arbeitssicherheit, Arbeitsschutz, Brandschutz und SiGeKo. Termin für Köln und NRW online anfragen.",
+  title,
+  description,
   alternates: { canonical: `${SITE.url}/beratung-buchen` },
+  ...pageSocialMeta({ path: "/beratung-buchen", title, description }),
 };
 
 export default function BeratungBuchenPage() {

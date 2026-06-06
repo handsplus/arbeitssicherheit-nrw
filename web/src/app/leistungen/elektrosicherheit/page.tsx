@@ -5,12 +5,17 @@ import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { OfficialSourcesBlock } from "@/components/content/OfficialSourcesBlock";
 import { RelatedOnSite } from "@/components/content/RelatedOnSite";
 import { OFFICIAL_ELEKTRO, OFFICIAL_GENERAL } from "@/lib/officialSources";
+import { pageSocialMeta } from "@/lib/page-metadata";
+
+const title = "Elektrosicherheit & VEFK – Köln & NRW";
+const description =
+  "Externe VEFK und Elektroprüfungen nach DIN VDE 1000-10 und DGUV V3 in Köln und NRW.";
 
 export const metadata = {
-  title: "Elektrosicherheit & VEFK – Ergänzung zu Arbeitssicherheit | Köln & NRW",
-  description:
-    "Ergänzend zu Arbeitssicherheit und Brandschutz: externe verantwortliche Elektrofachkraft (VEFK) und Elektroprüfungen nach DIN VDE 1000-10 und DGUV Vorschrift 3 in Köln und NRW.",
+  title,
+  description,
   alternates: { canonical: `${SITE.url}/leistungen/elektrosicherheit` },
+  ...pageSocialMeta({ path: "/leistungen/elektrosicherheit", title, description }),
 };
 
 export default function ElektrosicherheitPage() {

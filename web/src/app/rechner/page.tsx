@@ -2,12 +2,17 @@ import Link from "next/link";
 import { SITE } from "@/lib/constants";
 import { IconArrowRight } from "@/components/Icons";
 import { BrandschutzhelferRechner } from "@/components/BrandschutzhelferRechner";
+import { pageSocialMeta } from "@/lib/page-metadata";
+
+const title = "Rechner – Brandschutzhelfer & SiGeKo-Honorar";
+const description =
+  "Kostenlose Orientierung: Brandschutzhelfer-Rechner nach ASR A2.2 und SiGeKo-Honorar für Köln und NRW.";
 
 export const metadata = {
-  title: "Rechner: Arbeitssicherheit & Betrieb – Brandschutzhelfer & SiGeKo-Honorar",
-  description:
-    "Orientierungshilfen im Kontext Arbeitssicherheit: Brandschutzhelfer-Rechner nach ASR A2.2 und SiGeKo-Honorar. Kostenlos für Köln und NRW.",
+  title,
+  description,
   alternates: { canonical: `${SITE.url}/rechner` },
+  ...pageSocialMeta({ path: "/rechner", title, description }),
 };
 
 export default function RechnerPage() {

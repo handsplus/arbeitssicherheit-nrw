@@ -16,6 +16,15 @@ export const metadata = {
     description:
       "FaSi & Arbeitsschutz: Gefährdungsbeurteilung, Begehungen, Unterweisungen. Externe Betreuung für Unternehmen in Köln und NRW.",
     url: `${SITE.url}/leistungen/arbeitssicherheit`,
+    locale: "de_DE",
+    type: "website",
+    siteName: SITE.name,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Externe FaSi Köln | Arbeitsschutz NRW",
+    description:
+      "FaSi & Arbeitsschutz: Gefährdungsbeurteilung, Begehungen, Unterweisungen in Köln und NRW.",
   },
 };
 

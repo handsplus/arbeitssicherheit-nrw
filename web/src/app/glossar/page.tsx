@@ -1,12 +1,17 @@
 import Link from "next/link";
 import { SITE } from "@/lib/constants";
 import { IconArrowRight } from "@/components/Icons";
+import { pageSocialMeta } from "@/lib/page-metadata";
+
+const title = "Glossar – FaSi, BSB, SiGeKo & ArbSchG";
+const description =
+  "Begriffe zu Arbeitssicherheit: FaSi, Brandschutzbeauftragter, SiGeKo, Gefährdungsbeurteilung, ASiG, ArbSchG und DGUV.";
 
 export const metadata = {
-  title: "Glossar: Arbeitssicherheit, Arbeitsschutz, Brandschutz, SiGeKo (FaSi, BSB, ASiG, ArbSchG)",
-  description:
-    "Begriffe zu Arbeitssicherheit und Arbeitsschutz: FaSi, externe Fachkraft, Brandschutzbeauftragter, SiGeKo, Gefährdungsbeurteilung, ASiG, ArbSchG, DGUV; ergänzend VEFK und SiGePlan.",
+  title,
+  description,
   alternates: { canonical: `${SITE.url}/glossar` },
+  ...pageSocialMeta({ path: "/glossar", title, description }),
 };
 
 const BEGRIFFE = [

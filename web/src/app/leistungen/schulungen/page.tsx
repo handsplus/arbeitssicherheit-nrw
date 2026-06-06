@@ -5,12 +5,17 @@ import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { OfficialSourcesBlock } from "@/components/content/OfficialSourcesBlock";
 import { RelatedOnSite } from "@/components/content/RelatedOnSite";
 import { OFFICIAL_GENERAL } from "@/lib/officialSources";
+import { pageSocialMeta } from "@/lib/page-metadata";
+
+const title = "Schulungen – Arbeitssicherheit & Brandschutz NRW";
+const description =
+  "Schulungen und Unterweisungen zu Arbeitssicherheit, Brandschutz und SiGeKo – online oder vor Ort in Köln und NRW.";
 
 export const metadata = {
-  title: "Schulungen: Arbeitssicherheit, Brandschutz, SiGeKo – Köln & NRW",
-  description:
-    "Schulungen und Unterweisungen zu Arbeitssicherheit, Brandschutz und SiGeKo – individuell, online oder vor Ort in Köln und NRW.",
+  title,
+  description,
   alternates: { canonical: `${SITE.url}/leistungen/schulungen` },
+  ...pageSocialMeta({ path: "/leistungen/schulungen", title, description }),
 };
 
 const SCHULUNGEN_ARBEITSSCHUTZ = [

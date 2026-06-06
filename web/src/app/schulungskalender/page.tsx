@@ -1,11 +1,17 @@
 import Link from "next/link";
 import { SITE } from "@/lib/constants";
 import { IconCalendar, IconArrowRight } from "@/components/Icons";
+import { pageSocialMeta } from "@/lib/page-metadata";
+
+const title = "Schulungstermine – auf Anfrage";
+const description =
+  "Schulungen zu Arbeitssicherheit, Brandschutz und SiGeKo in NRW – individuell, Inhouse oder vor Ort.";
 
 export const metadata = {
-  title: "Schulungstermine – Termine auf Anfrage",
-  description: "Schulungstermine zu Arbeitssicherheit, Brandschutz und SiGeKo in NRW. Individuell und auf Anfrage – Inhouse oder vor Ort.",
+  title,
+  description,
   alternates: { canonical: `${SITE.url}/schulungskalender` },
+  ...pageSocialMeta({ path: "/schulungskalender", title, description }),
 };
 
 export default function SchulungsterminePage() {

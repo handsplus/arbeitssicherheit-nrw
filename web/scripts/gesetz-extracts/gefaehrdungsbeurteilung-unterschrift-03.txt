@@ -1,0 +1,14 @@
+# Blog: gefaehrdungsbeurteilung-unterschrift
+# PDF: 12_GefStoffV.pdf
+# Pfad: C:\Users\akork\OneDrive\H&S+\4. Gesetze-Vorschriften\02_Empfohlen_Arbeitsschutz_Personal\12_GefStoffV.pdf
+# Suche: fachkundigen Personen
+# Zeichen: 644arbeitsmedizinischen Vorsorge als notwendig erweist.
+(11) Die Gefährdungsbeurteilung darf nur von fachkundigen Personen durchgeführt werden. Verfügt der
+Arbeitgeber nicht selbst über die entsprechenden Kenntnisse, so hat er sich fachkundig beraten zu lassen.
+Fachkundig können insbesondere die Fachkraft für Arbeitssicherheit und die Betriebsärztin oder der Betriebsarzt
+sein.
+(12) Der Arbeitgeber hat ein Verzeichnis der im Betrieb verwendeten Gefahrstoffe zu führen. Das Verzeichnis
+muss mindestens folgende Angaben enthalten:
+1. Bezeichnung des Gefahrstoffs,
+2. Einstufung des Gefahrstoffs oder Angaben zu den gefährlichen Eigenschaften,
+---

@@ -88,6 +88,46 @@
       "permanent": true
     },
     {
+      "source": "/brandschutz",
+      "destination": "/leistungen/brandschutz",
+      "permanent": true
+    },
+    {
+      "source": "/brandschutz/",
+      "destination": "/leistungen/brandschutz",
+      "permanent": true
+    },
+    {
+      "source": "/sigeko",
+      "destination": "/leistungen/sigeko",
+      "permanent": true
+    },
+    {
+      "source": "/sigeko/",
+      "destination": "/leistungen/sigeko",
+      "permanent": true
+    },
+    {
+      "source": "/elektrosicherheit",
+      "destination": "/leistungen/elektrosicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/elektrosicherheit/",
+      "destination": "/leistungen/elektrosicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/managementsysteme",
+      "destination": "/leistungen/managementsysteme",
+      "permanent": true
+    },
+    {
+      "source": "/managementsysteme/",
+      "destination": "/leistungen/managementsysteme",
+      "permanent": true
+    },
+    {
       "source": "/post/brandschutz-brandbekaempfung-von-elektrofahrzeugen",
       "destination": "/leistungen/brandschutz",
       "permanent": true
@@ -116,9 +156,62 @@
       "source": "/post/welche-auswirkungen-hat-eine-nicht-erfolgte-bestellung-einer-fachkraft-fuer-arbeitssicherheit",
       "destination": "/faq",
       "permanent": true
+    },
+    {
+      "source": "/ueberuns",
+      "destination": "/ueber-uns",
+      "permanent": true
+    },
+    {
+      "source": "/post/bestellung-der-fachkraft-für-arbeitssicherheit-sifa-fasi",
+      "destination": "/leistungen/arbeitssicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/post/bestellung-der-fachkraft-fuer-arbeitssicherheit-sifa-fasi",
+      "destination": "/leistungen/arbeitssicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/post/bestellung-der-fachkraft-für-arbeitssicherheit-fasi",
+      "destination": "/leistungen/arbeitssicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/post/bestellung-der-fachkraft-fuer-arbeitssicherheit-fasi",
+      "destination": "/leistungen/arbeitssicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/post/beurteilung-der-arbeitsbedingungen-ein-wesentlicher-faktor-fuer-den-erfolg-von-unternehmen",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/post/vorteile-einer-externen-fachkraft-fuer-arbeitssicherheit",
+      "destination": "/leistungen/arbeitssicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/post/vorteile-einer-externen-fachkraft-für-arbeitssicherheit",
+      "destination": "/leistungen/arbeitssicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/post/:path*",
+      "destination": "/blog",
+      "permanent": true
     }
   ],
   "headers": [
+    {
+      "source": "/opengraph-image",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+    },
+    {
+      "source": "/manifest.webmanifest",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+    },
     {
       "source": "/(.*)",
       "headers": [

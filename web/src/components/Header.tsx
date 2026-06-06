@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useCallback, useEffect, useId, useState } from "react";
 import { CONTACT, NAV } from "@/lib/constants";
 import { IconPhone } from "@/components/Icons";
 import { PrimaryCtaLink } from "@/components/PrimaryCtaLink";
@@ -9,6 +9,22 @@ import { PrimaryCtaLink } from "@/components/PrimaryCtaLink";
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const navId = useId();
+
+  const closeDropdown = useCallback(() => setOpenDropdown(null), []);
+
+  useEffect(() => {
+    if (!openDropdown) return;
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") closeDropdown();
+    }
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [openDropdown, closeDropdown]);
+
+  function toggleDropdown(label: string) {
+    setOpenDropdown((prev) => (prev === label ? null : label));
+  }
 
   return (
     <header className="sticky top-0 z-50 border-b border-nrw-grau-200 bg-white/98 backdrop-blur-md">
@@ -37,17 +53,25 @@ export function Header() {
                   className="flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-medium text-nrw-grau-700 hover:bg-nrw-grau-100 hover:text-nrw-gruen"
                   aria-expanded={openDropdown === item.label}
                   aria-haspopup="true"
+                  aria-controls={`${navId}-${item.label}`}
+                  onClick={() => toggleDropdown(item.label)}
                 >
                   {item.label}
-                  <span className="text-nrw-grau-400" aria-hidden>▾</span>
+                  <span className="text-nrw-grau-400" aria-hidden>
+                    ▾
+                  </span>
                 </button>
                 {openDropdown === item.label && (
-                  <ul className="absolute left-0 top-full mt-1 w-52 rounded-xl border border-nrw-grau-200 bg-white py-2 shadow-xl">
+                  <ul
+                    id={`${navId}-${item.label}`}
+                    className="absolute left-0 top-full mt-1 min-w-[13rem] rounded-xl border border-nrw-grau-200 bg-white py-2 shadow-xl"
+                  >
                     {item.children.map((child) => (
                       <li key={child.href}>
                         <Link
                           href={child.href}
                           className="block px-4 py-2.5 text-sm text-nrw-grau-700 hover:bg-nrw-gruen-hell hover:text-nrw-gruen-hover"
+                          onClick={closeDropdown}
                         >
                           {child.label}
                         </Link>
@@ -88,13 +112,17 @@ export function Header() {
           type="button"
           className="rounded-lg p-2 text-nrw-grau-600 hover:bg-nrw-grau-100 md:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Menü öffnen"
+          aria-label={mobileOpen ? "Menü schließen" : "Menü öffnen"}
           aria-expanded={mobileOpen}
         >
           {mobileOpen ? (
-            <span className="text-xl font-bold" aria-hidden>×</span>
+            <span className="text-xl font-bold" aria-hidden>
+              ×
+            </span>
           ) : (
-            <span className="text-xl" aria-hidden>☰</span>
+            <span className="text-xl" aria-hidden>
+              ☰
+            </span>
           )}
         </button>
       </div>
@@ -103,10 +131,10 @@ export function Header() {
         <div className="border-t border-nrw-grau-200 bg-white px-4 py-6 md:hidden">
           <ul className="space-y-1">
             {NAV.map((item) => (
-              <li key={item.href}>
+              <li key={item.label}>
                 <Link
                   href={item.href}
-                  className="block rounded-lg py-3 px-3 font-medium text-nrw-grau-800"
+                  className="block rounded-lg px-3 py-3 font-medium text-nrw-grau-800"
                   onClick={() => setMobileOpen(false)}
                 >
                   {item.label}

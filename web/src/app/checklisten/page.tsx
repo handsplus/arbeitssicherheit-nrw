@@ -27,22 +27,13 @@ const SIGEKO = [
   "Koordinierungsphase eingehalten?",
 ];
 
-function ChecklistSection({
-  title,
-  items,
-  onToggle,
-}: {
-  title: string;
-  items: string[];
-  onToggle: (index: number) => void;
-}) {
+function ChecklistSection({ title, items }: { title: string; items: string[] }) {
   const [state, setState] = useState<boolean[]>(items.map(() => false));
 
   const toggle = (index: number) => {
     const next = [...state];
     next[index] = !next[index];
     setState(next);
-    onToggle(index);
   };
 
   const done = state.filter(Boolean).length;
@@ -63,7 +54,8 @@ function ChecklistSection({
               className={`mt-0.5 h-6 w-6 shrink-0 rounded-md border-2 ${
                 state[i] ? "border-nrw-gruen bg-nrw-gruen text-white" : "border-nrw-grau-200"
               }`}
-              aria-label={state[i] ? "Als erledigt markieren" : "Als offen markieren"}
+              aria-label={state[i] ? "Als offen markieren" : "Als erledigt markieren"}
+              aria-pressed={state[i]}
             >
               {state[i] ? "✓" : ""}
             </button>
@@ -78,8 +70,6 @@ function ChecklistSection({
 }
 
 export default function ChecklistenPage() {
-  const [toggleLog, setToggleLog] = useState<string>("");
-
   return (
     <div className="mx-auto max-w-4xl px-4 py-16 md:py-24">
       <p className="text-sm font-semibold uppercase tracking-widest text-nrw-gruen">Checklisten</p>
@@ -88,21 +78,9 @@ export default function ChecklistenPage() {
         Erste Einschätzung für Ihren Betrieb – keine Fachberatung. Wir unterstützen Sie gerne bei der vollständigen Umsetzung.
       </p>
       <div className="mt-14 space-y-10">
-        <ChecklistSection
-          title="Arbeitssicherheit / Gefährdungsbeurteilung"
-          items={GEFAHREN}
-          onToggle={() => setToggleLog("a")}
-        />
-        <ChecklistSection
-          title="Brandschutz"
-          items={BRANDSCHUTZ}
-          onToggle={() => setToggleLog("b")}
-        />
-        <ChecklistSection
-          title="SiGeKo (Baustelle)"
-          items={SIGEKO}
-          onToggle={() => setToggleLog("c")}
-        />
+        <ChecklistSection title="Arbeitssicherheit / Gefährdungsbeurteilung" items={GEFAHREN} />
+        <ChecklistSection title="Brandschutz" items={BRANDSCHUTZ} />
+        <ChecklistSection title="SiGeKo (Baustelle)" items={SIGEKO} />
       </div>
       <div className="mt-14 rounded-2xl border border-nrw-gruen-hell bg-nrw-gruen-hell p-8">
         <h2 className="text-lg font-bold text-nrw-grau-900">Professionelle Unterstützung</h2>

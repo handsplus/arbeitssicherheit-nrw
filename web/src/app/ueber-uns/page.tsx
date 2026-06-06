@@ -1,11 +1,16 @@
 import Link from "next/link";
 import { CONTACT, LEISTUNGEN, PRESS_MENTIONS, SITE } from "@/lib/constants";
+import { pageSocialMeta } from "@/lib/page-metadata";
+
+const title = "Über uns – Arbeitssicherheit in NRW";
+const description =
+  "Arbeitssicherheit.nrw: FaSi, Brandschutz und SiGeKo in Köln und NRW. Presse: General-Anzeiger Bonn.";
 
 export const metadata = {
-  title: "Über uns – Ihr Partner für Arbeitssicherheit in NRW",
-  description:
-    "Arbeitssicherheit.nrw: Partner mit Schwerpunkt Arbeitssicherheit, Brandschutz und SiGeKo in Köln und NRW. Presse: General-Anzeiger Bonn (Brandprävention).",
+  title,
+  description,
   alternates: { canonical: `${SITE.url}/ueber-uns` },
+  ...pageSocialMeta({ path: "/ueber-uns", title, description }),
 };
 
 export default function UeberUnsPage() {

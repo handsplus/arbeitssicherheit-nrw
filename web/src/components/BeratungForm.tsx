@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { FormHoneypot } from "@/components/FormHoneypot";
+import { FormPrivacyNotice } from "@/components/FormPrivacyNotice";
 
 const THEMEN = [
   "Arbeitssicherheit",
@@ -20,7 +22,7 @@ export function BeratungForm() {
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("sending");
-    const form = e.target as HTMLFormElement;
+    const form = e.currentTarget;
     const body = {
       thema: (form.elements.namedItem("thema") as HTMLSelectElement).value,
       vorname: (form.elements.namedItem("vorname") as HTMLInputElement).value,
@@ -29,6 +31,7 @@ export function BeratungForm() {
       email: (form.elements.namedItem("email") as HTMLInputElement).value,
       telefon: (form.elements.namedItem("telefon") as HTMLInputElement).value,
       nachricht: (form.elements.namedItem("nachricht") as HTMLTextAreaElement).value,
+      website: (form.elements.namedItem("website") as HTMLInputElement).value,
     };
     const url = FORMSPREE_FORM_ID
       ? `https://formspree.io/f/${FORMSPREE_FORM_ID}`
@@ -58,17 +61,13 @@ export function BeratungForm() {
   const labelClass = "mb-1.5 block text-sm font-medium text-nrw-grau-800";
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form onSubmit={handleSubmit} className="relative space-y-5">
+      <FormHoneypot />
       <div>
         <label htmlFor="thema" className={labelClass}>
           Thema / Anliegen
         </label>
-        <select
-          id="thema"
-          name="thema"
-          required
-          className={inputClass}
-        >
+        <select id="thema" name="thema" required className={inputClass}>
           <option value="">Bitte wählen</option>
           {THEMEN.map((t) => (
             <option key={t} value={t}>
@@ -79,49 +78,72 @@ export function BeratungForm() {
       </div>
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
-          <label htmlFor="vorname" className={labelClass}>Vorname</label>
-          <input id="vorname" name="vorname" type="text" required className={inputClass} />
+          <label htmlFor="vorname" className={labelClass}>
+            Vorname
+          </label>
+          <input id="vorname" name="vorname" type="text" required maxLength={80} className={inputClass} />
         </div>
         <div>
-          <label htmlFor="nachname" className={labelClass}>Nachname</label>
-          <input id="nachname" name="nachname" type="text" required className={inputClass} />
+          <label htmlFor="nachname" className={labelClass}>
+            Nachname
+          </label>
+          <input id="nachname" name="nachname" type="text" required maxLength={80} className={inputClass} />
         </div>
       </div>
       <div>
-        <label htmlFor="firma" className={labelClass}>Firma (optional)</label>
-        <input id="firma" name="firma" type="text" className={inputClass} />
+        <label htmlFor="firma" className={labelClass}>
+          Firma (optional)
+        </label>
+        <input id="firma" name="firma" type="text" maxLength={120} className={inputClass} />
       </div>
       <div>
-        <label htmlFor="email" className={labelClass}>E-Mail</label>
-        <input id="email" name="email" type="email" required className={inputClass} />
+        <label htmlFor="email" className={labelClass}>
+          E-Mail
+        </label>
+        <input id="email" name="email" type="email" required maxLength={254} className={inputClass} />
       </div>
       <div>
-        <label htmlFor="telefon" className={labelClass}>Telefon</label>
-        <input id="telefon" name="telefon" type="tel" className={inputClass} />
+        <label htmlFor="telefon" className={labelClass}>
+          Telefon
+        </label>
+        <input id="telefon" name="telefon" type="tel" maxLength={40} className={inputClass} />
       </div>
       <div>
-        <label htmlFor="nachricht" className={labelClass}>Kurze Beschreibung / Wunschtermin</label>
+        <label htmlFor="nachricht" className={labelClass}>
+          Kurze Beschreibung / Wunschtermin
+        </label>
         <textarea
           id="nachricht"
           name="nachricht"
           rows={3}
+          maxLength={3000}
           className={inputClass}
           placeholder="z.B. gewünschter Zeitraum für Rückruf"
         />
       </div>
       {status === "success" && (
-        <p className="rounded-xl bg-nrw-gruen-hell p-4 text-sm font-medium text-nrw-gruen-hover">
+        <p
+          role="status"
+          aria-live="polite"
+          className="rounded-xl bg-nrw-gruen-hell p-4 text-sm font-medium text-nrw-gruen-hover"
+        >
           Vielen Dank! Wir melden uns zeitnah bei Ihnen.
         </p>
       )}
       {status === "error" && (
-        <p className="rounded-xl bg-nrw-rot-hell p-4 text-sm font-medium text-nrw-rot">
+        <p
+          role="alert"
+          aria-live="assertive"
+          className="rounded-xl bg-nrw-rot-hell p-4 text-sm font-medium text-nrw-rot"
+        >
           Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder rufen Sie uns an.
         </p>
       )}
+      <FormPrivacyNotice />
       <button
         type="submit"
         disabled={status === "sending"}
+        aria-busy={status === "sending"}
         className="w-full rounded-full bg-nrw-rot px-6 py-4 font-semibold text-white hover:bg-nrw-rot-hover disabled:opacity-70 sm:w-auto"
       >
         {status === "sending" ? "Wird gesendet…" : "Kostenlose Erstberatung anfragen"}

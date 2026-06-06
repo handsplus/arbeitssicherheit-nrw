@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { FormHoneypot } from "@/components/FormHoneypot";
+import { FormPrivacyNotice } from "@/components/FormPrivacyNotice";
 
 const FORMSPREE_FORM_ID = (process.env.NEXT_PUBLIC_FORMSPREE_KONTAKT_ID ?? "").trim();
 
@@ -16,6 +18,7 @@ export function ContactForm() {
       nachname: (form.elements.namedItem("nachname") as HTMLInputElement).value,
       email: (form.elements.namedItem("email") as HTMLInputElement).value,
       mitteilung: (form.elements.namedItem("mitteilung") as HTMLTextAreaElement).value,
+      website: (form.elements.namedItem("website") as HTMLInputElement).value,
     };
     const url = FORMSPREE_FORM_ID
       ? `https://formspree.io/f/${FORMSPREE_FORM_ID}`
@@ -45,7 +48,8 @@ export function ContactForm() {
   const labelClass = "mb-1.5 block text-sm font-medium text-nrw-grau-800";
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form onSubmit={handleSubmit} className="relative space-y-5">
+      <FormHoneypot />
       <h3 className="text-lg font-bold text-nrw-grau-900">Nachricht senden</h3>
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
@@ -57,6 +61,7 @@ export function ContactForm() {
             name="vorname"
             type="text"
             required
+            maxLength={80}
             className={inputClass}
             placeholder="Max"
           />
@@ -70,6 +75,7 @@ export function ContactForm() {
             name="nachname"
             type="text"
             required
+            maxLength={80}
             className={inputClass}
             placeholder="Mustermann"
           />
@@ -84,6 +90,7 @@ export function ContactForm() {
           name="email"
           type="email"
           required
+          maxLength={254}
           className={inputClass}
           placeholder="ihre@email.de"
         />
@@ -97,6 +104,7 @@ export function ContactForm() {
           name="mitteilung"
           rows={4}
           required
+          maxLength={5000}
           className={inputClass}
           placeholder="Wie können wir Sie unterstützen?"
         />
@@ -119,6 +127,7 @@ export function ContactForm() {
           Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder rufen Sie uns an.
         </p>
       )}
+      <FormPrivacyNotice />
       <button
         type="submit"
         disabled={status === "sending"}

@@ -4,13 +4,18 @@ import { OfficialSourcesBlock } from "@/components/content/OfficialSourcesBlock"
 import { RelatedOnSite } from "@/components/content/RelatedOnSite";
 import { OFFICIAL_GENERAL, OFFICIAL_SIGEKO } from "@/lib/officialSources";
 import { SITE } from "@/lib/constants";
-import { BLOG_POSTS } from "@/data/blog-posts";
+import { getBlogPostsSorted } from "@/data/blog-posts";
+import { pageSocialMeta } from "@/lib/page-metadata";
+
+const title = "Blog – Arbeitssicherheit, FaSi & SiGeKo NRW";
+const description =
+  "Praxisartikel zu Arbeitssicherheit in Köln und NRW: FaSi, BSB, SiGeKo, Gefährdungsbeurteilung und Unterweisung.";
 
 export const metadata = {
-  title: "Blog: Arbeitssicherheit Köln, externe FaSi, Brandschutzbeauftragter & SiGeKo NRW",
-  description:
-    "Praxisartikel zu Arbeitssicherheit und Arbeitsschutz in Köln und NRW: externe Fachkraft für Arbeitssicherheit (FaSi), Brandschutzbeauftragter (BSB), SiGeKo auf der Baustelle, Gefährdungsbeurteilung und Unterweisung. Mit Links zu FAQ, Leistungen und Behördenquellen.",
+  title,
+  description,
   alternates: { canonical: `${SITE.url}/blog` },
+  ...pageSocialMeta({ path: "/blog", title, description }),
 };
 
 export default function BlogPage() {
@@ -45,7 +50,7 @@ export default function BlogPage() {
 
       <h2 className="mt-14 text-2xl font-bold text-nrw-grau-900">Alle Artikel</h2>
       <ul className="mt-8 grid gap-4 sm:grid-cols-2">
-        {BLOG_POSTS.map((post) => (
+        {getBlogPostsSorted().map((post) => (
           <li key={post.slug}>
             <Link
               href={`/blog/${post.slug}`}

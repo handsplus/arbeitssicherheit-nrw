@@ -1,0 +1,113 @@
+# ASR-A3-5.pdf
+# Quelle: C:\Users\akork\OneDrive\H&S+\4. Gesetze-Vorschriften\07_ASR_Alle\ASR-A3-5.pdf
+# Seiten: 4-6
+# Zeichen: 5912- inoffizieller Text - maßgeblich ist der im GMBl bekanntgemachte ASR-Text -
+- 4 -
+- Ausschuss für Arbeitsstätten – ASTA-Geschäftsführung – BAuA – www.baua.de -
+4.2 Lufttemperaturen in Räumen
+(1) In Arbeitsräumen muss die Lufttemperatur in Abhängigkeit von der Arbeits-
+schwere und Körperhaltung mindestens den Werten in Tabelle 1 entsprechen, wobei
+diese Lufttemperatur während der gesamten Nutzungsdauer zu gewährleisten ist.
+(2) Werden die Mindestwerte nach Tabelle 1 in Arbeitsräumen auch bei
+Ausschöpfung der technischen Möglichkeiten nicht erreicht, ist der Schutz gegen zu
+niedrige Temperaturen in folgender Rangfolge durch zusätzliche
+- arbeitsplatzbezogene technische Maßnahmen (z. B. Wärmestrahlungshei-
+zung, Heizmatten),
+- organisatorische Maßnahmen (z. B. Aufwärmzeiten) oder
+- personenbezogene Maßnahmen (z. B. geeignete Kleidung)
+sicher zu stellen.
+Tabelle 1: Mindestwerte der Lufttemperatur in Arbeitsräumen
+Überwiegende Körperhaltung Arbeitsschwere
+leicht mittel schwer
+Sitzen +20 °C +19 °C -
+Stehen, Gehen +19 °C +17 °C +12 °C
+Üblicherweise reichen für die Klassifizierung der Arbeitsschwere die Angaben aus
+Tabelle 2 aus.
+Tabelle 2: Arbeitsschwere
+Arbeitsschwere Beispiele
+leicht leichte Hand-/Armarbeit bei ruhigem Sitzen bzw. Stehen
+verbunden mit gelegentlichem Gehen
+mittel mittelschwere Hand-/Arm- oder Beinarbeit im Sitzen, Gehen
+oder Stehen
+schwer schwere Hand-/Arm-, Bein- und Rumpfarbeit im Gehen oder
+Stehen
+(3) Die Lufttemperatur in Arbeitsräumen und den in Absatz 4 genannten Räumen
+soll +26 °C nicht überschreiten. Bei Außenlufttemperaturen über +26 °C gilt
+Punkt 4.4.
+
+-- 4 of 8 --
+
+- inoffizieller Text - maßgeblich ist der im GMBl bekanntgemachte ASR-Text -
+- 5 -
+- Ausschuss für Arbeitsstätten – ASTA-Geschäftsführung – BAuA – www.baua.de -
+(4) In Pausen-, Bereitschafts-, Sanitär-, Kantinen- und Erste-Hilfe-Räumen muss
+während der Nutzungsdauer eine Lufttemperatur von mindestens +21 °C herrschen;
+in Toilettenräumen darf die Lufttemperatur durch Lüftungsvorgänge, die durch die
+Benutzer ausgelöst werden, kurzzeitig unterschritten werden.
+(5) In stationären Toilettenanlagen, die für Beschäftigte bei Arbeiten im Freien
+oder für gelegentlich genutzte Arbeitsstätten eingerichtet werden, muss während der
+Nutzungsdauer eine Lufttemperatur von +21 °C erreicht werden können.
+(6) In Waschräumen, in denen Duschen installiert sind, soll die Lufttemperatur
+während der Nutzungsdauer mindestens +24 °C betragen.
+4.3 Übermäßige Sonneneinstrahlung
+(1) Fenster, Oberlichter und Glaswände, die der Tageslichtversorgung nach
+ASR A3.4 „Beleuchtung“ dienen, sind so zu gestalten, dass eine ausreichende
+Tageslichtversorgung gewährleistet ist und gleichzeitig störende Blendung und
+übermäßige Erwärmung vermieden werden.
+(2) Führt die Sonneneinstrahlung durch Fenster, Oberlichter und Glaswände zu
+einer Erhöhung der Raumtemperatur über +26° C, so sind diese Bauteile mit geeig-
+neten Sonnenschutzsystemen auszurüsten. Störende direkte Sonneneinstrahlung
+auf den Arbeitsplatz ist zu vermeiden. Anforderungen an einen wirksamen
+Blendschutz an Fenstern, Oberlichtern und Glaswänden enthält die ASR A3.4
+„Beleuchtung“.
+(3) Beispiele für gestalterische Maßnahmen für Sonnenschutzsysteme enthält
+Tabelle 3. Dabei sind die Ausrichtung der Arbeitsräume und die jeweiligen Fenster-
+flächenanteile zu beachten. Außerdem können z. B. Vordächer, Balkone,
+feststehende Lamellen oder Bepflanzungen einen wirkungsvollen Sonnenschutz
+bieten.
+Tabelle 3: Gestaltungsbeispiele für Sonnenschutzsysteme
+Gestaltungsbeispiele für Sonnenschutzsysteme
+a) Sonnenschutzvorrichtungen, die das Fenster von außen beschatten
+(z. B. Jalousien oder hinterlüftete Markisen)
+b) im Zwischenraum der Verglasung angeordnete reflektierende Vorrichtungen
+c) innenliegende hochreflektierende oder helle Sonnenschutzvorrichtungen
+d) Sonnenschutzverglasungen (innerhalb eines Sonnenschutzsystems, Blend-
+schutz und Lichtfarbe sind zu beachten)
+
+-- 5 of 8 --
+
+- inoffizieller Text - maßgeblich ist der im GMBl bekanntgemachte ASR-Text -
+- 6 -
+- Ausschuss für Arbeitsstätten – ASTA-Geschäftsführung – BAuA – www.baua.de -
+4.4 Arbeitsräume bei einer Außenlufttemperatur über +26 °C
+(1) Wenn die Außenlufttemperatur über +26 °C beträgt und unter der
+Voraussetzung, dass geeignete Sonnenschutzmaßnahmen nach Punkt 4.3 verwen-
+det werden, sollen beim Überschreiten einer Lufttemperatur im Raum von +26 °C
+zusätzliche Maßnahmen, z. B. nach Tabelle 4, ergriffen werden. In Einzelfällen kann
+das Arbeiten bei über +26 °C zu einer Gesundheitsgefährdung führen, wenn z. B.:
+- schwere körperliche Arbeit zu verrichten ist,
+- besondere Arbeits- oder Schutzbekleidung getragen werden muss, die die
+Wärmeabgabe stark behindert oder
+- hinsichtlich erhöhter Lufttemperatur gesundheitlich Vorbelastete und beson-
+ders schutzbedürftige Beschäftigte (z. B. Jugendliche, Ältere, Schwangere,
+stillende Mütter) im Raum tätig sind.
+In solchen Fällen ist über weitere Maßnahmen anhand einer angepassten Gefähr-
+dungsbeurteilung zu entscheiden.
+(2) Bei Überschreitung der Lufttemperatur im Raum von +30 °C müssen wirksame
+Maßnahmen gemäß Gefährdungsbeurteilung (siehe Tabelle 4) ergriffen werden,
+welche die Beanspruchung der Beschäftigten reduzieren. Dabei gehen technische
+und organisatorische gegenüber personenbezogenen Maßnahmen vor.
+Tabelle 4: Beispielhafte Maßnahmen
+Beispielhafte Maßnahmen
+a) effektive Steuerung des Sonnenschutzes (z. B. Jalousien auch nach der Ar-
+beitszeit geschlossen halten)
+b) effektive Steuerung der Lüftungseinrichtungen (z. B. Nachtauskühlung)
+c) Reduzierung der inneren thermischen Lasten (z. B. elektrische Geräte nur bei
+Bedarf betreiben)
+d) Lüftung in den frühen Morgenstunden
+e) Nutzung von Gleitzeitregelungen zur Arbeitszeitverlagerung
+f) Lockerung der Bekleidungsregelungen
+g) Festlegung zusätzlicher Entwärmungsphasen
+h) Nutzung von Ventilatoren (z. B. Tisch-, Stand-, Turm- oder Deckenventilatoren)
+
+-- 6 of 8 --

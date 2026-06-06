@@ -5,12 +5,17 @@ import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { OfficialSourcesBlock } from "@/components/content/OfficialSourcesBlock";
 import { RelatedOnSite } from "@/components/content/RelatedOnSite";
 import { OFFICIAL_GENERAL, OFFICIAL_ISO } from "@/lib/officialSources";
+import { pageSocialMeta } from "@/lib/page-metadata";
+
+const title = "ISO 45001 & 14001 – Managementsysteme NRW";
+const description =
+  "Einführung und Optimierung von ISO 45001 und ISO 14001 im Kontext Arbeitssicherheit – Beratung in Köln und NRW.";
 
 export const metadata = {
-  title: "Managementsysteme ISO 45001, ISO 14001 – im Kontext Arbeitssicherheit | Köln & NRW",
-  description:
-    "Ergänzend zu Arbeitssicherheit und Brandschutz: Einführung und Optimierung von ISO 45001 und ISO 14001. Beratung in Köln und NRW.",
+  title,
+  description,
   alternates: { canonical: `${SITE.url}/leistungen/managementsysteme` },
+  ...pageSocialMeta({ path: "/leistungen/managementsysteme", title, description }),
 };
 
 export default function ManagementsystemePage() {

@@ -5,8 +5,10 @@ import { BLOG_POSTS, getBlogPost } from "@/data/blog-posts";
 import { SITE, CONTACT } from "@/lib/constants";
 import { BlogPostBody } from "@/components/blog/BlogPostBody";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
+import { OfficialSourcesBlock } from "@/components/content/OfficialSourcesBlock";
 import { RelatedOnSite } from "@/components/content/RelatedOnSite";
 import { IconArrowRight } from "@/components/Icons";
+import { getBlogOfficialSources } from "@/lib/blog-official-sources";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -31,11 +33,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       siteName: SITE.name,
       publishedTime: post.datePublished,
+      images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: SITE.name }],
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.description,
+      images: ["/opengraph-image"],
     },
   };
 }
@@ -52,7 +56,10 @@ export default async function BlogArticlePage({ params }: Props) {
     headline: post.title,
     description: post.description,
     url,
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    image: `${SITE.url}/opengraph-image`,
     datePublished: post.datePublished,
+    dateModified: post.datePublished,
     inLanguage: "de-DE",
     isAccessibleForFree: true,
     author: {
@@ -64,6 +71,7 @@ export default async function BlogArticlePage({ params }: Props) {
       "@type": "Organization",
       name: CONTACT.company,
       url: SITE.url,
+      logo: { "@type": "ImageObject", url: `${SITE.url}/icon` },
     },
   };
 
@@ -95,6 +103,13 @@ export default async function BlogArticlePage({ params }: Props) {
       <article className="prose mt-10 max-w-none prose-headings:text-nrw-grau-900 prose-p:text-nrw-grau-700 prose-li:text-nrw-grau-700 prose-a:text-nrw-gruen">
         <BlogPostBody slug={slug} />
       </article>
+      {getBlogOfficialSources(slug).length > 0 ? (
+        <OfficialSourcesBlock
+          title="Rechtsgrundlagen & offizielle Quellen"
+          intro="Verlinkte Gesetzestexte und Regelwerke – passend zum Thema dieses Artikels. Orientierung an ArbSchG, ASiG, GefStoffV, BaustellV, DGUV und BauO NRW."
+          links={getBlogOfficialSources(slug)}
+        />
+      ) : null}
       <div className="mt-12 flex flex-wrap gap-4 border-t border-nrw-grau-200 pt-10">
         <Link
           href="/blog"

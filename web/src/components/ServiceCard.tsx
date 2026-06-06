@@ -42,6 +42,7 @@ export function ServiceCard({ title, short, href, icon }: ServiceCardProps) {
       <p className="mt-3 flex-1 text-sm leading-relaxed text-nrw-grau-600">{short}</p>
       <Link
         href={href}
+        aria-label={`${title}: Mehr erfahren`}
         className="mt-6 inline-flex items-center gap-2 font-semibold text-nrw-gruen hover:text-nrw-gruen-hover"
       >
         Mehr erfahren

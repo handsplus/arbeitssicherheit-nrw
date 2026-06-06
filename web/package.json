@@ -10,7 +10,9 @@
     "dev:server": "node ./node_modules/next/dist/bin/next dev -p 3007",
     "build": "node ./node_modules/next/dist/bin/next build",
     "start": "node ./node_modules/next/dist/bin/next start -p 3007",
-    "lint": "node ./node_modules/next/dist/bin/next lint"
+    "lint": "node ./node_modules/next/dist/bin/next lint",
+    "extract-pdf": "node ./scripts/extract-gesetz-pdf.mjs",
+    "extract-blog-sources": "node ./scripts/extract-blog-sources.mjs"
   },
   "dependencies": {
     "next": "16.1.6",
@@ -25,6 +27,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "pdf-parse": "^2.4.5",
     "sharp": "^0.34.5",
     "tailwindcss": "^4",
     "typescript": "^5"

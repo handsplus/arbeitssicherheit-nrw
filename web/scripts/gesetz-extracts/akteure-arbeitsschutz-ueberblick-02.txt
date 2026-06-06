@@ -1,0 +1,14 @@
+# Blog: akteure-arbeitsschutz-ueberblick
+# PDF: 37_DGUV-Vorschrift-2_Mustertext-2024.pdf
+# Pfad: C:\Users\akork\OneDrive\H&S+\4. Gesetze-Vorschriften\05_DGUV_UV\37_DGUV-Vorschrift-2_Mustertext-2024.pdf
+# Suche: § 2 Bestellung
+# Zeichen: 563setz) ergebenden Pflichten zu treffen hat.
+§ 2 Bestellung
+(1) Der Unternehmer hat Betriebsärztinnen oder Betriebsärzte sowie Fachkräfte
+für Arbeitssicherheit zur Wahrnehmung der in den §§ 3 und 6 Arbeitssicherheits-
+gesetz bezeichneten Aufgaben schriftlich nach Maßgabe der nachfolgenden
+Bestimmungen zu bestellen. Der Unternehmer hat auf Verlangen nachzuweisen,
+wie er die Verpflichtung nach Satz 1 erfüllt hat.
+(2) Bei Betrieben mit bis zu 20 Beschäftigten richtet sich der Umfang der be-
+triebsärztlichen und sicherheitstechnischen Betreuung nach Anlage 1.
+---

@@ -75,7 +75,18 @@ export const NAV = [
     ],
   },
   { label: "Kontakt", href: "/kontakt" },
-  { label: "Wissen", href: "/wissen" },
+  {
+    label: "Wissen",
+    href: "/wissen",
+    children: [
+      { label: "Übersicht", href: "/wissen" },
+      { label: "FAQ", href: "/faq" },
+      { label: "Blog", href: "/blog" },
+      { label: "Glossar", href: "/glossar" },
+      { label: "Checklisten", href: "/checklisten" },
+      { label: "Rechner", href: "/rechner" },
+    ],
+  },
   {
     label: "Über uns",
     href: "/ueber-uns",

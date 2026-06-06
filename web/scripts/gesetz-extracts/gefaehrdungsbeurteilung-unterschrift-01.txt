@@ -1,0 +1,14 @@
+# Blog: gefaehrdungsbeurteilung-unterschrift
+# PDF: 09_ArbSchG.pdf
+# Pfad: C:\Users\akork\OneDrive\H&S+\4. Gesetze-Vorschriften\02_Empfohlen_Arbeitsschutz_Personal\09_ArbSchG.pdf
+# Suche: § 5 Beurteilung
+# Zeichen: 656biologischen Gründen zwingend geboten ist.
+§ 5 Beurteilung der Arbeitsbedingungen
+(1) Der Arbeitgeber hat durch eine Beurteilung der für die Beschäftigten mit ihrer Arbeit verbundenen Gefährdung
+zu ermitteln, welche Maßnahmen des Arbeitsschutzes erforderlich sind.
+(2) Der Arbeitgeber hat die Beurteilung je nach Art der Tätigkeiten vorzunehmen. Bei gleichartigen
+Arbeitsbedingungen ist die Beurteilung eines Arbeitsplatzes oder einer Tätigkeit ausreichend.
+(3) Eine Gefährdung kann sich insbesondere ergeben durch
+1. die Gestaltung und die Einrichtung der Arbeitsstätte und des Arbeitsplatzes,
+2. physikalische, chemische und biologische Einwirkungen,
+---
