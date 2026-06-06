@@ -1,6 +1,6 @@
 import type { OfficialLink } from "@/lib/officialSources";
 
-/** Rechtsgrundlagen je Blog-Artikel – abgestimmt auf die Gesetze-Vorschriften-Sammlung */
+/** Rechtsgrundlagen je Blog-Artikel – offizielle Behörden- und Gesetzeslinks */
 export const BLOG_OFFICIAL_SOURCES: Record<string, OfficialLink[]> = {
   "gefaehrdungsbeurteilung-unterschrift": [
     {
