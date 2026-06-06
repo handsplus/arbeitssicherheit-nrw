@@ -8,6 +8,7 @@ const BASE = SITE.url;
 const STATIC_PAGES: { path: string; lastModified: string; changeFrequency: MetadataRoute.Sitemap[0]["changeFrequency"]; priority: number }[] = [
   { path: "", lastModified: "2026-06-01", changeFrequency: "weekly", priority: 1 },
   { path: "/leistungen", lastModified: "2026-06-01", changeFrequency: "weekly", priority: 0.96 },
+  { path: "/fachkraft-fuer-arbeitssicherheit-koeln", lastModified: "2026-06-06", changeFrequency: "weekly", priority: 0.99 },
   { path: "/leistungen/arbeitssicherheit", lastModified: "2026-06-01", changeFrequency: "weekly", priority: 0.98 },
   { path: "/leistungen/brandschutz", lastModified: "2026-06-01", changeFrequency: "weekly", priority: 0.96 },
   { path: "/leistungen/sigeko", lastModified: "2026-06-01", changeFrequency: "weekly", priority: 0.95 },

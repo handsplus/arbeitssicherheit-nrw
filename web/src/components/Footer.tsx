@@ -28,7 +28,6 @@ const PARTNER_VERBUND_LINKS = [
   { label: "sigeko.koeln", href: "https://sigeko.koeln" },
   { label: "handsplus.de", href: "https://www.handsplus.de" },
   { label: "brandschutzkoeln.com", href: "https://brandschutzkoeln.com" },
-  { label: "arbeitssicherheitkoeln.de", href: "https://arbeitssicherheitkoeln.de" },
 ] as const;
 
 export function Footer() {

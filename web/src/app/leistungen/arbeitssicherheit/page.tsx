@@ -44,6 +44,12 @@ export default function ArbeitssicherheitPage() {
         <span className="text-nrw-grau-800">Arbeitssicherheit</span>
       </nav>
       <h1 className="text-4xl font-bold text-nrw-grau-900">Arbeitssicherheit</h1>
+      <p className="mt-6 rounded-xl border border-nrw-gruen/30 bg-nrw-gruen-hell px-4 py-3 text-sm text-nrw-grau-800">
+        Ausführliche SiFa-Landingpage für Köln:{" "}
+        <Link href="/fachkraft-fuer-arbeitssicherheit-koeln" className="font-semibold text-nrw-gruen hover:underline">
+          Externe Fachkraft für Arbeitssicherheit Köln
+        </Link>
+      </p>
       <p className="mt-6 text-lg text-nrw-grau-600">
         Als externe Fachkraft für Arbeitssicherheit (FaSi) bieten wir Ihnen in Köln und NRW eine grund- und betriebsspezifische Betreuung gemäß Arbeitssicherheitsgesetz (ASiG) und DGUV Vorschrift 2 – maßgeschneidert und rechtssicher.
       </p>

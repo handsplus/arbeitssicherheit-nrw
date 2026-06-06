@@ -25,6 +25,9 @@ export const SITE = {
   ] as const,
 } as const;
 
+/** Kanonische SiFa-Landingpage (SEO-Ziel für „externe Fachkraft … Köln“). */
+export const SIFA_PAGE_PATH = "/fachkraft-fuer-arbeitssicherheit-koeln" as const;
+
 /** Standort Köln (Barcelona Allee) – für Local SEO / Schema.org geo */
 export const GEO = {
   latitude: 50.9586,
@@ -67,6 +70,7 @@ export const NAV = [
     href: "/leistungen",
     children: [
       { label: "Arbeitssicherheit", href: "/leistungen/arbeitssicherheit" },
+      { label: "SiFa Köln", href: SIFA_PAGE_PATH },
       { label: "Brandschutz", href: "/leistungen/brandschutz" },
       { label: "SiGeKo", href: "/leistungen/sigeko" },
       { label: "Schulungen", href: "/leistungen/schulungen" },
