@@ -17,7 +17,7 @@ npm install
 npm run dev
 ```
 
-Die Anwendung läuft unter [http://localhost:3000](http://localhost:3000).
+Die Anwendung läuft unter [http://localhost:3007](http://localhost:3007).
 
 **Deployment auf Vercel:** Siehe [docs/DEPLOY-VERCEL.md](docs/DEPLOY-VERCEL.md) (Schritte, Root Directory `web`, Umgebungsvariablen für E-Mail). Weitere Anleitungen: [docs/](docs/).
 
