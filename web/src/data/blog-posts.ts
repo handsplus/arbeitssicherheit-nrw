@@ -52,9 +52,9 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: "externe-fachkraft-arbeitssicherheit-koeln",
-    title: "Externe Fachkraft für Arbeitssicherheit in Köln: Worauf kommt es an?",
+    title: "Externe Fachkraft für Arbeitssicherheit Köln: Wann und worauf achten?",
     description:
-      "FaSi extern beauftragen: Branchenkenntnis, Dokumentation, Zusammenarbeit mit Betriebsarzt – Checkliste für die Auswahl.",
+      "Externe FaSi in Köln: ASiG § 5 Pflicht, DGUV V2-Betreuung, Branchenkenntnis und fester Ansprechpartner — Checkliste für die Auswahl.",
     datePublished: "2026-03-23",
   },
   {
@@ -75,9 +75,9 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   // --- Mai 2026 (2 pro Woche) ---
   {
     slug: "verbandbuch-pflicht-betrieb-dokumentation",
-    title: "Verbandbuch im Betrieb: Pflicht, Inhalt und Aufbewahrung",
+    title: "Verbandbuch Pflicht: Was muss im Betrieb dokumentiert werden?",
     description:
-      "ArbSchG § 10 und DGUV: Was im Verbandbuch dokumentiert werden muss, wie lange es aufbewahrt wird und wie Ersthelfer es führen – für NRW-Betriebe.",
+      "Das Verbandbuch dokumentiert geleistete Erste Hilfe nach ArbSchG § 10 — Pflicht, Inhalt, Aufbewahrung und Führung im Betrieb für NRW.",
     datePublished: "2026-05-28",
   },
   {
@@ -140,9 +140,9 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: "betriebsbegehung-was-wird-geprueft",
-    title: "Betriebsbegehung: Was wird geprüft und wie bereiten Sie sich vor?",
+    title: "Betriebsbegehung Arbeitsschutz: Was wird geprüft?",
     description:
-      "ASiG § 6 und FaSi-Aufgaben: Typische Prüfpunkte bei Begehungen, Protokollierung und Maßnahmenverfolgung in NRW-Betrieben.",
+      "Betriebsbegehung nach ASiG § 6: FaSi muss Arbeitsstätten regelmäßig begehen, Mängel melden und auf Abhilfe hinwirken — typische Prüfpunkte für NRW-Betriebe.",
     datePublished: "2026-04-23",
   },
   {

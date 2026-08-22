@@ -1091,9 +1091,9 @@ export function VerbandbuchPflichtBetrieb() {
   return (
     <BlogArticleShell>
       <BlogLead>
-        Das Verbandbuch dokumentiert geleistete Erste Hilfe im Betrieb und ist damit weit mehr als ein Formular
-        für kleine Zwischenfälle. Es schafft Nachweis, hilft bei späteren Unfallzusammenhängen und ist Teil einer
-        funktionierenden Notfallorganisation.
+        Das Verbandbuch ist im Betrieb Pflicht: Es dokumentiert jede geleistete Erste Hilfe nach ArbSchG § 10
+        und ist zentraler Nachweis für Unfälle, Spätfolgen und Behördenprüfungen. Ohne ordentliche Führung fehlt
+        ein Baustein der Notfallorganisation — neben Ersthelfern, Erste-Hilfe-Material und Unterweisung.
       </BlogLead>
       <BlogLead>
         Gerade weil viele Einträge zunächst unspektakulär wirken, wird das Verbandbuch oft unterschätzt. Im

@@ -1043,9 +1043,10 @@ export function BetriebsbegehungWasGeprueft() {
   return (
     <BlogArticleShell>
       <BlogLead>
-        Eine Betriebsbegehung ist kein Rundgang mit Notizblock, sondern ein zentrales Steuerungsinstrument im
-        Arbeitsschutz. Sie zeigt, ob die Vorgaben aus Gefährdungsbeurteilung, Unterweisung und Organisation
-        tatsächlich in der Fläche ankommen oder nur auf dem Papier gut aussehen.
+        Betriebsbegehung im Arbeitsschutz: Die FaSi muss nach ASiG § 6 Arbeitsstätten in regelmäßigen Abständen
+        begehen, festgestellte Mängel mitteilen und auf Beseitigung hinwirken. Geprüft werden typischerweise
+        Flucht- und Rettungswege, Maschinen und Prüfkennzeichnungen, Gefahrstoffe, PSA, Erste Hilfe — und ob
+        Maßnahmen aus der Gefährdungsbeurteilung in der Praxis ankommen.
       </BlogLead>
       <BlogLead>
         Gerade in Betrieben in Köln und NRW mit gewachsenen Strukturen ist die Begehung oft der Moment, in

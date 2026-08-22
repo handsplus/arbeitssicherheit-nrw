@@ -18,10 +18,10 @@ export function ExterneFasiKoeln() {
   return (
     <BlogArticleShell>
       <BlogLead>
-        Eine externe Fachkraft für Arbeitssicherheit ist für viele Unternehmen in Köln die
-        wirtschaftlichste und fachlich sinnvollste Lösung. Das gilt vor allem für kleine und mittlere
-        Betriebe, wachsende Organisationen, mehrere Standorte oder Unternehmen, die keine eigene
-        sicherheitstechnische Kompetenz dauerhaft im Haus vorhalten möchten.
+        Externe Fachkraft für Arbeitssicherheit in Köln: Nach ASiG § 5 muss jeder Arbeitgeber eine FaSi bestellen
+        — für die meisten KMU in Köln ist die externe Beauftragung die wirtschaftlichste Lösung. Entscheidend sind
+        Branchenkenntnis, dokumentierte Betreuung nach DGUV V2 und ein fester Ansprechpartner, der Begehungen,
+        Gefährdungsbeurteilungen und Unterweisungen vor Ort begleitet.
       </BlogLead>
       <BlogLead>
         Trotzdem sollte die Auswahl nicht allein nach Stundensatz erfolgen. Eine gute externe FaSi
