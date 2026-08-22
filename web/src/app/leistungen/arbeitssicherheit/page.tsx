@@ -7,14 +7,14 @@ import { OFFICIAL_GENERAL } from "@/lib/officialSources";
 import { SITE } from "@/lib/constants";
 
 export const metadata = {
-  title: "Externe Fachkraft für Arbeitssicherheit Köln | FaSi & Arbeitsschutz NRW",
+  title: "Externe Fachkraft für Arbeitssicherheit NRW | FaSi-Betreuung",
   description:
-    "Externe Fachkraft für Arbeitssicherheit (FaSi) in Köln: Gefährdungsbeurteilung, Betreuung nach ASiG und DGUV Vorschrift 2, Arbeitsschutz vor Ort. Unverbindlich anfragen.",
+    "Externe Fachkraft für Arbeitssicherheit (FaSi) in Köln und NRW: gesetzliche Betreuung nach ASiG § 5 und DGUV V2 — Gefährdungsbeurteilung, Begehungen, Unterweisungen.",
   alternates: { canonical: `${SITE.url}/leistungen/arbeitssicherheit` },
   openGraph: {
-    title: "Externe Fachkraft für Arbeitssicherheit Köln | FaSi NRW",
+    title: "Externe Fachkraft für Arbeitssicherheit NRW | FaSi-Betreuung",
     description:
-      "FaSi & Arbeitsschutz: Gefährdungsbeurteilung, Begehungen, Unterweisungen. Externe Betreuung für Unternehmen in Köln und NRW.",
+      "Externe FaSi in Köln und NRW: Gefährdungsbeurteilung, Betriebsbegehungen, Unterweisungen — DGUV-konform und unverbindlich anfragen.",
     url: `${SITE.url}/leistungen/arbeitssicherheit`,
     locale: "de_DE",
     type: "website",
@@ -22,9 +22,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Externe FaSi Köln | Arbeitsschutz NRW",
+    title: "Externe FaSi NRW | Fachkraft für Arbeitssicherheit",
     description:
-      "FaSi & Arbeitsschutz: Gefährdungsbeurteilung, Begehungen, Unterweisungen in Köln und NRW.",
+      "Externe Fachkraft für Arbeitssicherheit in Köln und NRW — Betreuung nach ASiG und DGUV V2.",
   },
 };
 
@@ -43,7 +43,9 @@ export default function ArbeitssicherheitPage() {
         <span className="mx-2">/</span>
         <span className="text-nrw-grau-800">Arbeitssicherheit</span>
       </nav>
-      <h1 className="text-4xl font-bold text-nrw-grau-900">Arbeitssicherheit</h1>
+      <h1 className="text-4xl font-bold text-nrw-grau-900">
+        Externe Fachkraft für Arbeitssicherheit in NRW
+      </h1>
       <p className="mt-6 rounded-xl border border-nrw-gruen/30 bg-nrw-gruen-hell px-4 py-3 text-sm text-nrw-grau-800">
         Ausführliche SiFa-Landingpage für Köln:{" "}
         <Link href="/fachkraft-fuer-arbeitssicherheit-koeln" className="font-semibold text-nrw-gruen hover:underline">
@@ -51,7 +53,10 @@ export default function ArbeitssicherheitPage() {
         </Link>
       </p>
       <p className="mt-6 text-lg text-nrw-grau-600">
-        Als externe Fachkraft für Arbeitssicherheit (FaSi) bieten wir Ihnen in Köln und NRW eine grund- und betriebsspezifische Betreuung gemäß Arbeitssicherheitsgesetz (ASiG) und DGUV Vorschrift 2 – maßgeschneidert und rechtssicher.
+        Jeder Arbeitgeber muss nach ASiG § 5 eine Fachkraft für Arbeitssicherheit (FaSi) bestellen — intern
+        oder extern. Als externe FaSi bieten wir in Köln und ganz NRW grund- und betriebsspezifische Betreuung
+        nach DGUV Vorschrift 2: Gefährdungsbeurteilungen, Betriebsbegehungen, Unterweisungen und rechtssichere
+        Dokumentation — maßgeschneidert für Ihren Betrieb.
       </p>
       <div className="prose mt-12 max-w-none prose-headings:text-nrw-grau-900 prose-p:text-nrw-grau-600 prose-li:text-nrw-grau-600">
         <h2 className="text-2xl font-bold">Leistungen im Überblick</h2>

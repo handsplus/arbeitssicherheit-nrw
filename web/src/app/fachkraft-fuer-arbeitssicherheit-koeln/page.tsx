@@ -11,13 +11,13 @@ const pageUrl = `${SITE.url}${SIFA_PAGE_PATH}`;
 const leistungenHref = "/leistungen/arbeitssicherheit";
 
 export const metadata: Metadata = {
-  title: "Externe Fachkraft für Arbeitssicherheit Köln | SiFa-Betreuung",
+  title: "Externe Fachkraft für Arbeitssicherheit Köln | SiFa vor Ort",
   description:
-    "Externe Fachkraft für Arbeitssicherheit (SiFa) in Köln: DGUV-konforme Betreuung, Gefährdungsbeurteilungen, Unterweisungen und Begehungen – feste Ansprechpartner vor Ort.",
+    "Externe SiFa in Köln: gesetzliche Betreuung nach ASiG § 5 und DGUV V2, fester Ansprechpartner, Begehungen und Gefährdungsbeurteilungen vor Ort — unverbindlich anfragen.",
   openGraph: {
-    title: "Externe Fachkraft für Arbeitssicherheit Köln | SiFa-Betreuung",
+    title: "Externe Fachkraft für Arbeitssicherheit Köln | SiFa vor Ort",
     description:
-      "SiFa-Betreuung in Köln: gesetzeskonform, individuell und mit festem Ansprechpartner – Gefährdungsbeurteilung, Unterweisungen, Dokumentation.",
+      "Externe SiFa in Köln: gesetzliche Betreuung nach ASiG § 5 und DGUV V2, fester Ansprechpartner, Begehungen und Gefährdungsbeurteilungen vor Ort — unverbindlich anfragen.",
     url: pageUrl,
     locale: "de_DE",
     type: "website",
@@ -128,8 +128,10 @@ export default function SifaLandingPage() {
               <span className="text-nrw-gruen">in Köln</span>
             </h1>
             <p className="mt-6 text-lg text-nrw-grau-600 sm:text-xl">
-              Als externe SiFa übernehmen wir die gesetzlich geforderte sicherheitstechnische Betreuung Ihres
-              Unternehmens in Köln und Umgebung – DGUV-konform, individuell und mit festem Ansprechpartner vor Ort.
+              Externe Fachkraft für Arbeitssicherheit in Köln: Nach ASiG § 5 und DGUV V2 müssen Arbeitgeber
+              eine SiFa bestellen — für die meisten KMU in Köln ist die externe Beauftragung die übliche Lösung.
+              Wir übernehmen die sicherheitstechnische Betreuung vor Ort mit festem Ansprechpartner, Begehungen,
+              Gefährdungsbeurteilungen und Unterweisungen.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <PrimaryCtaLink
