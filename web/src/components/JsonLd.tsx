@@ -40,6 +40,12 @@ export function JsonLd() {
       latitude: GEO.latitude,
       longitude: GEO.longitude,
     },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:00",
+      closes: "17:00",
+    },
     contactPoint: {
       "@type": "ContactPoint",
       telephone: CONTACT.phoneHref.replace("tel:", ""),

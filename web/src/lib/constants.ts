@@ -1,12 +1,12 @@
 export const SITE = {
   name: "Arbeitssicherheit.nrw",
-  title: "Arbeitssicherheit Köln & NRW | Externe FaSi, Brandschutz & SiGeKo",
+  title: "Externe Fachkraft für Arbeitssicherheit Köln & NRW | FaSi & GBU",
   description:
-    "Fachkraft für Arbeitssicherheit & Arbeitsschutz in Köln und NRW: externe FaSi, Brandschutzbeauftragter (BSB) und SiGeKo. Gefährdungsbeurteilung, Beratung, Baustelle. Jetzt Termin anfragen – unverbindlich.",
+    "Externe Fachkraft für Arbeitssicherheit (FaSi) in Köln und NRW: Gefährdungsbeurteilung, Betreuung nach DGUV Vorschrift 2, Unterweisungen. Unverbindlich Termin anfragen.",
   /** Kanonische URL = Vercel-Produktions-Domain (ohne www; www leitet 301 hierher). */
   url: "https://arbeitssicherheit.nrw",
   /** Kurzbeschreibung für Social / KI-Zusammenfassungen */
-  tagline: "Arbeitssicherheit Köln & NRW: externe FaSi, BSB & SiGeKo – rechtssicher, aus einer Hand.",
+  tagline: "Externe FaSi Köln & NRW: Gefährdungsbeurteilung und betriebliche Betreuung.",
   /** Themen für strukturierte Daten (Sichtbarkeit in Suche & KI-Antworten) */
   knowsAbout: [
     "Arbeitssicherheit",
@@ -28,7 +28,7 @@ export const SITE = {
 /** Kanonische SiFa-Landingpage (SEO-Ziel für „externe Fachkraft … Köln“). */
 export const SIFA_PAGE_PATH = "/fachkraft-fuer-arbeitssicherheit-koeln" as const;
 
-/** Standort Köln (Barcelona Allee) – für Local SEO / Schema.org geo */
+/** Standort Köln (Barcelona-Allee) – für Local SEO / Schema.org geo */
 export const GEO = {
   latitude: 50.9586,
   longitude: 6.9991,
@@ -47,10 +47,11 @@ export const PRESS_MENTIONS = [
 
 export const CONTACT = {
   company: "Arbeitssicherheit.nrw",
-  address: "Barcelona Allee 12",
+  address: "Barcelona-Allee 12",
   zip: "51103",
   city: "Köln",
-  phone: "0152-28261619",
+  phone: "0152 282 61619",
+  hours: "Mo–Fr 08:00–17:00 Uhr",
   /** International format for reliable tel: link behavior across devices */
   phoneHref: "tel:+4915228261619",
   email: "kontakt@handsplus.de",

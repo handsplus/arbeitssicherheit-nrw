@@ -1,20 +1,17 @@
 import Link from "next/link";
 import { PrimaryCtaLink } from "@/components/PrimaryCtaLink";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
-import { OfficialSourcesBlock } from "@/components/content/OfficialSourcesBlock";
-import { RelatedOnSite } from "@/components/content/RelatedOnSite";
-import { OFFICIAL_BRANDSCHUTZ, OFFICIAL_GENERAL } from "@/lib/officialSources";
 import { SITE } from "@/lib/constants";
 
 export const metadata = {
-  title: "Brandschutzbeauftragter Köln | Externer BSB & Brandschutzberatung NRW",
+  title: "Brandschutz – Überblick | Arbeitssicherheit.nrw",
   description:
-    "Externer Brandschutzbeauftragter (BSB) in Köln: organisatorischer, baulicher und anlagentechnischer Brandschutz, Konzepte und Schulungen. Jetzt Beratung anfragen.",
+    "Betrieblicher Brandschutz im FaSi-Kontext. Konzepte, Ordnung und lokale Leistung für Köln: brandschutzkoeln.com.",
   alternates: { canonical: `${SITE.url}/leistungen/brandschutz` },
   openGraph: {
-    title: "Brandschutzbeauftragter Köln | Externer BSB NRW",
+    title: "Brandschutz – Überblick | Arbeitssicherheit.nrw",
     description:
-      "Brandschutz aus einer Hand: BSB, Konzepte, Brandschutzordnung. Für Betriebe und Einrichtungen in Köln und ganz NRW.",
+      "Brandschutzbeauftragter und Organisation im Betrieb. Fachseite Köln: brandschutzkoeln.com.",
     url: `${SITE.url}/leistungen/brandschutz`,
   },
 };
@@ -30,65 +27,41 @@ export default function BrandschutzPage() {
         ]}
       />
       <nav className="mb-10 text-sm text-nrw-grau-400" aria-label="Breadcrumb">
-        <Link href="/leistungen" className="hover:text-nrw-gruen">Leistungen</Link>
+        <Link href="/leistungen" className="hover:text-nrw-gruen">
+          Leistungen
+        </Link>
         <span className="mx-2">/</span>
-        <span className="text-nrw-grau-800">Brandschutzbeauftragter</span>
+        <span className="text-nrw-grau-800">Brandschutz</span>
       </nav>
-      <h1 className="text-4xl font-bold text-nrw-grau-900">Brandschutzbeauftragter</h1>
+      <h1 className="text-4xl font-bold text-nrw-grau-900">Brandschutz</h1>
       <p className="mt-6 text-lg text-nrw-grau-600">
-        Externer Brandschutzbeauftragter (BSB) in Köln und NRW: Beratung und Unterstützung im baulichen, anlagentechnischen und organisatorischen Brandschutz – von der Brandschutzordnung bis zum Brandschutzkonzept.
+        Im Betrieb greifen Brandschutz und Arbeitssicherheit ineinander: Unterweisungen,
+        Gefährdungsbeurteilung Brandgefahr, Evakuierung. Die externe FaSi stimmt das mit Ihren
+        Abläufen ab.
       </p>
-      <div className="prose mt-12 max-w-none prose-headings:text-nrw-grau-900 prose-p:text-nrw-grau-600 prose-li:text-nrw-grau-600">
-        <h2 className="text-2xl font-bold">Leistungsspektrum Brandschutz</h2>
-        <p>
-          Unser Brandschutz-Angebot umfasst die Rolle des externen Brandschutzbeauftragten sowie alle zentralen Themen des vorbeugenden Brandschutzes:
-        </p>
-        <ul>
-          <li>Brandschutzbeauftragter (extern) – Bestellung und Betreuung</li>
-          <li>Brandschutzkonzepte und -nachweise für Neubau, Umbau, Sonderbauten</li>
-          <li>Baulicher Brandschutz (Bauteile, Rettungswege, Abschottung)</li>
-          <li>Anlagentechnischer Brandschutz (Meldeanlagen, Löschsysteme, Rauchwarnmelder)</li>
-          <li>Organisatorischer Brandschutz (Fluchtwege, Evakuierung, Brandschutzordnung)</li>
-          <li>Brandschutzunterweisungen und Schulungen (z. B. Brandschutzhelfer)</li>
-        </ul>
-        <h2 className="text-2xl font-bold">Brandschutz in Köln und NRW</h2>
-        <p>
-          Ob Gewerbe, Industrie, Verwaltung oder Sonderbauten: Wir unterstützen Sie in Köln und Nordrhein-Westfalen bei Planung, Umsetzung und Dokumentation aller brandschutzrelevanten Anforderungen – rechtssicher und praxisnah.
-        </p>
-        <h2 className="text-2xl font-bold">Für wen?</h2>
-        <p>
-          Die Bestellung eines Brandschutzbeauftragten kann sich aus Rechtsvorschriften, Auflagen oder betrieblicher Entscheidung ergeben. Wir beraten Sie, ob und in welchem Umfang ein Brandschutzbeauftragter erforderlich ist, und übernehmen die Rolle extern.
-        </p>
-        <h2 className="text-2xl font-bold">Zusammenhang mit Arbeitssicherheit</h2>
-        <p>
-          Brandschutz und Arbeitssicherheit greifen in Unterweisungen, Gefährdungsbeurteilungen und Evakuierungskonzepten ineinander. Wir stimmen Maßnahmen mit Ihrer FaSi und Ihren internen Abläufen ab, damit Verantwortlichkeiten klar bleiben.
-        </p>
-      </div>
-      <OfficialSourcesBlock
-        title="Orientierung zum vorbeugenden Brandschutz"
-        links={[...OFFICIAL_BRANDSCHUTZ, ...OFFICIAL_GENERAL.slice(0, 3)]}
-      />
-      <RelatedOnSite
-        links={[
-          { href: "/leistungen/arbeitssicherheit", label: "Arbeitssicherheit", description: "FaSi & Arbeitsschutz vor Ort" },
-          { href: "/leistungen/schulungen", label: "Schulungen", description: "Brandschutzhelfer u. a." },
-          { href: "/blog", label: "Blog", description: "Brandschutzbeauftragter & Praxis" },
-          { href: "/faq", label: "FAQ", description: "BSB Köln & Pflichten" },
-          { href: "/beratung-buchen", label: "Beratung buchen", description: "Unverbindlich anfragen" },
-          { href: "/rechner", label: "Rechner", description: "Orientierung Brandschutzhelfer" },
-        ]}
-      />
+      <p className="mt-4 text-nrw-grau-600">
+        Brandschutzkonzept, Brandschutzordnung und die lokale Leistung für Köln liegen auf der
+        Fachdomain{" "}
+        <a
+          href="https://brandschutzkoeln.com/"
+          className="font-semibold text-nrw-gruen hover:underline"
+          rel="noopener noreferrer"
+        >
+          brandschutzkoeln.com
+        </a>
+        .
+      </p>
       <div className="mt-14 flex flex-wrap gap-4">
+        <a
+          href="https://brandschutzkoeln.com/"
+          className="inline-flex items-center gap-2 rounded-full bg-nrw-rot px-8 py-4 font-semibold text-white hover:bg-nrw-rot-hover"
+        >
+          Zur Brandschutz-Fachseite
+        </a>
         <PrimaryCtaLink
           theme="brandschutz"
-          className="inline-flex items-center gap-2 rounded-full bg-nrw-rot px-8 py-4 font-semibold text-white hover:bg-nrw-rot-hover"
-        />
-        <Link
-          href="/kontakt"
           className="inline-flex items-center gap-2 rounded-full border-2 border-nrw-grau-800 px-8 py-4 font-semibold text-nrw-grau-800 hover:bg-nrw-grau-800 hover:text-white"
-        >
-          Kontakt
-        </Link>
+        />
       </div>
     </div>
   );

@@ -14,14 +14,12 @@ import {
 } from "@/components/Icons";
 
 export const metadata = {
-  title: "Arbeitssicherheit Köln | Externe FaSi, Brandschutzbeauftragter & SiGeKo NRW",
-  description:
-    "Fachkraft für Arbeitssicherheit & Arbeitsschutz in Köln: externe FaSi, BSB und SiGeKo. Beratung, Gefährdungsbeurteilung, Baustelle. Unverbindlich Termin vereinbaren.",
+  title: SITE.title,
+  description: SITE.description,
   alternates: { canonical: SITE.url },
   openGraph: {
-    title: "Arbeitssicherheit Köln | Externe FaSi, Brandschutz & SiGeKo NRW",
-    description:
-      "Externe Fachkraft für Arbeitssicherheit, Brandschutzbeauftragter und SiGeKo – für Betriebe und Bauprojekte in Köln und NRW. Schnelle, klare Beratung.",
+    title: SITE.title,
+    description: SITE.description,
     url: SITE.url,
   },
 };
@@ -37,25 +35,20 @@ export default function HomePage() {
             Rechtssicher. Entlastet. Ihr Partner in NRW.
           </p>
           <h1 className="mt-4 max-w-full text-3xl font-bold leading-snug tracking-tight text-white sm:text-4xl md:text-5xl md:leading-[1.12] lg:text-6xl">
-            <span className="flex flex-wrap items-baseline gap-x-2 gap-y-2 sm:gap-x-3">
-              <span className="shrink-0 text-nrw-gruen">Arbeitssicherheit</span>
-              <span className="shrink-0 text-nrw-grau-400" aria-hidden>
-                ·
-              </span>
-              <span className="shrink-0 text-nrw-rot">Brandschutz</span>
-              <span className="shrink-0 text-nrw-grau-400" aria-hidden>
-                ·
-              </span>
-              <span className="shrink-0 text-white">SiGeKo</span>
-            </span>
-            <span className="mt-2 block break-words">
-              in NRW für Ihr Unternehmen und Bauvorhaben
-            </span>
+            <span className="text-nrw-gruen">Externe Fachkraft für Arbeitssicherheit</span>
+            <span className="mt-2 block break-words">in Köln und NRW</span>
           </h1>
           <p className="mt-6 max-w-3xl text-lg text-nrw-grau-200">
-            Professionelle Arbeitssicherheit, Brandschutz und SiGeKo für Ihr Unternehmen und Ihre Bauvorhaben in NRW:
-            externe Fachkraft für Arbeitssicherheit (FaSi), Gefährdungsbeurteilung, Brandschutzbeauftragter und
-            Sicherheits- und Gesundheitsschutzkoordination auf Baustellen – rechtssicher, praxisnah und entlastend.
+            Betriebliche Betreuung als externe FaSi: Gefährdungsbeurteilung, Unterweisungen und Organisation nach
+            ASiG und DGUV Vorschrift 2. Brandschutzkonzept und SiGeKo liegen auf den Fachseiten{" "}
+            <a href="https://brandschutzkoeln.com/" className="text-white underline decoration-white/40 underline-offset-2 hover:decoration-white">
+              brandschutzkoeln.com
+            </a>{" "}
+            und{" "}
+            <a href="https://sigeko.koeln/" className="text-white underline decoration-white/40 underline-offset-2 hover:decoration-white">
+              sigeko.koeln
+            </a>
+            .
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-start gap-4">
             <PrimaryCtaLink

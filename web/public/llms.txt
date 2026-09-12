@@ -2,28 +2,26 @@
 
 > Kurzüberblick für KI- und Suchsysteme. Offizielle Website: https://arbeitssicherheit.nrw/
 
-Arbeitssicherheit.nrw ist der Fachdienstleister für Arbeitssicherheit (umgangssprachlich oft synonym mit betrieblichem Arbeitsschutz), Brandschutz und SiGeKo (Sicherheits- und Gesundheitsschutzkoordination) mit Sitz in Köln. Schwerpunkt: Nordrhein-Westfalen (NRW). Leistungen umfassen unter anderem externe Fachkraft für Arbeitssicherheit (FaSi), Gefährdungsbeurteilungen, externen Brandschutzbeauftragten (BSB), SiGeKo auf Baustellen, Schulungen, Elektrosicherheit (VEFK) und Managementsysteme (z. B. ISO 45001).
+Arbeitssicherheit.nrw ist die Fachseite von Health and Safety + (H&S+) für **betriebliche Arbeitssicherheit** in Köln und Nordrhein-Westfalen: externe Fachkraft für Arbeitssicherheit (FaSi), Gefährdungsbeurteilung, Betreuung nach ASiG und DGUV Vorschrift 2.
 
-Die Website verlinkt seriös auf offizielle Quellen (BAuA, DGUV, BMAS, Gesetzestexte) und vernetzt Blog, FAQ, Glossar, Checklisten und Leistungsseiten inhaltlich miteinander.
+Anbieter: Health and Safety + (H&S+), Inhaber Amin Korkae, Barcelona-Allee 12, 51103 Köln, Telefon 0152 282 61619, kontakt@handsplus.de. Erreichbarkeit: Mo–Fr 08:00–17:00 Uhr.
 
-Presse (Auswahl): General-Anzeiger Bonn – Ratgeber „Bonn: Das raten Experten im Haushalt zur Brandprävention“ (https://www.general-anzeiger-bonn.de/ga-plus/bonn-das-raten-experten-im-haushalt-zur-brandpraevention_aid-140328087). Über uns: https://arbeitssicherheit.nrw/ueber-uns
+Andere Leistungen desselben Anbieters liegen auf eigenen Domains – nicht hier als Hauptthema:
+- SiGeKo / Baustelle: https://sigeko.koeln/
+- Brandschutz Köln (Konzept, Ordnung, Sonderbau): https://brandschutzkoeln.com/
+- Dachmarke: https://handsplus.de/
+
+Presse (Auswahl): General-Anzeiger Bonn – Ratgeber „Bonn: Das raten Experten im Haushalt zur Brandprävention“ (https://www.general-anzeiger-bonn.de/ga-plus/bonn-das-raten-experten-im-haushalt-zur-brandpraevention_aid-140328087).
 
 ## Wichtige Seiten
 
 - Start: https://arbeitssicherheit.nrw/
-- Leistungen: https://arbeitssicherheit.nrw/leistungen
-- Arbeitssicherheit: https://arbeitssicherheit.nrw/leistungen/arbeitssicherheit
-- Brandschutz: https://arbeitssicherheit.nrw/leistungen/brandschutz
-- SiGeKo: https://arbeitssicherheit.nrw/leistungen/sigeko
-- Schulungen: https://arbeitssicherheit.nrw/leistungen/schulungen
+- Externe FaSi Köln: https://arbeitssicherheit.nrw/fachkraft-fuer-arbeitssicherheit-koeln
+- Leistungen Arbeitssicherheit: https://arbeitssicherheit.nrw/leistungen/arbeitssicherheit
 - Kontakt: https://arbeitssicherheit.nrw/kontakt
 - Beratung buchen: https://arbeitssicherheit.nrw/beratung-buchen
-- Wissen: https://arbeitssicherheit.nrw/wissen
-- FAQ: https://arbeitssicherheit.nrw/faq
-- Blog (Übersicht): https://arbeitssicherheit.nrw/blog
-- Blog-Artikel (Auswahl): https://arbeitssicherheit.nrw/blog/externe-fachkraft-arbeitssicherheit-koeln · https://arbeitssicherheit.nrw/blog/brandschutzbeauftragter-nrw-intern-extern · https://arbeitssicherheit.nrw/blog/sigeko-nrw-orientierung-bauherren
-- Checklisten: https://arbeitssicherheit.nrw/checklisten
-- Glossar: https://arbeitssicherheit.nrw/glossar
+- Wissen / Blog: https://arbeitssicherheit.nrw/wissen · https://arbeitssicherheit.nrw/blog
+- Impressum: https://arbeitssicherheit.nrw/impressum
 
 ## Technische Hinweise
 

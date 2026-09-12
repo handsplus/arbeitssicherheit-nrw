@@ -35,6 +35,8 @@ export default function ImpressumPage() {
           Telefon: <a href={CONTACT.phoneHref}>{CONTACT.phone}</a>
           <br />
           E-Mail: <a href={CONTACT.emailHref}>{CONTACT.email}</a>
+          <br />
+          Erreichbarkeit: {CONTACT.hours} (Termine nach Vereinbarung)
         </p>
         <p className="mt-6">
           <strong>Umsatzsteuer-ID</strong>
