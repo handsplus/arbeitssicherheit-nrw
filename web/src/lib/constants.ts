@@ -71,7 +71,7 @@ export const NAV = [
     href: "/leistungen",
     children: [
       { label: "Arbeitssicherheit", href: "/leistungen/arbeitssicherheit" },
-      { label: "SiFa Köln", href: SIFA_PAGE_PATH },
+      { label: "Fachkraft für Arbeitssicherheit Köln", href: SIFA_PAGE_PATH },
       { label: "Brandschutz", href: "/leistungen/brandschutz" },
       { label: "SiGeKo", href: "/leistungen/sigeko" },
       { label: "Schulungen", href: "/leistungen/schulungen" },

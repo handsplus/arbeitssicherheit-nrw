@@ -22,7 +22,7 @@ const STATIC_PAGES: { path: string; lastModified: string; changeFrequency: Metad
   { path: "/faq", lastModified: "2026-06-01", changeFrequency: "weekly", priority: 0.85 },
   { path: "/glossar", lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.7 },
   { path: "/rechner", lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.7 },
-  { path: "/schulungskalender", lastModified: "2026-06-01", changeFrequency: "weekly", priority: 0.75 },
+  // /schulungskalender: noindex, solange keine festen Termine – nicht in Sitemap
   { path: "/blog", lastModified: "2026-05-28", changeFrequency: "weekly", priority: 0.8 },
   { path: "/ueber-uns", lastModified: "2026-06-01", changeFrequency: "yearly", priority: 0.75 },
   { path: "/impressum", lastModified: "2026-06-01", changeFrequency: "yearly", priority: 0.3 },

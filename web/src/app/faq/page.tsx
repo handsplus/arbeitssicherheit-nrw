@@ -55,6 +55,13 @@ export default function FaqPage() {
         ))}
       </div>
       <div className="mt-10 flex flex-wrap gap-3 text-sm">
+        <Link
+          href="/fachkraft-fuer-arbeitssicherheit-koeln"
+          className="font-medium text-nrw-gruen hover:underline"
+        >
+          Fachkraft für Arbeitssicherheit Köln
+        </Link>
+        <span className="text-nrw-grau-300">·</span>
         <Link href="/blog" className="font-medium text-nrw-gruen hover:underline">
           Blog mit Praxisartikeln
         </Link>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { BLOG_POSTS, getBlogPost } from "@/data/blog-posts";
+import { BLOG_POSTS, getBlogPost, getRelatedBlogPosts } from "@/data/blog-posts";
 import { SITE, CONTACT } from "@/lib/constants";
 import { BlogPostBody } from "@/components/blog/BlogPostBody";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
@@ -128,10 +128,14 @@ export default async function BlogArticlePage({ params }: Props) {
       </div>
       <RelatedOnSite
         className="mt-14"
+        title="Passende Beiträge"
         links={[
-          { href: "/faq", label: "FAQ", description: "Kurzantworten" },
+          ...getRelatedBlogPosts(slug, 4).map((p) => ({
+            href: `/blog/${p.slug}`,
+            label: p.title,
+            description: p.description,
+          })),
           { href: "/leistungen", label: "Leistungen", description: "FaSi, BSB, SiGeKo" },
-          { href: "/wissen", label: "Wissen", description: "Ressourcen & Tools" },
         ]}
       />
     </div>

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE } from "@/lib/constants";
 import { IconCalendar, IconArrowRight } from "@/components/Icons";
@@ -5,12 +6,13 @@ import { pageSocialMeta } from "@/lib/page-metadata";
 
 const title = "Schulungstermine – auf Anfrage";
 const description =
-  "Schulungen zu Arbeitssicherheit, Brandschutz und SiGeKo in NRW – individuell, Inhouse oder vor Ort.";
+  "Schulungen zu Arbeitssicherheit, Brandschutz und SiGeKo in NRW – individuell, Inhouse oder vor Ort. Termine nach Absprache.";
 
-export const metadata = {
+export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: `${SITE.url}/schulungskalender` },
+  robots: { index: false, follow: true },
   ...pageSocialMeta({ path: "/schulungskalender", title, description }),
 };
 
@@ -25,8 +27,13 @@ export default function SchulungsterminePage() {
         Schulungstermine auf Anfrage
       </h1>
       <p className="mt-6 text-lg text-nrw-grau-600">
-        Wir planen Schulungen und Unterweisungen individuell mit Ihnen – Inhouse, vor Ort oder online.
-        Senden Sie uns eine unverbindliche Anfrage, wir melden uns zeitnah mit passenden Terminvorschlägen.
+        Feste öffentliche Termine stehen hier derzeit nicht. Wir planen Schulungen und
+        Unterweisungen individuell mit Ihnen – Inhouse, vor Ort oder online. Typische Themen:
+        Arbeitsschutz-Unterweisung, Brandschutzhelfer, Evakuierung und SiGeKo-Grundlagen.
+      </p>
+      <p className="mt-4 text-nrw-grau-600">
+        Senden Sie uns eine unverbindliche Anfrage mit Branche, Teilnehmerzahl und Wunschzeitraum.
+        Wir melden uns zeitnah mit passenden Terminvorschlägen für Köln und NRW.
       </p>
       <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
         <Link

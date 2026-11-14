@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { CONTACT, LEISTUNGEN, SITE } from "@/lib/constants";
+import { CONTACT, LEISTUNGEN, SITE, SIFA_PAGE_PATH } from "@/lib/constants";
 import { getBlogPostsSorted } from "@/data/blog-posts";
 import { ServiceCard } from "@/components/ServiceCard";
 import { ContactForm } from "@/components/ContactForm";
@@ -56,6 +56,12 @@ export default function HomePage() {
               className="btn-primary inline-flex items-center gap-2 rounded-full bg-nrw-rot px-8 py-4 text-base font-semibold text-white shadow-lg hover:bg-nrw-rot-hover"
               iconClassName="w-5 h-5"
             />
+            <Link
+              href={SIFA_PAGE_PATH}
+              className="btn-secondary inline-flex items-center gap-2 rounded-full border-2 border-white/40 bg-white/10 px-8 py-4 text-base font-semibold text-white backdrop-blur hover:border-nrw-gruen hover:bg-white/15"
+            >
+              Fachkraft für Arbeitssicherheit Köln
+            </Link>
             <Link
               href="/leistungen"
               className="btn-secondary inline-flex items-center gap-2 rounded-full border-2 border-white/40 bg-white/10 px-8 py-4 text-base font-semibold text-white backdrop-blur hover:border-nrw-gruen hover:bg-white/15"

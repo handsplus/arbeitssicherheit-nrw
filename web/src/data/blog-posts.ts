@@ -201,3 +201,33 @@ export function getBlogPostsSorted(): BlogPostMeta[] {
     (a, b) => new Date(b.datePublished).getTime() - new Date(a.datePublished).getTime()
   );
 }
+
+/** Themen-Cluster für „Passende Beiträge“ unter Artikeln */
+const RELATED_CLUSTERS: string[][] = [
+  [
+    "gefaehrdungsbeurteilung-erstellen-schritt-fuer-schritt",
+    "gefaehrdungsbeurteilung-unterschrift",
+    "homeoffice-gefaehrdungsbeurteilung-pflicht",
+    "psychische-belastung-gefaehrdungsbeurteilung",
+    "explosionsschutz-gefaehrdungsbeurteilung",
+  ],
+  ["sigeko-ab-wann-pflicht-baustelle", "sigeplan-inhalt-pflichten-baustelle", "sigeko-und-betrieb-schnittstelle"],
+  ["brandschutzhelfer-ausbildung-pflicht-nrw", "brandschutzbeauftragter-nrw-intern-extern"],
+];
+
+/** 3–5 thematisch passende Blogbeiträge (ohne den aktuellen Slug) */
+export function getRelatedBlogPosts(slug: string, limit = 4): BlogPostMeta[] {
+  const cluster = RELATED_CLUSTERS.find((c) => c.includes(slug));
+  const fromCluster = (cluster ?? [])
+    .filter((s) => s !== slug)
+    .map((s) => bySlug.get(s))
+    .filter((p): p is BlogPostMeta => Boolean(p));
+
+  if (fromCluster.length >= limit) return fromCluster.slice(0, limit);
+
+  const extras = getBlogPostsSorted()
+    .filter((p) => p.slug !== slug && !fromCluster.some((c) => c.slug === p.slug))
+    .slice(0, Math.max(0, limit - fromCluster.length));
+
+  return [...fromCluster, ...extras].slice(0, limit);
+}

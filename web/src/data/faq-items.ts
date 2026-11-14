@@ -11,6 +11,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     q: "Braucht unser Unternehmen eine Fachkraft für Arbeitssicherheit?",
     a: "Nach dem Arbeitssicherheitsgesetz (ASiG) und der DGUV Vorschrift 2 müssen Arbeitgeber Betriebe mit Beschäftigten durch eine Fachkraft für Arbeitssicherheit (FaSi) und einen Betriebsarzt betreiben lassen. Die Betreuung kann extern erfolgen – wir übernehmen das für Sie.",
     related: [
+      { href: "/fachkraft-fuer-arbeitssicherheit-koeln", label: "Fachkraft für Arbeitssicherheit Köln" },
       { href: "/leistungen/arbeitssicherheit", label: "Leistung: Arbeitssicherheit & FaSi" },
       { href: "/faq", label: "Weitere FAQ" },
     ],
@@ -20,6 +21,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     q: "Was macht eine externe Fachkraft für Arbeitssicherheit?",
     a: "Die FaSi berät in allen Fragen der Arbeitssicherheit, unterstützt bei der Gefährdungsbeurteilung, bei Betriebsbegehungen, Unterweisungen und der Umsetzung von Maßnahmen. Sie arbeitet mit dem Betriebsarzt und dem Arbeitgeber zusammen.",
     related: [
+      { href: "/fachkraft-fuer-arbeitssicherheit-koeln", label: "Fachkraft für Arbeitssicherheit Köln" },
       { href: "/leistungen/arbeitssicherheit", label: "Leistung: Externe FaSi Köln & NRW" },
       { href: "/blog", label: "Blog: Praxiswissen Arbeitssicherheit" },
       { href: "/checklisten", label: "Checklisten zur Selbstprüfung" },
