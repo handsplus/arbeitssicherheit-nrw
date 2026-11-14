@@ -137,7 +137,7 @@
       "permanent": true
     },
     {
-      "source": "/post/brandschutz-brandbekämpfung-von-elektrofahrzeugen",
+      "source": "/post/brandschutz-brandbek%C3%A4mpfung-von-elektrofahrzeugen",
       "destination": "https://brandschutzkoeln.com/ratgeber/e-fahrzeuge-tiefgarage-brandgefahren-fbfhb-024",
       "permanent": true
     },
@@ -147,7 +147,31 @@
       "permanent": true
     },
     {
-      "source": "/post/brandschutz-einsatz-von-löschdecken",
+      "source": "/post/brandschutz-einsatz-von-l%C3%B6schdecken",
+      "destination": "https://brandschutzkoeln.com/ratgeber/brandklassen-loeschertypen-feuerloescher-din-en-2",
+      "permanent": true
+    },
+    {
+      "source": "/post/brandschutz-einsatz-von-l%C3%B6schdecken",
+      "has": [{ "type": "host", "value": "www.arbeitssicherheit.nrw" }],
+      "destination": "https://brandschutzkoeln.com/ratgeber/brandklassen-loeschertypen-feuerloescher-din-en-2",
+      "permanent": true
+    },
+    {
+      "source": "/post/brandschutz-brandbek%C3%A4mpfung-von-elektrofahrzeugen",
+      "has": [{ "type": "host", "value": "www.arbeitssicherheit.nrw" }],
+      "destination": "https://brandschutzkoeln.com/ratgeber/e-fahrzeuge-tiefgarage-brandgefahren-fbfhb-024",
+      "permanent": true
+    },
+    {
+      "source": "/post/brandschutz-brandbekaempfung-von-elektrofahrzeugen",
+      "has": [{ "type": "host", "value": "www.arbeitssicherheit.nrw" }],
+      "destination": "https://brandschutzkoeln.com/ratgeber/e-fahrzeuge-tiefgarage-brandgefahren-fbfhb-024",
+      "permanent": true
+    },
+    {
+      "source": "/post/brandschutz-einsatz-von-loeschdecken",
+      "has": [{ "type": "host", "value": "www.arbeitssicherheit.nrw" }],
       "destination": "https://brandschutzkoeln.com/ratgeber/brandklassen-loeschertypen-feuerloescher-din-en-2",
       "permanent": true
     },
