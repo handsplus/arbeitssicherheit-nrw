@@ -78,6 +78,16 @@
       "permanent": true
     },
     {
+      "source": "/arbeitsschutz",
+      "destination": "/leistungen/arbeitssicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/arbeitsschutz/",
+      "destination": "/leistungen/arbeitssicherheit",
+      "permanent": true
+    },
+    {
       "source": "/schulungen",
       "destination": "/leistungen/schulungen",
       "permanent": true
@@ -129,12 +139,22 @@
     },
     {
       "source": "/post/brandschutz-brandbekaempfung-von-elektrofahrzeugen",
-      "destination": "/leistungen/brandschutz",
+      "destination": "https://brandschutzkoeln.com/ratgeber/e-fahrzeuge-tiefgarage-brandgefahren-fbfhb-024",
       "permanent": true
     },
     {
       "source": "/post/brandschutz-brandbekämpfung-von-elektrofahrzeugen",
-      "destination": "/leistungen/brandschutz",
+      "destination": "https://brandschutzkoeln.com/ratgeber/e-fahrzeuge-tiefgarage-brandgefahren-fbfhb-024",
+      "permanent": true
+    },
+    {
+      "source": "/post/brandschutz-einsatz-von-loeschdecken",
+      "destination": "https://brandschutzkoeln.com/ratgeber/brandklassen-loeschertypen-feuerloescher-din-en-2",
+      "permanent": true
+    },
+    {
+      "source": "/post/brandschutz-einsatz-von-löschdecken",
+      "destination": "https://brandschutzkoeln.com/ratgeber/brandklassen-loeschertypen-feuerloescher-din-en-2",
       "permanent": true
     },
     {
