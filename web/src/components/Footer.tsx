@@ -26,7 +26,7 @@ const FOOTER_NAV = [
 /** Partnerlinks unter „Verbund“ (rechte Spalte) */
 const PARTNER_VERBUND_LINKS = [
   { label: "sigeko.koeln", href: "https://sigeko.koeln" },
-  { label: "handsplus.de", href: "https://www.handsplus.de" },
+  { label: "handsplus.de", href: "https://handsplus.de" },
   { label: "brandschutzkoeln.com", href: "https://brandschutzkoeln.com" },
 ] as const;
 
