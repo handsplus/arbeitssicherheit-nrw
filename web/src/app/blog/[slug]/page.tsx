@@ -21,10 +21,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getBlogPost(slug);
   if (!post) return {};
   const url = `${SITE.url}/blog/${slug}`;
+  // P2-11: DGUV-V3-Artikel kanonisch auf handsplus (Domain-Rolle Dachmarke)
+  const canonical =
+    slug === "elektropruefung-dguv-vorschrift-3-fristen"
+      ? "https://handsplus.de/wissen/blog/dguv-vorschrift-3-elektropruefung"
+      : url;
   return {
     title: post.title,
     description: post.description,
-    alternates: { canonical: url },
+    alternates: { canonical },
     openGraph: {
       title: post.title,
       description: post.description,

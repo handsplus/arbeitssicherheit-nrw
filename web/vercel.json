@@ -2,12 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.arbeitssicherheit.nrw" }],
-      "destination": "https://arbeitssicherheit.nrw/:path*",
-      "permanent": true
-    },
-    {
       "source": "/datenschutzerklärung",
       "destination": "/datenschutz",
       "permanent": true
@@ -220,6 +214,12 @@
     {
       "source": "/post/:path*",
       "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.arbeitssicherheit.nrw" }],
+      "destination": "https://arbeitssicherheit.nrw/:path*",
       "permanent": true
     }
   ],
