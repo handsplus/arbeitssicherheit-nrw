@@ -39,9 +39,11 @@ export default function ImpressumPage() {
           Erreichbarkeit: {CONTACT.hours} (Termine nach Vereinbarung)
         </p>
         <p className="mt-6">
-          <strong>Umsatzsteuer-ID</strong>
+          <strong>Steuerangaben</strong>
           <br />
-          Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE 72 436 085 016
+          Steuernummer: 218/5132/3974
+          <br />
+          Eine Umsatzsteuer-Identifikationsnummer (USt-IdNr.) liegt nicht vor.
         </p>
         <p className="mt-6">
           <strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</strong>
