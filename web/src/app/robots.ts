@@ -1,8 +1,8 @@
 import { MetadataRoute } from "next";
 import { SITE } from "@/lib/constants";
 
-/** Nicht indexierbare technische Pfade (reduziert GSC-Rauschen) */
-const DISALLOW = ["/_next/", "/api/", "/opengraph-image", "/manifest.webmanifest"];
+/** Nur API sperren — /_next/ muss für Googlebot-Rendering erreichbar bleiben */
+const DISALLOW = ["/api/"];
 
 function rule(userAgent: string) {
   return { userAgent, allow: "/", disallow: DISALLOW };
