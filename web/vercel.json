@@ -153,25 +153,45 @@
     },
     {
       "source": "/post/brandschutz-einsatz-von-l%C3%B6schdecken",
-      "has": [{ "type": "host", "value": "www.arbeitssicherheit.nrw" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.arbeitssicherheit.nrw"
+        }
+      ],
       "destination": "https://brandschutzkoeln.com/ratgeber/brandklassen-loeschertypen-feuerloescher-din-en-2",
       "permanent": true
     },
     {
       "source": "/post/brandschutz-brandbek%C3%A4mpfung-von-elektrofahrzeugen",
-      "has": [{ "type": "host", "value": "www.arbeitssicherheit.nrw" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.arbeitssicherheit.nrw"
+        }
+      ],
       "destination": "https://brandschutzkoeln.com/ratgeber/e-fahrzeuge-tiefgarage-brandgefahren-fbfhb-024",
       "permanent": true
     },
     {
       "source": "/post/brandschutz-brandbekaempfung-von-elektrofahrzeugen",
-      "has": [{ "type": "host", "value": "www.arbeitssicherheit.nrw" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.arbeitssicherheit.nrw"
+        }
+      ],
       "destination": "https://brandschutzkoeln.com/ratgeber/e-fahrzeuge-tiefgarage-brandgefahren-fbfhb-024",
       "permanent": true
     },
     {
       "source": "/post/brandschutz-einsatz-von-loeschdecken",
-      "has": [{ "type": "host", "value": "www.arbeitssicherheit.nrw" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.arbeitssicherheit.nrw"
+        }
+      ],
       "destination": "https://brandschutzkoeln.com/ratgeber/brandklassen-loeschertypen-feuerloescher-din-en-2",
       "permanent": true
     },
@@ -242,7 +262,12 @@
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.arbeitssicherheit.nrw" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.arbeitssicherheit.nrw"
+        }
+      ],
       "destination": "https://arbeitssicherheit.nrw/:path*",
       "permanent": true
     }
@@ -250,22 +275,48 @@
   "headers": [
     {
       "source": "/opengraph-image",
-      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
     },
     {
       "source": "/manifest.webmanifest",
-      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
     },
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
+        },
         {
           "key": "Strict-Transport-Security",
-          "value": "max-age=31536000; includeSubDomains"
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "Content-Security-Policy-Report-Only",
+          "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self' https://formspree.io; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data:; connect-src 'self' https://formspree.io; upgrade-insecure-requests"
         }
       ]
     }
